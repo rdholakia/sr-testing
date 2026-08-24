@@ -1453,6 +1453,10 @@ function wire(){
     S.expOpen=true; render();
     var mods=document.querySelectorAll('#curturn .mod');
     if(mods.length) mods[mods.length-1].scrollIntoView({block:'start'});}});
+  s.querySelectorAll('[data-age]').forEach(function(e){e.onclick=function(){
+    S.retire=parseInt(this.getAttribute('data-age'),10);
+    var b=document.getElementById('scroll'), pos=b?b.scrollTop:0;
+    render(); var nb=document.getElementById('scroll'); if(nb) nb.scrollTop=pos;}});
   s.querySelectorAll('[data-path]').forEach(function(e){e.onclick=function(){
     S.path=this.getAttribute('data-path');
     S.retire=(PATHS.filter(function(x){return x.id===S.path})[0]||PATHS[0]).age;

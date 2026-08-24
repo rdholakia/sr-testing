@@ -547,6 +547,7 @@ function modSurplus(){
    '<div class="cap">You gave necessities as a band. Move it &mdash; the width of that band is the widest thing in this answer.</div>'+
    '<div class="sl"><label>Fixed monthly necessities <b>'+usd(S.ess)+'</b></label>'+
      '<input type="range" data-k="ess" min="9000" max="10500" step="50" value="'+S.ess+'"></div>'+
+   '<div class="slout">Leaves <b>'+usd(takeHome()-S.ess)+' a month</b> to work with</div>'+
    '<div class="trows">'+
      '<div class="trow"><span>Household take-home</span><b>'+usd(takeHome())+'</b></div>'+
      '<div class="trow"><span>Fixed necessities</span><b>&minus;'+usd(S.ess)+'</b></div>'+
@@ -639,6 +640,8 @@ function modPaths(){
 }
 
 function modTrade(){
+  var cap=Math.max(300,takeHome()-S.ess);
+  if(S.pay>cap) S.pay=cap;
   var sel=PATHS.filter(function(p){return p.id===S.path})[0]||PATHS[0];
   var apr=sel.apr!==undefined?sel.apr:S.apr;
   var n=monthsToClear(S.debt,apr,S.pay), grows=n===null;
@@ -649,10 +652,11 @@ function modTrade(){
      '<div class="tr"><div class="fl" style="width:'+Math.min(S.pay/MAX*100,100)+'%;background:'+(grows?'var(--t-a)':'var(--t-c)')+'"></div>'+
      '<div class="ceil" style="left:'+(intMo(apr)/MAX*100)+'%"></div></div>'+
      '<div class="ceill">The line is '+usd(intMo(apr))+' &mdash; the interest. Below it the balance rises.</div></div>'+
-   '<div class="sl"><label>Each month <b>'+usd(S.pay)+'</b></label>'+
-     '<input type="range" data-k="pay" min="300" max="2500" step="25" value="'+S.pay+'"></div>'+
+   '<div class="sl"><label>Toward the debt <b>'+usd(S.pay)+'</b></label>'+
+     '<input type="range" data-k="pay" min="300" max="'+Math.max(500,takeHome()-S.ess)+'" step="25" value="'+Math.min(S.pay,takeHome()-S.ess)+'"></div>'+
    '<div class="sl"><label>Fixed monthly necessities <b>'+usd(S.ess)+'</b></label>'+
      '<input type="range" data-k="ess" min="9000" max="10500" step="50" value="'+S.ess+'"></div>'+
+   '<div class="slout">Leaves <b>'+usd(takeHome()-S.ess)+' a month</b> to work with</div>'+
    '<div class="trows">'+
      '<div class="trow"><span>Interest accruing at '+apr+'%</span><b>'+usd(intMo(apr))+'/mo</b></div>'+
      '<div class="trow"><span>Actually reducing the balance</span><b'+(S.pay-intMo(apr)<=0?' class="neg"':'')+'>'+
@@ -1302,7 +1306,10 @@ function wire(){
   s.querySelectorAll('[data-more]').forEach(function(e){e.onclick=function(){
     S.log.push({who:'hence',i:S.t});
     S.t=S.t+1;syncCorrected();render();scrollToTurn();}});
-  s.querySelectorAll('input[type=range]').forEach(function(e){e.oninput=function(){
+  s.querySelectorAll('input[type=range]').forEach(function(e){
+    e.addEventListener('change',function(){
+      if(this.getAttribute('data-k')==='ess'){ var cap=takeHome()-S.ess; if(S.pay>cap) S.pay=Math.max(300,cap); }
+    },true);e.oninput=function(){
     var k=this.getAttribute('data-k');
     if(k==='apr10') S.apr=parseInt(this.value,10)/10;
     else S[k]=parseInt(this.value,10);

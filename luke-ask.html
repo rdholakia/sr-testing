@@ -1426,7 +1426,7 @@ function viewEntry(){
   return topBar()+'<div class="body" style="display:flex;flex-direction:column;justify-content:center">'+
    '<div class="avatar c">F</div><div class="hero">What&rsquo;s on your<br>money mind?</div></div>'+
    '<div class="dock"><div class="inp"><span class="ic">&#128206;</span><span class="ic">&#127908;</span>'+
-   '<span class="ph" style="color:#2c1d24">My current home is 4130 North Russet, Portland Oregon. My wife and I have a combined income of about $220,000 annually. We would like to upgrade our home in the next 5 or so years&hellip;</span>'+
+   '<span class="ph" style="color:#2c1d24">My current home is 4130 North Russet, Portland Oregon. My wife and I have a combined income of about $220,000 annually. We would like to upgrade our home in the next 5 or so years, maybe earlier. Can you help me with this pathway? Make it comprehensive.</span>'+
    '<button class="snd" data-go="0">&uarr;</button></div></div>';
 }
 
@@ -1482,7 +1482,7 @@ function wire(){
   s.querySelectorAll('input[type=range]').forEach(function(e){
     e.oninput=function(){
       var k=this.getAttribute('data-k');
-    if(k==='optIdx'){ S.opt=OPTS[parseInt(this.value,10)].id; }
+    if(k==='optIdx'){ var o=OPTS[parseInt(this.value,10)]; S.opt=o.id; S.price=o.price; }
     else { S[k]= k==='taxRate' ? parseFloat(this.value) : parseInt(this.value,10); }
       var lab=this.parentNode.querySelector('label b');
       if(lab && typeof usd==='function'){ var k=this.getAttribute('data-k'); if(S[k]!==undefined) lab.innerHTML=usd(S[k]); }
@@ -1519,6 +1519,7 @@ function wire(){
     render(); var nb=document.getElementById('scroll'); if(nb) nb.scrollTop=pos;}});
   s.querySelectorAll('[data-opt2]').forEach(function(e){e.onclick=function(){
     S.opt=this.getAttribute('data-opt2');
+    var o=OPTS.filter(function(x){return x.id===S.opt})[0]; if(o) S.price=o.price;
     var b=document.getElementById('scroll'), pos=b?b.scrollTop:0;
     render(); var nb=document.getElementById('scroll'); if(nb) nb.scrollTop=pos;}});
   s.querySelectorAll('[data-conf]').forEach(function(e){e.onclick=function(){
