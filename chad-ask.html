@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Finneas — Ask, paced. Chad / getting the debt under control</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --plum:#4b2a39;--cream:#f3efe5;--cream-2:#e9e4d6;--ink:#2c1d24;--lilac:#b57ce0;
+  --t-a:#f0a47f;--t-b:#f2e076;--t-c:#abdfa6;--dim:rgba(255,255,255,.72);
+  --ok:#5fa85f;--warn:#d8a24a;--bad:#c96a5a;
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-font-smoothing:antialiased}
+body{font-family:'Hanken Grotesk',-apple-system,sans-serif;background:#171015;color:#fff;
+  min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:26px 16px 60px;gap:14px}
+
+.chrome{width:100%;max-width:930px;display:flex;flex-direction:column;gap:9px}
+.chrome h1{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#8a7a83}
+.steps{display:flex;gap:5px;flex-wrap:wrap}
+.steps button{background:#241a20;border:1px solid #3a2c33;color:#bda9b4;font:inherit;font-size:11px;
+  font-weight:600;padding:6px 10px;border-radius:7px;cursor:pointer}
+.steps button.on{background:#fff;color:#171015;border-color:#fff}
+.steps button.home{border-color:#6b4f5e}
+.vsw{display:flex;gap:6px;align-items:center;margin-top:2px}
+.vsw span{font-size:11px;color:#7d6d76;margin-right:4px}
+.vsw button{background:#241a20;border:1px solid #3a2c33;color:#bda9b4;font:inherit;font-size:11px;
+  font-weight:600;padding:6px 11px;border-radius:7px;cursor:pointer}
+.vsw button.on{background:var(--lilac);color:#fff;border-color:var(--lilac)}
+.conf{border-top:1px solid #e0d9c9;margin-top:15px;padding-top:13px;cursor:pointer}
+.conf .ch{display:flex;align-items:center;gap:9px}
+.conf .ck{font-size:9.5px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:#a3967f}
+.conf .cv{font-size:13px;font-weight:700;margin-left:auto}
+.conf .cchev{font-size:10px;color:#a89b8a}
+.conf .cbar{height:5px;background:#ddd7c9;border-radius:5px;margin-top:9px;overflow:hidden}
+.conf .cbar i{display:block;height:100%;background:#c9a227;border-radius:5px}
+.conf .cd{font-size:11.5px;color:#7a6f62;margin-top:7px;line-height:1.45}
+.conf .clist{margin-top:12px}
+.conf .cli{display:flex;gap:9px;font-size:12px;line-height:1.45;color:#5f5459;margin-top:7px}
+.conf .cli i{flex:none;font-style:normal;font-size:11px;width:12px}
+.conf .cli.miss{color:#8a5a4e}
+.toast{display:flex;align-items:center;gap:11px;background:rgba(255,255,255,.10);
+  border-radius:10px;padding:13px 15px;margin-top:16px}
+.toast .tk{flex:none;width:22px;height:22px;border-radius:6px;background:var(--lilac);color:#fff;
+  display:flex;align-items:center;justify-content:center;font-size:12px}
+.toast .tt{font-size:14px;line-height:1.4;color:rgba(255,255,255,.9)}
+.toast .tt b{color:#fff;font-weight:600}
+.toast .tv{font-size:12.5px;font-weight:700;color:var(--lilac);cursor:pointer;flex:none;margin-left:auto}
+.lace{background:rgba(255,255,255,.08);border-radius:9px;padding:12px 14px;margin-top:14px}
+.lace .lk{font-size:10px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;color:var(--lilac)}
+.lace p{font-size:13.5px;line-height:1.5;color:rgba(255,255,255,.82);margin-top:7px}
+.digest{margin-top:18px}
+.digest .dk{font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--dim)}
+.digest .di{background:var(--cream);color:var(--ink);border-radius:12px;padding:15px 16px;margin-top:11px}
+.digest .dt{font-family:'Newsreader',serif;font-size:19px;line-height:1.2}
+.digest .dd{font-size:13.5px;line-height:1.5;color:#6b5f64;margin-top:6px}
+.rowa{display:flex;justify-content:space-between;gap:12px;align-items:baseline;
+  border-bottom:1px solid rgba(255,255,255,.14);padding:10px 0;font-size:13.5px}
+.rowa .q{color:var(--dim);flex:1}
+.rowa .a{color:#fff;font-weight:600}
+.rowa .ed{color:var(--lilac);font-size:12px;text-decoration:underline;cursor:pointer;flex:none}
+.two{display:flex;gap:9px;margin-top:16px}
+.two .f{flex:1;background:var(--cream);color:var(--ink);border-radius:12px;padding:15px 14px}
+.two .f .fk{font-size:9.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#a3967f}
+.two .f .fh{font-family:'Newsreader',serif;font-size:18px;line-height:1.2;margin-top:7px}
+.two .f .fd{font-size:12.5px;line-height:1.5;color:#5f5459;margin-top:9px}
+.two .f .fd b{color:var(--ink)}
+.note{font-size:12px;color:#7d6d76;max-width:930px;line-height:1.5;text-align:center}
+
+.device{width:392px;height:812px;background:var(--plum);border-radius:44px;
+  box-shadow:0 0 0 10px #100b0e,0 0 0 12px #2c2027,0 34px 70px rgba(0,0,0,.6);overflow:hidden;position:relative}
+.screen{position:absolute;inset:0;display:flex;flex-direction:column}
+.body{flex:1;overflow-y:auto;overflow-x:hidden;padding:0 20px}
+.body::-webkit-scrollbar{width:0}
+.top{display:flex;justify-content:space-between;align-items:flex-start;padding:22px 22px 6px;flex:none}
+.wm{font-family:'Newsreader',serif;font-size:19px}
+.burger{width:22px}.burger span{display:block;height:1.5px;background:#fff;margin:5px 0}
+.avatar{width:34px;height:34px;border-radius:9px;background:var(--lilac);display:flex;align-items:center;
+  justify-content:center;font-family:'Newsreader',serif;font-size:19px;margin:16px 0 14px}
+.avatar.c{margin:14px auto 16px}
+.hero{font-family:'Newsreader',serif;font-size:29px;line-height:1.16;text-align:center}
+
+.said{font-family:'Newsreader',serif;font-size:23px;line-height:1.26;color:#fff}
+.sub{font-size:16px;line-height:1.5;color:rgba(255,255,255,.78);margin-top:11px}
+.sub b{color:#fff;font-weight:600}
+.ask{font-size:16px;font-weight:600;line-height:1.4;margin-top:18px;color:#fff}
+.qwhy{font-size:13.5px;line-height:1.5;color:rgba(255,255,255,.6);font-style:italic;margin-top:9px}
+.fieldfoot{display:flex;justify-content:space-between;gap:12px;margin-top:12px;font-size:12.5px;color:var(--dim)}
+.fieldfoot .skip{cursor:pointer;text-decoration:underline}
+.opts{display:flex;flex-direction:column;gap:8px;margin-top:16px}
+.opt{background:transparent;border:1px solid rgba(255,255,255,.42);color:#fff;font:inherit;font-size:14.5px;
+  padding:12px 15px;border-radius:22px;text-align:left;cursor:pointer;transition:.14s}
+.opt:hover{background:rgba(255,255,255,.1)}
+.opt.ghost{border-style:dashed;color:var(--dim)}
+.turn{margin-top:8px;max-width:96%;margin-right:auto}
+.fade{animation:fu .34s cubic-bezier(.2,.7,.2,1) both}
+.fade2{animation:fu .40s cubic-bezier(.2,.7,.2,1) .16s both}
+.fade3{animation:fu .40s cubic-bezier(.2,.7,.2,1) .32s both}
+@keyframes fu{from{opacity:0;transform:translateY(9px)}to{opacity:1;transform:translateY(0)}}
+@keyframes dis{from{opacity:0}to{opacity:1}}
+.dissolve{animation:dis .34s ease both}
+
+.mine{display:flex;justify-content:flex-end;margin:26px 0 30px}
+.mine .b{background:#5e4557;color:#f3efe5;border-radius:14px;padding:18px 20px;
+  font-size:16.5px;line-height:1.45;max-width:88%;text-align:left}
+.recap{background:rgba(255,255,255,.08);border-radius:9px;padding:12px 14px;font-size:13.5px;
+  line-height:1.45;color:rgba(255,255,255,.8);margin-top:13px}
+
+.mathhead{font-family:'Newsreader',serif;font-size:22px;color:#fff;margin-top:26px}
+ul.t{margin:13px 0 0;padding:0;list-style:none}
+ul.t li{font-size:15px;line-height:1.5;color:rgba(255,255,255,.8);padding-left:16px;position:relative;margin-top:9px}
+ul.t li:before{content:'';position:absolute;left:0;top:8px;width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,.4)}
+ul.t li b{color:#fff;font-weight:600}
+.closing{background:rgba(255,255,255,.09);border-left:3px solid var(--lilac);border-radius:0 9px 9px 0;
+  padding:14px 15px;margin-top:17px;font-size:15px;line-height:1.5}
+
+/* ---- cream artifacts ---- */
+.mod{background:var(--cream);color:var(--ink);border-radius:12px;padding:17px;margin-top:18px}
+.mod h3{font-family:'Newsreader',serif;font-size:21px;font-weight:400;line-height:1.18}
+.mod .cap{font-size:12px;color:#7a6f74;margin-top:4px;line-height:1.45}
+.mod .modnote{font-size:11.5px;line-height:1.5;color:#7a6f74;margin-top:12px}
+.mod .modnote b{color:var(--ink)}
+.big{font-family:'Newsreader',serif;font-size:36px;line-height:1;margin-top:13px}
+.bigsub{font-size:12.5px;color:#7a6f74;margin-top:3px}
+.sl{margin-top:15px}
+.sl label{display:flex;justify-content:space-between;font-size:12.5px;font-weight:600;color:#7a6f74;margin-bottom:2px}
+.sl label b{color:var(--ink);font-size:13.5px}
+input[type=range]{width:100%;-webkit-appearance:none;height:4px;background:#d3ccbd;border-radius:4px;outline:0;margin-top:7px}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;height:22px;border-radius:50%;
+  background:var(--ink);cursor:pointer;border:3px solid var(--cream)}
+input[type=range]::-moz-range-thumb{width:22px;height:22px;border-radius:50%;background:var(--ink);
+  cursor:pointer;border:3px solid var(--cream)}
+.trow{display:flex;justify-content:space-between;gap:12px;font-size:13.5px;color:#6b5f52;
+  padding:10px 0;border-bottom:1px solid #e0d9c9}
+.trows{margin-top:14px;border-top:1px solid #e0d9c9}
+.trow b{color:var(--ink);font-weight:700;text-align:right;white-space:nowrap}
+.trow.tot{border-bottom:0;padding-top:12px}
+.trow.tot span{font-weight:700;color:var(--ink)}
+.trow.tot b{font-size:18px}
+.trow .neg{color:#8a5a4e}
+.cmpt{background:var(--cream);color:var(--ink);border-radius:12px;padding:6px 14px 14px;margin-top:18px}
+.cmpt table{border-collapse:collapse;width:100%;font-size:12px;table-layout:fixed}
+.cmpt th{text-align:right;font-size:9px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+  color:#7a6f62;padding:12px 0 8px 6px;border-bottom:1px solid #cfc6b5;line-height:1.25}
+.cmpt th:first-child{text-align:left;width:42%;padding-left:0}
+.cmpt th:nth-child(2){width:26%}
+.cmpt td{padding:9px 0 9px 6px;border-bottom:1px solid #e6dfd0;line-height:1.3;text-align:right;
+  font-weight:700}
+.cmpt td:first-child{text-align:left;font-weight:400;color:#6b5f52;padding-left:0}
+.cmpt tr:last-child td{border-bottom:0}
+.cmpt tr.hi td{background:#e6dfd0}
+.cmpt tr.sec td{padding-top:16px;border-bottom:1px solid #cfc6b5}
+.cmpt tr.sec td:first-child{font-size:9px;font-weight:700;letter-spacing:.08em;
+  text-transform:uppercase;color:#a3967f}
+/* three-lender variant — four columns in 392px */
+.cmpt.three table{font-size:11px}
+.cmpt.three th:first-child{width:31%}
+.cmpt.three th{width:23%;padding-left:4px}
+.cmpt.three td{padding-left:4px;font-size:11px}
+.cmpt.three td:first-child{font-size:11.5px}
+.cmpt.three .dl{font-size:9.5px}
+.qb{background:#e9e2d4;border-left:3px solid var(--plum);border-radius:0 8px 8px 0;
+  padding:12px 13px;margin-top:14px;font-size:14px;line-height:1.5;color:#4a4038;font-style:italic}
+.opd{margin-top:15px;border-top:1px solid #e0d9c9;padding-top:14px}
+.opd .oh{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.opd .on1{font-family:'Newsreader',serif;font-size:21px;line-height:1.15}
+.opd .op{font-size:19px;font-weight:700;white-space:nowrap}
+.opd .om{font-size:12.5px;color:#7a6f62;margin-top:6px;line-height:1.45}
+.opd .orow{display:flex;justify-content:space-between;font-size:13.5px;
+  border-bottom:1px solid #e0d9c9;padding:10px 0}
+.opd .orow:first-of-type{border-top:1px solid #e0d9c9;margin-top:13px}
+.opd .orow span{color:#6b5f52}
+.opd .orow b{font-weight:700}
+.opd .orow b.up{color:#8a5a4e}
+.dl2{display:block;font-size:10.5px;color:#a3967f;margin-top:2px;font-weight:400}
+.cmpt td.ql{font-weight:400;font-size:11.5px;color:#4a4038;line-height:1.35;text-align:right}
+.cmpt .dl{font-size:10.5px;font-weight:400;color:#8a7f70;display:block;margin-top:2px}
+.cmpt .up{color:#8a5a4e}
+.cmpt .neu{color:#4a4038}
+.cmpt .win{color:#3f6b3f}
+.scen{display:flex;gap:7px;margin-top:15px}
+.scen .c{flex:1;background:var(--cream-2);border-radius:9px;padding:11px 9px;cursor:pointer;
+  border:2px solid transparent;transition:.15s}
+.scen .c.on{border-color:var(--ink);background:#fff}
+.scen .c .k{font-size:9.5px;letter-spacing:.05em;text-transform:uppercase;color:#7a6f74;font-weight:700;line-height:1.3}
+.scen .c .v{font-family:'Newsreader',serif;font-size:21px;line-height:1;margin-top:6px}
+.scen .c .s{font-size:10.5px;color:#7a6f74;margin-top:3px}
+.bar{margin-top:13px}
+.bar .bl{display:flex;justify-content:space-between;font-size:12px;color:#6b5f52;margin-bottom:5px}
+.bar .bl b{color:var(--ink)}
+.bar .tr{height:11px;background:#ddd7c9;border-radius:6px;position:relative;overflow:visible}
+.bar .fl{height:100%;border-radius:6px;transition:width .5s cubic-bezier(.2,.7,.2,1)}
+.bar .ceil{position:absolute;top:-3px;bottom:-3px;width:2px;background:#7a6f74}
+.bar .ceill{font-size:10px;color:#8a5a4e;margin-top:6px}
+.stack{display:flex;height:36px;border-radius:8px;overflow:hidden;margin-top:15px}
+.stack div{display:flex;align-items:center;justify-content:center;font-size:10.5px;font-weight:700;
+  color:#2c1d24;transition:flex-grow .5s cubic-bezier(.2,.7,.2,1);overflow:hidden;white-space:nowrap}
+.stackkey{display:flex;gap:12px;flex-wrap:wrap;font-size:11.5px;color:#6b5f52;margin-top:10px}
+.stackkey i{display:inline-block;width:10px;height:10px;border-radius:3px;vertical-align:-1px;margin-right:5px}
+
+.grp{font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--dim);
+  font-weight:700;margin-top:20px}
+
+/* handoff / proposed pack — in chat */
+.prop{background:var(--cream);color:var(--ink);border-radius:12px;padding:18px 17px;margin-top:16px}
+.prop .lab{font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:#7a6f74}
+.prop h3{font-family:'Newsreader',serif;font-size:25px;font-weight:400;margin-top:5px;line-height:1.2}
+.prop .tgt{font-size:14px;line-height:1.45;color:#4d4048;margin-top:9px}
+.pact{display:flex;gap:11px;padding:13px 0;border-top:1px solid #ddd7c9}
+.pact .pn{flex:none;width:23px;height:23px;border:1px solid #9c948a;border-radius:5px;display:flex;
+  align-items:center;justify-content:center;font-size:12px;margin-top:1px}
+.pact .pt{font-size:15px;font-weight:600;line-height:1.3;margin-top:0}
+.pact .pd{font-size:12.5px;line-height:1.4;color:#6b5f64;margin-top:3px}
+.who{display:inline-block;font-size:9px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;
+  padding:2px 7px;border-radius:20px;margin-top:6px}
+.who.h{background:#dfd8c8;color:#5c5145}
+.who.u{background:#e6d3dd;color:#6b3f56}
+.assume{background:#e6e0d1;border-radius:8px;padding:12px 13px;font-size:12.5px;line-height:1.45;
+  margin-top:14px;color:#5c5145}
+.assume b{color:var(--ink)}
+
+/* ---- object pages ---- */
+.body.page{background:#f6f2e9;color:var(--ink);padding:0 18px 0}
+.top.light{background:#f6f2e9}
+.top.light .wm{color:var(--ink)}
+.top.light .burger span{background:var(--ink)}
+.pghead{padding:14px 0 4px}
+.pgt{font-family:'Newsreader',serif;font-size:30px;font-weight:400;line-height:1.12;
+  letter-spacing:-.012em;margin-top:11px}
+.progbar{height:5px;background:#e2dac9;border-radius:5px;overflow:hidden;margin-top:16px}
+.progbar i{display:block;height:100%;background:var(--lilac);border-radius:5px}
+.progl{font-size:11.5px;color:#8a7f70;margin-top:7px}
+.secH{font-family:'Newsreader',serif;font-size:25px;font-weight:400;letter-spacing:-.012em;
+  line-height:1.15;margin:28px 0 0}
+.page .mod{background:#fdfbf6;border:1px solid #e6dfd0;border-radius:12px;padding:15px 15px 14px;margin-top:13px}
+.page .mod.plain{padding:14px 13px 12px}
+.modk{font-size:9px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:#a3967f}
+.modh{font-family:'Newsreader',serif;font-size:20px;font-weight:400;line-height:1.22;margin-top:8px}
+.modp{font-size:13px;line-height:1.55;color:#5c5145;margin-top:11px}
+.page .trow{display:flex;justify-content:space-between;gap:12px;font-size:13px;color:#6b5f52;
+  padding:9px 0;border-bottom:1px solid #e6dfd0;font-weight:400}
+.page .trow:last-of-type{border-bottom:0}
+.page .trow b{color:var(--ink);font-weight:600;text-align:right}
+.page .modnote{font-size:12px;line-height:1.5;color:#7a6f62;margin-top:11px}
+.src{font-size:10.5px;color:#a89b8a;margin-top:12px}
+.page .mod .pcard{background:#f0eade}
+.pcard{background:#e9e2d4;color:var(--ink);border-radius:7px;padding:12px 13px 11px;margin-bottom:10px}
+.eyebrow{display:inline-block;font-size:8.5px;font-weight:700;letter-spacing:.07em;
+  color:#5c5145;background:#f3eee4;border:1px solid #ddd5c6;border-radius:4px;padding:3px 7px}
+.pt{font-size:15.5px;font-weight:500;line-height:1.25;margin-top:9px;letter-spacing:-.005em}
+.pb{font-size:12.5px;line-height:1.42;color:#7a6f62;margin-top:3px}
+.prow{display:flex;align-items:center;justify-content:space-between;margin-top:11px}
+.dur{font-size:8.5px;font-weight:700;letter-spacing:.07em;color:#5c5145;
+  border:1px solid #c9bda9;border-radius:4px;padding:3px 8px}
+.ta{font-size:12.5px;font-weight:700;cursor:pointer}
+.ta i{font-style:normal;font-size:9px;vertical-align:1px;margin-left:2px}
+.urg{display:inline-block;font-size:8.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;
+  border-radius:999px;padding:3px 9px}
+.urg.high{background:#f0dc7a;color:#5c4a10}
+.stepc{display:flex;gap:11px;padding:13px 0;border-bottom:1px solid #e6dfd0}
+.stepc:last-child{border-bottom:0}
+.stepn{flex:none;width:24px;height:24px;border:1px solid #b3a795;border-radius:5px;display:flex;
+  align-items:center;justify-content:center;font-size:12px;font-weight:600;color:#5c5145;margin-top:8px}
+.stepb{flex:1}
+.qrow{display:flex;align-items:center;justify-content:space-between;gap:12px;
+  padding:13px 0;border-bottom:1px solid #e6dfd0}
+.qrow:last-child{border-bottom:0}
+.chev{color:#a89b8a;font-size:11px;flex:none}
+.pt2{font-family:'Newsreader',serif;font-size:19px;font-weight:400}
+.ratenow{font-family:'Newsreader',serif;font-size:31px;margin-top:10px}
+.ratenow span{font-size:12px;font-family:'Hanken Grotesk';color:#3f6b3f;margin-left:8px}
+.ratesvg{width:100%;display:block;margin-top:8px}
+.ratex{display:flex;justify-content:space-between;font-size:10px;color:#a89b8a;margin-top:4px}
+.pill-more{display:block;margin:20px auto 0;background:#fff;color:#2c1d24;border:0;font:inherit;
+  font-size:15px;font-weight:600;padding:13px 26px;border-radius:999px;cursor:pointer}
+
+.dock{flex:none;padding:12px 20px 14px}
+.inp{display:flex;align-items:center;gap:11px;background:#fff;border-radius:26px;padding:11px 11px 11px 16px}
+.inp .ph{flex:1;font-size:14.5px;color:#8c8189;line-height:1.35;max-height:74px;overflow:hidden}
+.ic{color:#5d525a;font-size:15px}
+.snd{width:34px;height:34px;border-radius:50%;background:var(--ink);color:#fff;border:0;font-size:15px;
+  cursor:pointer;flex:none}
+.selbox{background:#efe9db;border-radius:9px;padding:13px 14px;margin-top:14px}
+.selk{font-size:9.5px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:#a3967f}
+.selp{font-size:13px;line-height:1.5;color:#5c5145;margin-top:6px}
+.cmpt th.selth{color:var(--ink);border-bottom:2px solid var(--ink)}
+.cmpt td.selc{background:#efe9db}
+.modfoot{display:flex;align-items:center;justify-content:space-between;gap:12px;
+  border-top:1px solid #e0d9c9;margin-top:15px;padding-top:14px}
+.mfl{flex:1}
+.mfh{font-family:'Newsreader',serif;font-size:21px;line-height:1.15;color:var(--ink)}
+.mfs{font-size:11.5px;color:#7a6f62;margin-top:3px}
+.btn-set{flex:none;background:var(--ink);color:#fff;border:0;font:inherit;font-size:12px;font-weight:700;
+  padding:8px 14px;border-radius:999px;cursor:pointer;margin-top:2px;white-space:nowrap}
+.btn-set.ghost{background:#e6dfd0;border:0;color:#6b5f52;font-weight:600}
+.refm{padding-top:14px;padding-bottom:14px}
+.rfhead{display:flex;align-items:center;justify-content:space-between;gap:12px;cursor:pointer}
+.rfk{font-size:13.5px;font-weight:700;color:var(--ink)}
+.rfs{font-size:12px;color:#7a6f62;margin-top:3px}
+.rfchev{font-size:10px;color:#a3967f}
+.rfbody{border-top:1px solid #e0d9c9;margin-top:13px;padding-top:4px}
+.rfi{border-top:1px solid #e0d9c9;padding:13px 0}
+.rfi:first-of-type{border-top:0;padding-top:4px}
+.rfh{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+.rft{font-size:14px;font-weight:600;color:var(--ink);line-height:1.35}
+.rfw{font-size:12.5px;line-height:1.5;color:#7a6f62;margin-top:5px}
+.rfb{flex:none;background:transparent;border:1px solid #b3a795;color:#4a4038;font:inherit;font-size:11.5px;
+  font-weight:700;padding:6px 12px;border-radius:999px;cursor:pointer;white-space:nowrap}
+.rfb.on{background:var(--ink);border-color:var(--ink);color:#fff}
+.declined{background:rgba(255,255,255,.08);border-radius:12px;padding:15px 16px 16px;margin-top:16px;text-align:center}
+.declined .dh{font-size:16px;font-weight:600;color:#fff}
+.declined .dp{font-size:12.5px;line-height:1.5;color:var(--dim);margin-top:6px}
+.signup{margin-top:22px}
+.signup .field{margin-top:4px}
+.signup label{display:block;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--dim);margin-bottom:6px}
+.sso{display:flex;align-items:center;justify-content:center;gap:9px;width:100%;background:#fff;color:#1c1c1c;
+  border:0;font:inherit;font-size:15px;font-weight:600;padding:14px;border-radius:10px;cursor:pointer;margin-bottom:9px}
+.ssoi{font-size:15px;font-weight:700}
+.ordiv{display:flex;align-items:center;gap:10px;margin:16px 0;color:var(--dim);font-size:12px}
+.ordiv::before,.ordiv::after{content:"";flex:1;height:1px;background:rgba(255,255,255,.22)}
+.fakefield{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.28);border-radius:10px;
+  padding:14px 15px;font-size:15px;color:rgba(255,255,255,.5)}
+.mkacct{width:100%;background:var(--lilac);color:#fff;border:0;font:inherit;font-size:15px;font-weight:600;
+  padding:14px;border-radius:10px;cursor:pointer;margin-top:12px}
+.fineprint{font-size:11.5px;line-height:1.45;color:var(--dim);margin-top:12px}
+.welcome{position:absolute;inset:0;z-index:40;display:flex;flex-direction:column;align-items:center;
+  justify-content:center;background:#2e2620;color:#f6f1e6}
+.wmark{font-family:'Newsreader',serif;font-size:20px;letter-spacing:.02em;opacity:.6}
+.wtitle{font-family:'Newsreader',serif;font-size:32px;margin-top:14px;animation:fu .6s ease both}
+.wsub{font-size:13.5px;color:#a89b8a;margin-top:8px;animation:fu .6s .2s ease both}
+.wbar{width:150px;height:3px;background:rgba(255,255,255,.16);border-radius:3px;margin-top:22px;overflow:hidden}
+.wbar i{display:block;height:100%;width:0;background:#b57ce0;border-radius:3px;animation:fill 1.6s ease-out forwards}
+.pgrp{font-size:10px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:#a3967f;
+  margin-top:16px;padding-top:14px;border-top:1px solid #ddd7c9}
+.pact.watch .pn{border:0;background:#e6dfd0;color:#7a6f62;font-size:11px}
+.pact.watch .pt{font-weight:500}
+.hstack{position:relative;margin:26px 4px 0;cursor:pointer}
+.hstack .ghost{position:absolute;left:12px;right:12px;top:12px;bottom:-12px;background:#e4dfd2;
+  border-radius:9px;box-shadow:0 4px 10px rgba(0,0,0,.14)}
+.hstack .ghost.g2{left:26px;right:26px;top:26px;bottom:-26px;background:#d6d1c3}
+.hcard{background:var(--cream);color:var(--ink);border-radius:9px;padding:15px 16px;position:relative}
+.hcard .eyebrow{display:inline-block;font-size:8.5px;font-weight:700;letter-spacing:.08em;
+  color:#6b5f52;background:rgba(44,29,36,.055);border-radius:4px;padding:4px 8px}
+.crow2{display:flex;gap:11px;margin-top:11px}
+.num{flex:none;width:26px;height:26px;border:1px solid #9c948a;border-radius:5px;
+  display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:500}
+.num.ok{background:var(--ink);color:#fff;border-color:var(--ink);font-size:13px}
+.ctitle{font-family:'Newsreader',serif;font-size:19px;line-height:1.2}
+.cbody{font-size:12.5px;line-height:1.45;color:#6b5f64;margin-top:5px}
+.cact{font-size:13px;font-weight:700;margin-top:11px;display:inline-block;cursor:pointer}
+.btn-work{background:#2c1d24;color:#fff;border:0;font:inherit;font-size:12px;font-weight:700;
+  padding:9px 13px;border-radius:5px;margin-top:12px;cursor:pointer}
+.cards{display:flex;flex-direction:column;gap:13px;margin-top:22px}
+.myh{flex:none;background:var(--cream-2);color:var(--ink);text-align:center;padding:15px;
+  font-size:13px;font-weight:700;letter-spacing:.15em;cursor:pointer}
+.subhero{text-align:center;font-size:15px;line-height:1.4;color:var(--dim);margin-top:9px}
+.sheet{position:absolute;inset:0;background:#f3eee4;color:#2f2620;z-index:30;
+  overflow-y:auto;padding:18px 20px 34px}
+.sheet.enter{animation:up .3s cubic-bezier(.2,.7,.2,1) both}
+.sheet.dissolvein{animation:dis .3s ease both}
+.sheet::-webkit-scrollbar{width:0}
+.sheet h2{font-family:'Newsreader',serif;font-size:30px;font-weight:400;margin:20px 0 0;
+  text-align:center;letter-spacing:-.01em}
+.sheet .sect{text-align:center;margin-top:30px}
+.sheet .sect.sm{margin-top:34px}
+.sheet .sicon{font-size:15px;color:#4a4038;margin-bottom:4px}
+.sheet .stitle{font-family:'Newsreader',serif;font-size:24px;letter-spacing:-.01em}
+.sheet .ssub{font-size:12.5px;line-height:1.45;color:#7a6f62;margin-top:6px;padding:0 6px}
+.sheet .filt{display:flex;align-items:center;justify-content:center;gap:8px;font-size:12.5px;
+  color:#4a4038;margin-top:26px;font-weight:600}
+.sheet .weeks{display:flex;gap:6px;overflow-x:auto;margin-top:16px}
+.sheet .wk{flex:none;background:#ebe4d6;border-radius:6px;padding:9px 12px 8px;min-width:76px}
+.sheet .grp{margin-top:20px}
+.sheet .pt{font-size:15.5px;font-weight:500;line-height:1.25;margin-top:9px;letter-spacing:-.005em}
+.sheet .pb{font-size:12.5px;line-height:1.42;color:#7a6f62;margin-top:3px}
+.sheet .prio{background:#ebe4d6;border-radius:7px;padding:13px 13px;margin-top:14px;
+  display:flex;gap:11px;align-items:center}
+.prio .sheet .pt{font-family:'Newsreader',serif;font-size:19px;font-weight:400;margin-top:5px}
+.sheet .rec{background:#ebe4d6;border-radius:7px;padding:13px;margin-top:14px}
+.rec .sheet .pt{font-family:'Newsreader',serif;font-size:19px;font-weight:400}
+.sheet .past{display:flex;align-items:center;justify-content:space-between;gap:12px;
+  padding:14px 0;border-bottom:1px solid #ddd5c6}
+.sheet .lsect{display:flex;align-items:center;gap:9px;font-family:'Newsreader',serif;font-size:24px;
+  margin-top:36px;letter-spacing:-.01em}
+.sheet .found{background:#ebe4d6;border:1px solid #ddd5c6;border-radius:7px;padding:18px 12px;margin-top:14px;
+  display:grid;grid-template-columns:repeat(3,1fr);gap:16px 6px}
+.sheet .wknext{background:#ebe4d6;border-radius:9px;padding:13px 14px;margin-top:14px}
+.sheet .abank{background:#ebe4d6;border-radius:9px;padding:4px 14px 6px;margin-top:14px}
+.sheet .pcard .pt{font-family:'Hanken Grotesk',sans-serif;font-size:15.5px;font-weight:600;
+  line-height:1.28;letter-spacing:0;text-transform:none;color:#2f2620;margin-top:9px}
+.sheet .pcard .pb{font-family:'Hanken Grotesk',sans-serif;font-size:12.5px;font-weight:400;
+  line-height:1.45;letter-spacing:0;text-transform:none;color:#7a6f62;margin-top:4px}
+.sheet .prio .pt,.sheet .rec .pt{font-family:'Newsreader',serif;font-size:19px;font-weight:400;
+  letter-spacing:0;text-transform:none;color:#2f2620}
+.sheet .prio .pb,.sheet .rec .pb,.sheet .past .pb{font-family:'Hanken Grotesk',sans-serif;
+  font-size:12.5px;font-weight:400;line-height:1.45;letter-spacing:0;text-transform:none;color:#7a6f62}
+.sheet .ta{font-family:'Hanken Grotesk',sans-serif;font-size:12.5px;font-weight:700;
+  letter-spacing:0;text-transform:none}
+.shead{display:flex;align-items:center;justify-content:space-between}
+.shead .close{font-size:14px;cursor:pointer;color:#8a7f70;width:16px}
+.shead .wm2{font-size:10.5px;font-weight:700;letter-spacing:.16em;color:#4a4038}
+.tabs{display:flex;background:#fbf8f1;border:1px solid #ddd5c6;border-radius:999px;
+  padding:4px;gap:2px;margin:16px 0 0}
+.tb{flex:1;border:0;background:transparent;font:inherit;font-size:12.5px;font-weight:600;
+  color:#5c5145;padding:8px 4px;border-radius:999px;cursor:pointer}
+.tb.on{background:#2e2620;color:#f6f1e6}
+.tabbody{animation:slideL .26s cubic-bezier(.2,.7,.2,1) both}
+.tabbody.back{animation-name:slideR}
+.sect.nogap{margin-top:10px}
+.weeks::-webkit-scrollbar{height:0}
+.wk span{display:block;font-size:8.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#8a7f70}
+.wk b{display:block;font-family:'Newsreader',serif;font-size:17px;font-weight:400;margin-top:2px}
+.wk i{display:block;font-style:normal;font-size:10.5px;color:#8a7f70;margin-top:1px}
+.wk.now{background:#2e2620;color:#f6f1e6}
+.wk.now span,.wk.now i{color:#a89b8a}
+.wk.done{background:#c9dcc0}
+.prio .pn{flex:none;width:28px;height:28px;border-radius:5px;background:#f3eee4;display:flex;
+  align-items:center;justify-content:center;font-size:13px;font-weight:500}
+.prio .pbody{flex:1}
+.recap{background:rgba(255,255,255,.08);border-radius:9px;padding:12px 14px;font-size:13.5px;
+  line-height:1.45;color:rgba(255,255,255,.8);margin-top:13px}
+.recpill{display:inline-block;font-size:8.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;
+  color:#fff;background:var(--lilac);padding:3px 9px;border-radius:4px}
+.recflag{display:inline-block;font-size:8.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;
+  color:#fff;background:#b07cd8;padding:3px 9px;border-radius:4px}
+.recbtns{display:flex;gap:9px;margin-top:14px}
+.recbtns button{flex:1;font:inherit;font-size:12.5px;font-weight:600;padding:10px;border-radius:5px;cursor:pointer}
+.recbtns .rj{background:#fbf8f1;border:1px solid #ddd5c6;color:#4a4038}
+.recbtns .ac{background:#2e2620;border:0;color:#f6f1e6}
+.pwhy{font-size:12.5px;line-height:1.42;color:#7a6f62;font-style:italic;margin-top:7px}
+.pastwrap{background:#ebe4d6;border-radius:7px;padding:2px 13px;margin-top:10px}
+.past:last-child{border-bottom:0}
+.filt .sep{color:#b3a795;font-weight:400}
+.abk{font-size:9.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#8a7f70;
+  padding:11px 0 4px}
+.abr{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:13px;
+  padding:11px 0;border-bottom:1px solid #ddd5c6}
+.abr:last-child{border-bottom:0}
+.licon{font-size:15px;color:#4a4038}
+.fitem{text-align:center;font-size:12px;font-weight:600}
+.fitem.unknown{color:#a89b8a}
+.fdot{display:flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;
+  margin:0 auto 7px;color:#fff;font-size:15px}
+.fdot.ok{background:#7ba86c}
+.fdot.grey{background:transparent;border:1.5px dashed #bdb2a0;color:#a89b8a;font-size:14px}
+.fnote{font-size:11.5px;line-height:1.45;color:#8a7f70;margin-top:11px}
+.viewf{text-align:right;font-size:12.5px;font-weight:600;margin-top:12px;cursor:pointer}
+.viewf i{font-style:normal;font-size:9px;vertical-align:1px;margin-left:2px}
+.ask{font-size:16px;font-weight:600;line-height:1.4;margin-top:18px;color:#fff}
+.assume{background:#e6e0d1;border-radius:8px;padding:12px 13px;font-size:12.5px;line-height:1.45;
+  margin-top:14px;color:#5c5145}
+.assume b{color:var(--ink)}
+.wnk{font-size:9.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#8a7f70}
+.wnr{font-size:12.5px;line-height:1.45;color:#6b5f52;padding:7px 0;border-bottom:1px solid #ddd5c6}
+.wnr:last-child{border-bottom:0}
+.tipinline{background:#f6efe0;border-left:3px solid #c9843c;border-radius:0 6px 6px 0;
+  padding:12px 14px;margin-top:15px;color:#6b5f64}
+.tipk{font-size:9.5px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:#a07a44}
+.tipq{font-family:'Newsreader',serif;font-size:16.5px;line-height:1.42;color:#4a4038;margin-top:8px}
+.tipf{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:11px;
+  font-size:11.5px;color:#8a7f70}
+.tipc{flex:none;background:#e6dcc6;border:0;color:#6b5f52;font:inherit;font-size:11px;font-weight:700;
+  padding:6px 12px;border-radius:999px;cursor:pointer}
+.slout{font-size:12px;color:#7a6f62;margin-top:5px}
+.slout b{color:var(--ink);font-weight:700}
+@keyframes fill{to{width:100%}}
+@keyframes up{from{transform:translateY(100%)}to{transform:translateY(0)}}
+@keyframes slideL{from{opacity:0;transform:translateX(26px)}to{opacity:1;transform:translateX(0)}}
+@keyframes slideR{from{opacity:0;transform:translateX(-26px)}to{opacity:1;transform:translateX(0)}}
+</style>
+</head>
+<body>
+
+<div class="chrome">
+  <h1>Finneas · Ask, paced · Chad · getting the debt under control</h1>
+  <div class="steps" id="steps"></div>
+  <div class="vsw" id="vsw"><span>Insights:</span><button data-m="laced">Laced through</button><button data-m="held">Held to the end</button></div>
+</div>
+
+<div class="device"><div class="screen" id="screen"></div></div>
+<div class="note" id="note"></div>
+
+<script>
+/* ------------------------------------------------------------------
+   Chad S — $50,000 of credit card debt on $11,000/mo take-home.
+   His question and figures from the Round 1 session (34620).
+
+   Beat 0's answer is his own words, stitched from the warm-up at
+   6:41 and 7:29. His question was a meta-question — "What questions
+   do I need to answer for you to help me begin a plan?" — and the
+   product's own reviewer flagged that it never addressed it. This
+   build answers that question first, which is what the reframe is.
+
+   The $9,202 error is reproduced, compressed to two beats, and moved
+   to the front. In the real session it surfaced only after the whole
+   answer had been built. He said he would have corrected it before
+   answering anything else — "I do need to make a correction on the
+   income amount to then go ahead and update that stuff" — so it
+   opens the analysis here rather than closing it.
+
+   Tone is emotion-neutral throughout. He named that as the thing he
+   liked: "it's being very emotion neutral... some other AI platforms
+   can be a little too yes-man, rah-rah."
+------------------------------------------------------------------- */
+
+var S={ t:'entry', path:'aval', expOpen:false, goalSet:false, declined:false, refineOpen:false, refine:{}, fan:false, sheet:false, tab:'cal', mode:'laced', log:[], confOpen:false, corrected:false,
+        debt:50000, apr:17.5, ess:9750, pay:500 };
+
+function usd(n){var v=Math.round(n);return (v<0?'&minus;$':'$')+Math.abs(v).toLocaleString('en-US');}
+function takeHome(){return 11000;}
+function surplus(){return takeHome()-S.ess;}
+function intMo(apr){return S.debt*apr/100/12;}
+function monthsToClear(bal,apr,pay){
+  var r=apr/100/12;
+  if(r<=0) return pay>0 ? bal/pay : null;   /* 0% transfer: no interest to outrun */
+  if(pay<=bal*r) return null;
+  return -Math.log(1-bal*r/pay)/Math.log(1+r);
+}
+
+/* ---------------- artifacts ---------------- */
+
+function modConfidence(){
+  var open=S.confOpen;
+  return '<div class="conf" data-conf="1">'+
+   '<div class="ch"><span class="ck">Confidence</span>'+
+     '<span class="cv">Moderate &middot; 60%</span>'+
+     '<span class="cchev">'+(open?'&#9650;':'&#9660;')+'</span></div>'+
+   '<div class="cbar"><i style="width:60%"></i></div>'+
+   '<div class="cd">What this measures: how much of the answer rests on figures you gave me, against figures I inferred. It is at 60% because two of your figures are bands rather than numbers, and one input was skipped.</div>'+
+   (open?'<div class="clist">'+
+     '<div class="cli"><i>&#10003;</i><span>Your balance, take-home, card count, APR band, payment status and employer match &mdash; used exactly as given</span></div>'+
+     '<div class="cli"><i>&#10003;</i><span>Today&rsquo;s balance-transfer terms, personal loan rate ranges and the average card APR &mdash; looked up today</span></div>'+
+     '<div class="cli miss"><i>&#8722;</i><span>Per-card APRs. Without them I can tell you the shape of each path but not which one wins.</span></div>'+
+     '<div class="cli miss"><i>&#8722;</i><span>Your exact savings balance and your exact monthly necessities. Both are bands, and the necessities band alone swings your payoff time by years.</span></div>'+
+     '<div class="cd">The APR list is the one thing standing between this and high.</div>'+
+   '</div>':'')+
+  '</div>';
+}
+
+
+function modSurplus(){
+  var s=surplus(), lo=takeHome()-10500, hi=takeHome()-9000;
+  return '<div class="mod"><h3>'+usd(s)+' a month against the debt</h3>'+
+   '<div class="cap">You gave necessities as a band. Move it &mdash; the width of that band is the widest thing in this answer.</div>'+
+   '<div class="sl"><label>Fixed monthly necessities <b>'+usd(S.ess)+'</b></label>'+
+     '<input type="range" data-k="ess" min="9000" max="10500" step="50" value="'+S.ess+'"></div>'+
+   '<div class="trows">'+
+     '<div class="trow"><span>Household take-home</span><b>'+usd(takeHome())+'</b></div>'+
+     '<div class="trow"><span>Fixed necessities</span><b>&minus;'+usd(S.ess)+'</b></div>'+
+     '<div class="trow"><span>Interest accruing at '+S.apr+'%</span><b class="neg">&minus;'+usd(intMo(S.apr))+'</b></div>'+
+     '<div class="trow tot"><span>Actually reducing the balance</span><b'+(s-intMo(S.apr)<=0?' class="neg"':'')+'>'+usd(s-intMo(S.apr))+'</b></div>'+
+   '</div>'+
+   '<div class="modnote">Across the band you gave me the surplus runs '+usd(lo)+' to '+usd(hi)+'. '+
+   '<b>Interest alone is '+usd(intMo(S.apr))+' a month.</b> Anything below that is not slow progress &mdash; it is no progress. '+
+   'One month of tracking settles which end of that band you are actually at.</div></div>';
+}
+
+var PATHS=[
+ {id:'aval', n:'Avalanche', how:'Highest APR first', best:'Costs least', catch:'No early wins',
+  d:'Pay minimums on everything, throw every extra dollar at the card with the highest interest rate. Mathematically optimal &mdash; saves the most money and gets you out fastest. Works best if you can stay disciplined for two to three years without needing a quick win.'},
+ {id:'snow', n:'Snowball',  how:'Smallest balance first', best:'Early wins', catch:'Costs more',
+  d:'Pay minimums on everything, attack the smallest balance until it&rsquo;s gone, then roll that payment to the next. Costs a bit more in total interest but delivers early wins that keep people on track. Choose this if you know you need momentum to stay motivated.'},
+ {id:'cons', n:'Consolidation', how:'0% BT or personal loan', best:'Freezes the rate', catch:'Needs 670+ credit', apr:0,
+  d:'Freezes or lowers your interest rate and simplifies to one payment, but requires good credit and the discipline not to reload the cards. A 0% balance transfer has a deadline cliff at 18&ndash;21 months; a personal loan is slower but safer. Whether it makes sense depends on your individual card APRs, which I don&rsquo;t have yet.'}
+];
+
+function goalPay(){ return S.pay; }
+
+var REFINE=[
+ {id:'aprs', t:'Your actual APRs',
+  w:'If any card is above 25%, that card jumps to the front of the line regardless of balance. If all cards are at 15%, the avalanche-versus-snowball difference shrinks and momentum becomes a reasonable default.'},
+ {id:'efund', t:'Your emergency fund balance',
+  w:'If you&rsquo;re at $5,000, I&rsquo;d pause aggressive paydown briefly to build to $10,000 first. At $15,000, go straight to offense.'},
+ {id:'credit', t:'Your credit score',
+  w:'If it&rsquo;s below 670, balance-transfer cards likely aren&rsquo;t available to you and the personal loan rate climbs. The strategy shifts to pure avalanche with rate negotiation as the primary lever.'},
+ {id:'util', t:'Whether any card is near its limit',
+  w:'High utilization on one card can be dragging your credit score, which affects your consolidation options.'}
+];
+
+function modScript(){
+  return '<div class="mod" style="padding:0;background:transparent"><div class="tipinline script"><div class="tipk">&#9670; Your script</div>'+
+   '<div class="tipq">&ldquo;I&rsquo;ve been a customer for [X] years with no missed payments. I&rsquo;ve received offers from other lenders at lower rates. Can you match a rate of [X]%?&rdquo;</div>'+
+   '<div class="tipf"><span>Ask for the supervisor if the first answer is no.</span>'+
+   '<button class="tipc">Copy</button></div></div></div>';
+}
+
+function modRefine(){
+  var n=0; REFINE.forEach(function(r){ if(S.refine[r.id]) n++; });
+  var open=S.refineOpen;
+  var h='<div class="mod refm"><div class="rfhead" data-refopen="1">'+
+    '<div><div class="rfk">Refine this answer</div>'+
+    '<div class="rfs">'+(n?n+' added &mdash; I&rsquo;ll redo the numbers when they land':REFINE.length+' figures I had to estimate. Optional.')+'</div></div>'+
+    '<span class="rfchev">'+(open?'&#9650;':'&#9660;')+'</span></div>';
+  if(open){
+    h+='<div class="rfbody">'+REFINE.map(function(r){
+      var on=S.refine[r.id];
+      return '<div class="rfi"><div class="rfh"><div><div class="rft">'+r.t+'</div>'+
+        '<div class="rfw">'+r.w+'</div></div>'+
+        '<button class="rfb'+(on?' on':'')+'" data-refine="'+r.id+'">'+(on?'Added &#10003;':'&#43; Add')+'</button>'+
+        '</div></div>';
+    }).join('')+
+    '<div class="modnote">None of it is required &mdash; the answer stands without it. Anything you add goes on your plan as something to find.</div></div>';
+  }
+  return h+'</div>';
+}
+
+function modPaths(){
+  var sel=PATHS.filter(function(p){return p.id===S.path})[0]||PATHS[0];
+  var h='<div class="mod"><h3>Three ways to clear it</h3>'+
+   '<div class="cap">I can describe all three. I can&rsquo;t rank them until I have your per-card APRs &mdash; the input you skipped. Tap a column.</div>'+
+   '<div class="cmpt three" style="background:transparent;padding:0;margin-top:14px"><table>'+
+   '<tr><th>&nbsp;</th>'+PATHS.map(function(p){
+      return '<th class="'+(p.id===S.path?'selth':'')+'" data-path="'+p.id+'" style="cursor:pointer">'+p.n+'</th>';}).join('')+'</tr>'+
+   '<tr><td>Method</td>'+PATHS.map(function(p){
+      return '<td class="neu'+(p.id===S.path?' selc':'')+'" data-path="'+p.id+'" style="font-weight:400;font-size:10.5px">'+p.how+'</td>';}).join('')+'</tr>'+
+   '<tr class="hi"><td>Clears in</td>'+PATHS.map(function(p){
+      var apr=p.apr!==undefined?p.apr:S.apr;
+      var n=monthsToClear(S.debt,apr,S.pay);
+      var over=(p.id==='xfer'&&n!==null&&n>21);
+      var floor=Math.ceil(intMo(apr)/25)*25+25;
+      return '<td class="'+(n===null||over?'up':'neu')+(p.id===S.path?' selc':'')+'" data-path="'+p.id+'">'+
+        (n===null
+          ? 'Needs '+usd(floor)+'<span class="dl">before the balance starts falling</span>'
+          : Math.round(n)+' mo'+(p.id==='xfer'?'<span class="dl">'+(over?'past the 21-mo window':'inside the window')+'</span>':''))+
+        '</td>';}).join('')+'</tr>'+
+   '<tr><td>Strength</td>'+PATHS.map(function(p){
+      return '<td class="win'+(p.id===S.path?' selc':'')+'" data-path="'+p.id+'" style="font-size:10.5px">'+p.best+'</td>';}).join('')+'</tr>'+
+   '<tr><td>Cost</td>'+PATHS.map(function(p){
+      return '<td class="up'+(p.id===S.path?' selc':'')+'" data-path="'+p.id+'" style="font-weight:400;font-size:10.5px">'+p.catch+'</td>';}).join('')+'</tr>'+
+   '</table></div>'+
+   '<div class="selbox"><div class="selk">'+sel.n+'</div><div class="selp">'+sel.d+'</div></div>'+
+   '<div class="modnote">What the APR list decides: <b>if any single card is above 25%, avalanche wins outright</b> and the balance ordering stops mattering. <b>If they are all clustered near 15%, the gap closes</b> and you may as well take the one that keeps you going. Four to six logins settles it.</div></div>';
+  if(S.expOpen || S.goalSet) h+=modTrade();
+  if(!S.expOpen && !S.goalSet) h+='<button class="pill-more" data-exp="1" style="margin:16px auto 0">Explore trade-offs</button>';
+  return h;
+}
+
+function modTrade(){
+  var sel=PATHS.filter(function(p){return p.id===S.path})[0]||PATHS[0];
+  var apr=sel.apr!==undefined?sel.apr:S.apr;
+  var n=monthsToClear(S.debt,apr,S.pay), grows=n===null;
+  var MAX=2500;
+  return '<div class="mod">'+
+   '<div class="modk">Explore trade-offs</div>'+
+   '<div class="bar" style="margin-top:14px"><div class="bl"><span>Toward the debt</span><b>'+usd(S.pay)+'</b></div>'+
+     '<div class="tr"><div class="fl" style="width:'+Math.min(S.pay/MAX*100,100)+'%;background:'+(grows?'var(--t-a)':'var(--t-c)')+'"></div>'+
+     '<div class="ceil" style="left:'+(intMo(apr)/MAX*100)+'%"></div></div>'+
+     '<div class="ceill">The line is '+usd(intMo(apr))+' &mdash; the interest. Below it the balance rises.</div></div>'+
+   '<div class="sl"><label>Each month <b>'+usd(S.pay)+'</b></label>'+
+     '<input type="range" data-k="pay" min="300" max="2500" step="25" value="'+S.pay+'"></div>'+
+   '<div class="sl"><label>Fixed monthly necessities <b>'+usd(S.ess)+'</b></label>'+
+     '<input type="range" data-k="ess" min="9000" max="10500" step="50" value="'+S.ess+'"></div>'+
+   '<div class="trows">'+
+     '<div class="trow"><span>Interest accruing at '+apr+'%</span><b>'+usd(intMo(apr))+'/mo</b></div>'+
+     '<div class="trow"><span>Actually reducing the balance</span><b'+(S.pay-intMo(apr)<=0?' class="neg"':'')+'>'+
+       (S.pay-intMo(apr)<=0 ? 'Nothing yet' : usd(S.pay-intMo(apr))+'/mo')+'</b></div>'+
+     '<div class="trow"><span>Total interest along the way</span><b'+(grows?' class="neg"':'')+'>'+(grows?'Unbounded':usd(S.pay*n-S.debt))+'</b></div>'+
+   '</div>'+
+   modConfidence()+
+   '<div class="modfoot"><div class="mfl"><div class="mfh">'+(grows
+       ? usd(Math.ceil(intMo(apr)/25)*25+25)+' a month before it starts falling'
+       : (sel.id==='xfer'&&n>21?Math.round(n)+' months &mdash; past the window':(n/12).toFixed(1)+' years to clear'))+'</div>'+
+     '<div class="mfs">'+usd(S.pay)+' a month, '+sel.n.toLowerCase()+(sel.id==='xfer'?', 0% for 21 months':', at '+apr+'%')+'</div></div>'+
+     (S.goalSet
+       ? '<span class="btn-set ghost">Target set &#10003;</span>'
+       : '<button class="btn-set" data-goal="1">Set my target</button>')+
+   '</div></div>';
+}
+
+function modTransfer(){
+  var fee=S.debt*0.03, need=(S.debt+fee)/18, avoided=intMo(S.apr)*18;
+  var fits=S.pay>=need;
+  return '<div class="mod"><h3>'+usd(need)+' a month to make the transfer work</h3>'+
+   '<div class="cap">$50,000 moved at a 3% fee, 18 months at 0%. The fee and the window are the market&rsquo;s; the payment is yours.</div>'+
+   '<div class="trows">'+
+     '<div class="trow"><span>Transfer fee at 3%</span><b>'+usd(fee)+'</b></div>'+
+     '<div class="trow"><span>Interest avoided over 18 months<span class="dl2">At your '+S.apr+'%</span></span><b>'+usd(avoided)+'</b></div>'+
+     '<div class="trow"><span>Net if you clear it in the window</span><b>'+usd(avoided-fee)+'</b></div>'+
+     '<div class="trow tot"><span>Payment required to clear it</span><b'+(fits?'':' class="neg"')+'>'+usd(need)+'/mo</b></div>'+
+   '</div>'+
+   '<div class="modnote">'+(fits
+     ? 'At '+usd(S.pay)+' a month you clear it inside the window and keep the '+usd(avoided-fee)+'.'
+     : '<b>Your '+usd(S.pay)+' does not reach '+usd(need)+'.</b> The top of the band you gave me is $2,000, which is still short. '+
+       'Whatever is left when the promotional rate ends reprices at the new card&rsquo;s standard APR, which is typically higher than the 15&ndash;20% you are paying now.')+
+   ' A transfer that is not cleared in the window is a deferral, not a saving &mdash; and it is the version most people end up with.</div></div>';
+}
+
+/* ---------------- handoff pack ---------------- */
+
+var PACK=[
+ {n:1,t:'Pull the APR and balance on each card',
+  d:'Four to six logins, or the number on the back. Write down card, balance, APR, minimum payment. This is the single input that turns everything above from a shape into a plan &mdash; the payoff order, the timeline and the interest total all come out of it.',
+  who:'u',wl:'You pull it &middot; ~20 min'},
+ {n:2,t:'Track one month of actual spending',
+  d:'You gave necessities as $9,000&ndash;$10,500. Across that band your payoff time moves by years, and at the bottom of it the balance grows rather than falls. Your bank&rsquo;s spending tool already has the data.',
+  who:'u',wl:'You track &middot; I&rsquo;ll read the export'},
+ {n:3,t:'Call your highest-APR issuer and ask for a rate reduction',
+  d:'Say: you have been a customer for X years with no missed payments, you have offers from other lenders at lower rates, can they match. Approval is moderate for accounts in good standing. Five points off a $15,000 balance is about $750 a year.',
+  who:'u',wl:'You call &middot; I&rsquo;ll draft the script'},
+ {g:'What I&rsquo;ll watch', w:true,
+  t:'Balance-transfer offers you&rsquo;d actually qualify for',
+  d:'They come and go by issuer and by month. A 0% window is only worth taking if the balance clears before it closes &mdash; when one appears that fits your payment, I&rsquo;ll say so.'},
+ {w:true, t:'Whether the balance is falling',
+  d:'At the bottom of your surplus band it isn&rsquo;t. Once a month I&rsquo;ll check the direction, and tell you if it turns the wrong way.'},
+ {w:true, t:'Card rates on your issuers',
+  d:'Variable APRs move with the prime rate and nobody announces it. If one of yours rises, the payoff order changes and I&rsquo;ll redo it.'},
+ {n:4,t:'I&rsquo;ll build the payoff order the moment the APR list lands',
+  d:'Exact order, exact timeline, exact interest saved against each of the three paths, and a straight answer on whether a transfer is worth it at your payment level.',
+  who:'h',wl:'I&rsquo;ll run this &middot; nothing for you to do'}
+];
+
+function packHTML(){
+  var h='<div class="prop"><div class="lab">What to do next</div>'+
+   '<h3>Get the debt under control</h3>'+
+   '<div class="tgt">Three things to gather and one thing I&rsquo;ll build. None of this is the plan &mdash; it is what the plan needs, which is what you asked for.</div><div style="height:6px"></div>';
+  PACK.forEach(function(p){
+    if(p.g) h+='<div class="pgrp">'+p.g+'</div>';
+    if(p.w){
+      h+='<div class="pact watch"><div class="pn">&#9673;</div><div>'+
+         '<div class="pt">'+p.t+'</div><div class="pd">'+p.d+'</div></div></div>';
+    } else {
+      h+='<div class="pact"><div class="pn">'+p.n+'</div><div>'+
+         '<div class="pt">'+p.t+'</div><div class="pd">'+p.d+'</div>'+
+         '<span class="who '+p.who+'">'+p.wl+'</span></div></div>';
+    }
+  });
+  h+='<div class="assume"><b>What this rests on.</b> Your take-home at your stated $11,000, corrected from the $9,202 I had derived. '+
+     'Your necessities at the midpoint of the band you gave, '+usd(S.ess)+'. Your APR at the midpoint of 15&ndash;20%. '+
+     'A 3% transfer fee and an 18-month window, which are current market terms rather than an offer you hold. '+
+     'Two of those four stop being assumptions the moment you send me the card list.</div></div>';
+  return h;
+}
+
+
+var HOME={hero:'Welcome back, Chad.', sub:'Twenty minutes of logins settles almost everything on this plan.'};
+var HOME_CARDS=[
+ {n:1, pri:['The debt'], title:'Pull the APR and balance on each card',
+  body:"Four to six logins. It decides which method wins and how long this takes &mdash; nothing else here moves as much.",
+  cta:'Walk me through it'},
+ {n:2, pri:['The debt','Cash flow'], title:'Track one month of actual spending',
+  body:"Your surplus is somewhere between $500 and $2,000. Only one end of that clears the debt.",
+  cta:'Send to Finneas'},
+ {n:3, pri:['The debt'], title:'Call your highest-rate issuer',
+  body:"Free, ten minutes, and the only lever here that doesn&rsquo;t require you to find money.",
+  cta:'Talk it through'}
+];
+var WEEK_STEPS=[
+ {pri:['The debt'], t:'Pull the APR and balance on each card',
+  b:"Four to six logins, one document at the end of it.", tag:'20 MIN', cta:'Walk me through it'},
+ {pri:['The debt','Cash flow'], t:'Track one month of actual spending',
+  b:"Which end of the $500&ndash;$2,000 band you are actually at.", tag:'ONE MONTH', cta:'Send to Finneas'},
+ {pri:['The debt'], t:'Call your highest-rate issuer',
+  b:"Ask for a reduction. I&rsquo;ll draft what to say.", tag:'10 MIN', cta:'Talk it through'}
+];
+var CAL={title:'To-Do: Week of Aug 25', sub:'One of these unlocks the rest. Until the card list exists, every ranking on this plan is a guess presented as an answer.',
+ weeks:[['Aug 18','Done','done'],['Aug 25','Now','now'],['Sep 1','Next',''],['Sep 22','',''],['Sep 29','','']],
+ next:['Build the payoff order &mdash; once the APR list lands','Read the month of spending and fix the surplus']};
+var PRI={t:'Get the debt under control', b:'Find out what you are actually carrying, then pick the method the numbers choose.', n:4};
+var REC={t:'Build the cushion before you pay down hard', b:'You gave liquid savings as $5,000&ndash;$15,000. At the low end, paying down aggressively with no buffer means the next repair goes straight back onto a card &mdash; and you spend months moving the same money twice.',
+ why:'It is the one condition that reverses the order of everything else here.'};
+var PAST={t:'Getting the debt under control', b:'What I have, what I don&rsquo;t, the surplus, and three ways to clear it &mdash; 21 August'};
+var NOTSTARTED=['Check your credit score','Price one balance-transfer offer','Set a floor for the emergency fund'];
+var FOUND=[
+ ['Cash','&#9635;','warn','Surplus is a $1,500 band'],
+ ['Safety','&#9679;','warn','$5K&ndash;$15K, not pinned'],
+ ['Protection','&#10039;','grey','No cover details yet'],
+ ['Debt','&#9636;','bad','$50K at 15&ndash;20%, APRs unknown'],
+ ['Long game','&#9650;','grey','Nothing on retirement'],
+ ['Taxes','&#9638;','grey','Nothing on tax yet']
+];
+var FOUND_NOTE='3 of 6 measured, and two of those are bands rather than figures.';
+var ASKS=[
+ ['Does a transfer actually beat paying down?','Only if the balance clears in the window'],
+ ['Should I use savings to pay a card?','Depends which end of $5K&ndash;$15K you are at'],
+ ['What if my rates are all about the same?','Then take the method you will finish']
+];
+
+function ebText(pri){
+  var t=pri.slice(0,2).join(', ')+(pri.length>2?', +'+(pri.length-2):'');
+  return t.replace(/&rsquo;s/g,'S').toUpperCase().replace(/&NDASH;/g,'&ndash;').replace(/&MDASH;/g,'&mdash;');
+}
+
+function homeCard(c){
+  var eb=ebText(c.pri);
+  var act = c.cta==='Send to Finneas'
+    ? '<button class="btn-work">Send to Finneas</button>'
+    : '<div class="cact">'+c.cta+' &nbsp;&#9656;</div>';
+  return '<div class="hcard"><span class="eyebrow">'+eb+'</span>'+
+   '<div class="crow2"><div class="num">'+c.n+'</div><div>'+
+   '<div class="ctitle">'+c.title+'</div>'+
+   '<div class="cbody">'+c.body+'</div>'+act+
+   '</div></div></div>';
+}
+
+function stepRow(st){
+  var eb=ebText(st.pri);
+  return '<div class="pcard"><div class="eyebrow">'+eb+'</div>'+
+   '<div class="pt">'+st.t+'</div><div class="pb">'+st.b+'</div>'+
+   '<div class="prow"><span class="dur">'+st.tag+'</span>'+
+   '<span class="ta">'+st.cta+' <i>&#9656;</i></span></div></div>';
+}
+
+function tabCalendar(){
+  return '<div class="sect"><div class="sicon">&#9776;</div>'+
+   '<div class="stitle">'+CAL.title+'</div>'+
+   '<div class="ssub">'+CAL.sub+'</div></div>'+
+   '<div class="weeks">'+CAL.weeks.map(function(w){
+     return '<div class="wk '+w[2]+'"><span>Week of</span><b>'+w[0]+'</b>'+(w[1]?'<i>'+w[1]+'</i>':'')+'</div>';
+   }).join('')+'</div>'+
+   '<div class="grp">'+WEEK_STEPS.map(stepRow).join('')+'</div>'+
+   '<div class="wknext"><div class="wnk">Next week</div>'+
+   CAL.next.map(function(n){return '<div class="wnr">'+n+'</div>'}).join('')+'</div>';
+}
+
+function tabPriorities(){
+  return '<div class="sect"><div class="sicon">&#9781;</div><div class="stitle">My Priorities</div></div>'+
+   '<div class="prio" data-go="priority"><div class="pn">1</div><div class="pbody">'+
+   '<span class="urg high">Active</span>'+
+   '<div class="pt">'+PRI.t+'</div>'+
+   '<div class="pb">'+PRI.b+'</div>'+
+   '<div class="ta">View all '+PRI.n+' actions <i>&#9656;</i></div></div><span class="chev">&#9656;</span></div>'+
+   '<div class="sect sm"><div class="sicon">&#9788;</div><div class="stitle">To think about</div></div>'+
+   '<div class="rec"><span class="recpill">Finneas recommends</span>'+
+   '<div class="pt">'+REC.t+'</div>'+
+   '<div class="pb">'+REC.b+'</div>'+
+   '<div class="pwhy">'+REC.why+'</div>'+
+   '<div class="recbtns"><button class="rj">Not for us</button><button class="ac">Look into it</button></div></div>'+
+   '<div class="pastwrap">'+
+   '<div class="past"><div><div class="pt2">'+PAST.t+'</div>'+
+   '<div class="pb">'+PAST.b+'</div></div>'+
+   '<span class="chev">&#9656;</span></div></div>';
+}
+
+function tabActions(){
+  return '<div class="filt"><span>&#9906; Filter</span><span class="sep">|</span><span>Sort by type</span></div>'+
+   '<div class="sect nogap"><div class="stitle">Action bank</div></div>'+
+   '<div class="grp">'+WEEK_STEPS.map(stepRow).join('')+'</div>'+
+   '<div class="abank"><div class="abk">Not started</div>'+
+   NOTSTARTED.map(function(r){
+     return '<div class="abr"><span>'+r+'</span><span class="chev">&#9656;</span></div>';
+   }).join('')+'</div>';
+}
+
+function sheetHTML(){
+  var tabs=[['cal','Calendar'],['pri','Priorities'],['act','Actions']];
+  var body = S.tab==='pri'?tabPriorities() : S.tab==='act'?tabActions() : tabCalendar();
+  return '<div class="sheet">'+
+   '<div class="shead"><span class="close" data-sheet="0">&darr;</span>'+
+   '<span class="wm2">MY FINNEAS</span><span class="close" style="opacity:0">&darr;</span></div>'+
+   '<h2>Your plan</h2>'+
+   '<div class="tabs">'+tabs.map(function(t){
+     return '<button class="tb'+(S.tab===t[0]?' on':'')+'" data-tab="'+t[0]+'">'+t[1]+'</button>';
+   }).join('')+'</div>'+
+   '<div class="tabbody" key="'+S.tab+'">'+body+'</div>'+
+   '<div class="lsect"><span class="licon">&#9671;</span>Foundations</div>'+
+   '<div class="found">'+FOUND.map(function(f){
+     return '<div class="fitem'+(f[2]==='grey'?' unknown':'')+'" title="'+f[3]+'">'+
+       '<span class="fdot '+f[2]+'">'+(f[2]==='grey'?'?':f[1])+'</span>'+f[0]+'</div>';
+   }).join('')+'</div>'+
+   '<div class="fnote">'+FOUND_NOTE+'</div>'+
+   '<div class="viewf">View Foundations <i>&#9656;</i></div>'+
+   '<div class="lsect"><span class="licon">&#9993;</span>Ask us anything</div>'+
+   ASKS.map(function(a){
+     return '<div class="askrow"><div><div class="aq">'+a[0]+'</div>'+
+       '<div class="as">'+a[1]+'</div></div><span class="chev">&#9656;</span></div>';
+   }).join('')+
+   '<div class="askbar"><span>&#10022; &nbsp;Ask us anything..</span><button>Ask</button></div>'+
+   '</div>';
+}
+
+function viewHome(){
+  var body;
+  if(!S.fan){
+    body = '<div class="avatar c">F</div>'+
+     '<div class="hero">'+HOME.hero+'</div>'+
+     '<div class="subhero">'+HOME.sub+'</div>'+
+     '<div class="hstack" data-fan="1"><div class="ghost g2"></div><div class="ghost"></div>'+
+     homeCard(HOME_CARDS[0])+'</div><div style="height:34px"></div>';
+  }else{
+    body = '<div class="avatar c">F</div>'+
+     '<div class="hero">Let&rsquo;s get started.</div>'+
+     '<div class="cards">'+HOME_CARDS.map(homeCard).join('')+'</div>';
+  }
+  return topBar()+'<div class="body" id="scroll">'+body+
+   '<div style="height:16px"></div></div>'+dock()+
+   '<div class="myh" data-sheet="1">MY FINNEAS</div>'+
+   (S.sheet?sheetHTML():'');
+}
+
+function viewSignup(){
+  return topBar()+'<div class="body" id="scroll"><div class="turn"><div class="avatar">F</div>'+
+   '<div class="said">I&rsquo;ll need somewhere to keep it.</div>'+
+   '<div class="sub">The three things to gather and the analysis behind them stay with your account. That matters more here than most: the moment your card list lands, everything on this page recalculates against it. Without somewhere to hold it, you&rsquo;d be starting from the top.</div>'+
+   '<div class="signup">'+
+     '<button class="sso"><span class="ssoi">&#63743;</span> Continue with Apple</button>'+
+     '<button class="sso"><span class="ssoi">G</span> Continue with Google</button>'+
+     '<div class="ordiv"><span>or</span></div>'+
+     '<div class="field"><label>Email</label><div class="fakefield">you@example.com</div></div>'+
+     '<button class="mkacct" data-go="welcome">Create my account</button>'+
+     '<div class="fineprint">You can delete the plan or the account at any time. I&rsquo;ll only email you when something needs you.</div>'+
+   '</div>'+
+   '<div class="opts"><button class="opt ghost" data-go="11">Back to the plan</button></div>'+
+   '</div><div style="height:20px"></div></div>'+dock();
+}
+
+function viewWelcome(){
+  return topBar()+'<div class="body" id="scroll"></div>'+dock()+
+   '<div class="welcome"><div class="wmark">Finneas</div>'+
+   '<div class="wtitle">Welcome to Finneas</div>'+
+   '<div class="wsub">Setting up your plan&hellip;</div>'+
+   '<div class="wbar"><i></i></div></div>';
+}
+
+
+/* ---------------- priority + action pages ---------------- */
+
+var ACTIONS=[
+ {pri:['Get the debt under control'], t:'Pull the APR and balance on each card',
+  b:'The one input that decides the payoff order, the timeline and whether a transfer is worth the fee. Four to six logins.',
+  tag:'3 STEPS'},
+ {pri:['Get the debt under control','Build a budget'], t:'Track one month of actual spending',
+  b:'Your necessities are a $1,500-wide band. At the bottom of it the balance grows. Your bank&rsquo;s spending tool already holds the data.',
+  tag:'2 STEPS', cta:'Walk me through it'},
+ {pri:['Get the debt under control'], t:'Ask your highest-APR issuer for a rate reduction',
+  b:'Free, ten minutes, moderate approval odds for accounts in good standing. Five points on $15,000 is about $750 a year.',
+  tag:'1 STEP', cta:'Draft the script'},
+ {pri:['Get the debt under control'], t:'Build the payoff order',
+  b:'Runs automatically once the card list lands. Exact order, exact timeline, exact interest against all three paths.',
+  tag:'I&rsquo;LL RUN IT', cta:'Send to Finneas'}
+];
+
+var ACT_STEPS=[
+ {n:1,t:'Log into each card and find the current purchase APR',
+  b:'Not the promotional rate and not the cash-advance rate &mdash; the standard purchase APR, which is the one your balance is accruing at. It is on the account summary or the last statement.',
+  cta:'Walk me through it', tag:'~20 min for 4-6 cards'},
+ {n:2,t:'Write down four things per card',
+  b:'Card, current balance, purchase APR, minimum payment. Four columns, four to six rows. That is the whole document.',
+  cta:'Talk it through', tag:'~10 min'},
+ {n:3,t:'Send it back and I&rsquo;ll build the order',
+  b:'Payoff sequence, month-by-month timeline, total interest under each path, and a straight answer on the transfer. This is the step everything above has been waiting on.',
+  cta:'Send to Finneas', tag:"I'll run it"}
+];
+
+var AVG=[{x:0,v:16.3},{x:.25,v:20.4},{x:.5,v:21.5},{x:.75,v:21.9},{x:1,v:21.4}];
+
+/* ---------------- dialogue ---------------- */
+var D=[
+
+/* 0 — open, voiced. Asks nothing about money. */
+{ says:"Before the numbers &mdash; what&rsquo;s actually on your mind with this one?",
+  sub:"Not the plan yet. Just where it sits.",
+  answer:"Stress and anxiety. With the two businesses I&rsquo;m constantly thinking about money for each one of those places, plus thinking about money at home. We had a couple big things come up this year that cost us significantly and that&rsquo;s put us in not the best spot. My wife makes pretty good money and she does like to spend it, especially on the girls. So getting a budget under control has been a big challenge, and then making inroads on that debt. That&rsquo;s probably the thing I think about more than anything when it comes to our money." },
+
+/* 1 — the reframe. Finneas's own opening: you've already answered them. */
+{ says:"You&rsquo;ve already answered the most important ones.",
+  sub:"$50,000 in card debt, $11,000 a month take-home, married with two kids, current on all minimums, full employer match captured, and open to any payoff path. That&rsquo;s a solid foundation for a real plan. You don&rsquo;t need to answer more questions before I can help &mdash; I have enough to build this out right now.<br><br>The short version: you&rsquo;re in a tough but very workable spot. Your income is steady, you&rsquo;re not in collections, and you&rsquo;re not behind. The debt is real and the interest is expensive &mdash; at 15&ndash;20% APR you&rsquo;re paying somewhere between $625 and $833 every month just in interest on that $50,000. That&rsquo;s money going nowhere. The goal is to stop that bleed as fast as possible.",
+  after:"And this came from a couple of bad months rather than from how you run your money. You said a couple of big things came up this year and cost you significantly &mdash; that&rsquo;s a different problem from spending drifting past income, and there&rsquo;s nothing here to correct, only something to clear.",
+  ask:"Does that land right?",
+  opts:["That&rsquo;s it","Close, but there&rsquo;s more to it","Not really &mdash; let me restate it"],
+  answered:"That&rsquo;s it" },
+
+/* 2 — intake */
+{ bare:true,
+  toast:"Started a priority for you &mdash; <b>Get the debt under control</b>. Nothing is saved until you say so.",
+  meta:"1 of 5",
+  ask:"What&rsquo;s the APR on the bulk of it?",
+  why:"At 25% or more, $50,000 accrues over $1,000 a month in interest and refinancing outranks paying down. At 15% it does not. This decides the order of operations.",
+  banded:true,
+  opts:["Under 15%","15&ndash;20%","20&ndash;25%","25&ndash;29%","29%+","I&rsquo;m not sure"],
+  answered:"15&ndash;20%" },
+
+/* 3 */
+{ bare:true, meta:"2 of 5",
+  ask:"Roughly what goes out each month on fixed necessities?",
+  why:"Housing, utilities, groceries, childcare, insurance, minimum payments. The gap between this and take-home is the entire engine of a payoff plan, so it is the number I would most like exact.",
+  banded:true,
+  opts:["Under $5,000","$5,000&ndash;$7,000","$7,000&ndash;$9,000","$9,000&ndash;$10,500","Over $10,500"],
+  answered:"$9,000&ndash;$10,500",
+  lace:["Working while you answer","At $50,000 and a 15&ndash;20% APR, interest alone is running between $625 and $833 a month. That figure matters more than it looks: any payment below it means the balance rises rather than falls. I am checking where your band sits against it."] },
+
+/* 4 */
+{ bare:true, meta:"3 of 5",
+  ask:"How much is liquid right now &mdash; checking, savings, money market?",
+  why:"Without a buffer the next unexpected expense goes back onto a card and undoes the payments. Below about $10,000 I would build the cushion first; above it I would not.",
+  banded:true,
+  opts:["Under $1,000","$1,000&ndash;$5,000","$5,000&ndash;$15,000","$15,000&ndash;$30,000","Over $30,000"],
+  answered:"$5,000&ndash;$15,000" },
+
+/* 5 */
+{ bare:true, meta:"4 of 5",
+  ask:"How many separate accounts make up the $50,000?",
+  why:"One balance points at consolidation. Several at different rates points at avalanche. The count changes which method is even worth modelling.",
+  banded:true,
+  opts:["1 card","2&ndash;3 cards","4&ndash;6 cards","7 or more"],
+  answered:"4&ndash;6 cards" },
+
+/* 6 — the one he skipped */
+{ bare:true, meta:"5 of 5",
+  ask:"For each card: balance, APR, and minimum payment.",
+  why:"This is the one that decides the payoff order. It is also the one that takes twenty minutes of looking things up, so skip it if you do not have it to hand &mdash; I will tell you exactly what it costs to skip rather than working around it quietly.",
+  opts:["Type them in","Skip &mdash; I don&rsquo;t have them off the top of my head"],
+  answered:"Skipped &mdash; don&rsquo;t have them off the top of my head",
+  lace:["Working while you answer","Balance transfer offers are currently running 18 to 21 months at 0% with a 3 to 5% fee. Personal loan rates for good credit sit around 10 to 18%. Both are worth modelling against your cards, and neither can be ranked without the per-card rates."] },
+
+/* 7 — the answered set */
+{ recapRows:true,
+  says:"That&rsquo;s what I have.",
+  sub:"Five questions, one skipped. Change any of it and the figures move.",
+  cta:"So what can you actually tell me?",
+  more:true },
+
+/* 8 — the math */
+{ more:true, math:"The Math",
+  says:"You clear somewhere between $500 and $2,000 a month, and only one end of that clears the debt.",
+  sub:"Against your $11,000 a month take-home and your stated $9,000&ndash;$10,500 in fixed monthly expenses, your surplus for debt attack lands somewhere in the $500&ndash;$2,000 range depending on where your spending actually goes.<br><br>That range matters a lot. At $500 a month extra toward the debt, you&rsquo;re looking at a long, expensive road &mdash; $50,000 at 15&ndash;20% accrues $625 to $833 a month in interest on its own. At $2,000 a month you could be debt-free in under three years and save tens of thousands in interest. <b>The single biggest lever you have is finding and protecting that surplus.</b><br><br>Your emergency fund sits at $5,000&ndash;$15,000. The verified three-month target for a dual-income household with two kids is $29,250 &mdash; three months at your $9,750 average expenses. At the lower end of your range that&rsquo;s a $19,250 shortfall before the cushion is fully funded, and it matters, because attacking the debt aggressively with no cushion means the next car repair or medical bill goes right back on a card.",
+  mod:function(){return modSurplus()+modRefine();},
+  recap:"The surplus, and what it does against the interest.",
+  cta:"See my options" },
+
+/* 10 — the options component */
+{ more:true,
+  mod:modPaths, recap:"Three methods, and the trade-off you opened.", gate:true,
+  cta:"So what do I do first?" },
+
+/* 10 — what to do */
+{ more:true, math:"What to do",
+  toastFn:function(){
+    var sel=PATHS.filter(function(p){return p.id===S.path})[0]||PATHS[0];
+    var apr=sel.apr!==undefined?sel.apr:S.apr;
+    var n=monthsToClear(S.debt,apr,S.pay);
+    return 'Target added to <b>Get the debt under control</b> &mdash; '+usd(S.pay)+' a month, '+sel.n.toLowerCase()+(n===null?'':', clear in '+(n/12).toFixed(1)+' years')+'.';
+  },
+  says:"Three things this week. The first one unlocks the rest.",
+  sub:"<b>Pull your actual APR on each card.</b> Log into each portal or call the number on the back and ask for the current purchase APR. Write them down: card name, balance, APR, minimum payment. About twenty minutes, and it is the single input that unlocks the full plan. Bring that list back and I&rsquo;ll build the exact payoff order, timeline and interest savings.<br><br><b>Call your highest-APR issuer and ask for a rate reduction.</b> Approval is moderate-to-high for customers in good standing. Ten minutes, costs nothing, and a five-point reduction on a $15,000 balance saves about $750 a year.",
+  mod:modScript,
+  after:"<b>Check your emergency fund balance.</b> If it&rsquo;s under $10,000, build to at least $10,000 before going full-aggressive on the debt. That&rsquo;s roughly one month of expenses &mdash; enough to absorb one emergency without reloading the cards. If you&rsquo;re already at $15,000, skip this and go straight to offense.",
+  recap:"The three things this week.",
+  cta:"Get a step-by-step guide" },
+
+/* 12 — the handoff, the watching, and the save decision */
+{ more:true,
+  says:"Here&rsquo;s what I&rsquo;d put on your plan.",
+  sub:"Three things to gather, one I&rsquo;ll build. Nothing here asks you to move money before you know what you&rsquo;re working with.",
+  handoff:true, authorise:true, gate:true }
+
+];
+
+var ROWS=[
+ ['Why this matters','Knowing what I&rsquo;m missing'],
+ ['Total card balance','$50,000'],
+ ['APR on the bulk','15&ndash;20%'],
+ ['Fixed necessities','$9,000&ndash;$10,500'],
+ ['Liquid savings','$5,000&ndash;$15,000'],
+ ['Accounts','4&ndash;6 cards'],
+ ['Per-card APRs','Skipped']];
+
+var STEPS=[['Entry','entry'],['Why are you asking','0'],['The reframe','1'],['Intake','2'],
+ ['What you told me','7'],['The math','8'],['Your options','9'],
+ ['What to do','10'],['Handoff','11'],
+ ['SIGN UP','signup'],['LOADER','welcome'],['HOME','home'],['PRIORITY page','priority'],['ACTION page','pack']];
+
+var NOTES={
+ entry:"His question, as he typed it.",
+ '0':"Asks nothing about money. His answer is his own, from the transcript.",
+ '1':"Finneas's own opening move: you've already answered the most important ones.",
+ '2':"Five questions. The last is the one he skipped.",
+ '7':"Everything he told me, editable.",
+ '8':"His take-home, the surplus range, and the emergency-fund shortfall. Refine sits collapsed at the foot.",
+ '9':"Three methods. Explore trade-offs opens the interactive part below.",
+ '10':"Three methods. Explore trade-offs opens the interactive part below.",
+ '11':"The verdict, and the two things worth doing regardless.",
+ '12':"The pack, what I\'ll watch, and the save decision — all one beat.",
+ signup:"The account ask, after the value. Nothing is kept until this point.",
+ welcome:"The loader between signing up and home. Advances on its own.",
+ home:"Where he lands once the conversation is done.",
+ priority:"Priority detail. Target, actions, monitoring, questions asked, related.",
+ pack:"Action detail: why it comes first, the steps, and what it counts toward."
+};
+
+/* ---------------- rendering ---------------- */
+
+function topBar(){return '<div class="top"><div class="wm" data-go="entry">Finneas</div>'+
+  '<div class="burger"><span></span><span></span></div></div>'}
+function dockTyped(txt){
+  return '<div class="dock"><div class="inp">'+
+   '<span class="ic">&#128206;</span><span class="ic">&#127908;</span>'+
+   '<span class="ph" style="color:#2c1d24">'+txt+'</span>'+
+   '<button class="snd" data-send="1">&uarr;</button></div></div>';
+}
+function dock(){
+  return '<div class="dock"><div class="inp">'+
+   '<span class="ic">&#128206;</span><span class="ic">&#127908;</span>'+
+   '<span class="ph">Speak or type a message</span><button class="snd">&uarr;</button></div></div>';
+}
+function digest(){
+  return '<div class="digest"><div class="dk">What I found while you were answering</div>'+
+   '<div class="di"><div class="dt">Interest alone is $625&ndash;$833 a month</div>'+
+   '<div class="dd">At $50,000 and 15&ndash;20%. Any payment under that figure means the balance rises rather than falls, which makes it the first number to check your surplus against.</div></div>'+
+   '<div class="di"><div class="dt">Your rate is below the market average</div>'+
+   '<div class="dd">Cards average around 21.4% right now. At 15&ndash;20% you are already better placed than most &mdash; which also means a consolidation loan has less room to beat you than the marketing suggests.</div></div>'+
+   '<div class="di"><div class="dt">Transfer offers run 18&ndash;21 months at a 3&ndash;5% fee</div>'+
+   '<div class="dd">The fee on $50,000 is $1,500 at 3%. Whether that is worth paying depends entirely on whether the balance can be gone before the window closes.</div></div></div>';
+}
+
+function henceBlock(n,past){
+  var t=D[n];
+  var h='<div class="turn'+(past?'':(t.bare?' dissolve':' fade'))+'"'+(past?'':' id="curturn"')+'>';
+  if(t.toastFn) h+='<div class="toast'+(past?'':' fade3')+'" data-go="priority">'+
+    '<span class="tk">&#10003;</span><span class="tt">'+t.toastFn()+'</span>'+
+    '<span class="tv">View</span></div>';
+  if(!t.bare&&t.says) h+='<div class="avatar">F</div>';
+  if(t.says) h+='<div class="said">'+t.says+'</div>';
+  if(t.math) h+='<div class="mathhead">'+t.math+'</div>';
+  if(t.sub) h+='<div class="sub'+(past?'':' fade2')+'">'+t.sub+'</div>';
+  if(t.toast) h+='<div class="toast'+(past?'':' fade3')+'" data-go="priority">'+
+    '<span class="tk">&#10003;</span>'+
+    '<span class="tt">'+t.toast+'</span>'+
+    '<span class="tv">View</span></div>';
+  if(t.lace && S.mode==='laced') h+='<div class="lace'+(past?'':' fade3')+'"><div class="lk">'+t.lace[0]+'</div><p>'+t.lace[1]+'</p></div>';
+  if(t.recapRows){ h+='<div class="fade2">'+ROWS.map(function(r){
+      return '<div class="rowa"><span class="q">'+r[0]+'</span><span class="a">'+r[1]+'</span><span class="ed">Edit</span></div>';}).join('')+'</div>';
+      if(S.mode==='held') h+=digest(); }
+  if(t.mod) h+= past ? '<div>'+t.mod()+'</div>' : '<div class="fade2">'+t.mod()+'</div>';
+  if(t.after) h+='<div class="sub'+(past?'':' fade3')+'">'+t.after+'</div>';
+  if(t.handoff) h+= past ? '<div>'+packHTML()+'</div>' : '<div class="fade2">'+packHTML()+'</div>';
+  if(t.authorise) h+=
+    '<div class="said fade3" style="font-size:20px;margin-top:26px">Want me to keep this?</div>'+
+    '<div class="sub fade3">Saving it puts the three gathering steps in your plan and holds the analysis so it recalculates the moment the card list arrives.</div>'+
+    '<div class="opts fade3">'+
+    '<button class="opt" data-go="signup">Save it to my plan</button>'+
+    '<button class="opt" data-go="9">Change the target first</button>'+
+    '<button class="opt ghost" data-decline="1">Not now &mdash; just keep the answer</button></div>'+
+    (S.declined?'<div class="declined fade3"><div class="dh">Kept, but not saved.</div>'+
+      '<div class="dp">The answer stays in this conversation. Without an account I can&rsquo;t hold the analysis, so when your APR list lands there is nothing waiting to recalculate against it &mdash; you&rsquo;d be starting this from the top.</div>'+
+      '<button class="pill-more" data-go="signup" style="margin:14px auto 0">Actually, save it</button></div>':'');
+  if(t.meta) h+='<div class="ask" style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.5);font-weight:700">'+t.meta+'</div>';
+  if(t.ask) h+='<div class="ask">'+t.ask+'</div>';
+  if(t.why) h+='<div class="qwhy">'+t.why+'</div>';
+  return h;
+}
+
+function thread(){
+  return S.log.map(function(m){
+    return m.who==='me'
+      ? '<div class="mine"><div class="b">'+m.text+'</div></div>'
+      : henceBlock(m.i,true)+'</div>';
+  }).join('');
+}
+
+function lightBar(){
+  return '<div class="top light"><div class="wm" data-go="entry">Finneas</div>'+
+    '<div class="burger"><span></span><span></span></div></div>';
+}
+function eyebrowOf(p){
+  return p.pri.slice(0,2).join(', ').toUpperCase()+(p.pri.length>2?', +'+(p.pri.length-2):'');
+}
+function actionCard(p,i){
+  return '<div class="pcard" data-go="pack"><div class="eyebrow">'+eyebrowOf(p)+'</div>'+
+   '<div class="pt">'+p.t+'</div><div class="pb">'+p.b+'</div>'+
+   '<div class="prow"><span class="dur">'+p.tag+'</span>'+
+   '<span class="ta">'+(p.cta||'Take action')+' <i>&#9656;</i></span></div></div>';
+}
+function aprTracker(){
+  var W=300,H=72,PAD=8, v=AVG.map(function(r){return r.v});
+  var mx=Math.max.apply(null,v), mn=Math.min.apply(null,v);
+  var X=function(r){return PAD+r.x*(W-PAD*2)};
+  var Y=function(x){return H-PAD-((x-mn)/((mx-mn)||1))*(H-PAD*2)};
+  var last=AVG[AVG.length-1];
+  var pts=AVG.map(function(r){return X(r)+','+Y(r.v)}).join(' ');
+  var area='M'+X(AVG[0])+','+(H-PAD)+' L'+pts.split(' ').join(' L')+' L'+X(last)+','+(H-PAD)+' Z';
+  return '<div class="mod"><div class="modk">Monitoring</div>'+
+   '<h3 class="modh">The average card APR, against yours</h3>'+
+   '<div class="ratenow">21.4%<span style="color:#8a5a4e">&uarr; 5.1 since 2022</span></div>'+
+   '<svg viewBox="0 0 '+W+' '+H+'" class="ratesvg">'+
+     '<path d="'+area+'" fill="rgba(176,124,216,.14)"/>'+
+     '<polyline fill="none" stroke="#b07cd8" stroke-width="2" points="'+pts+'"/>'+
+     '<circle cx="'+X(last)+'" cy="'+Y(last.v)+'" r="3.5" fill="#b07cd8"/>'+
+   '</svg>'+
+   '<div class="ratex"><span>2022</span><span>2023</span><span>2024</span><span>2025</span><span>2026</span></div>'+
+   '<p class="modp">Your 15&ndash;20% sits below the market average. That is worth knowing before you consolidate: a personal loan quoted at 10&ndash;18% is a narrower win against your cards than against most people&rsquo;s, and at the top of that range it is no win at all.</p>'+
+   '<p class="modp">Issuers reprice variable APRs without much notice. If any of your cards moves, I&rsquo;ll tell you which and what it does to the payoff order.</p>'+
+   '<div class="src">Federal Reserve G.19, average APR on accounts assessed interest &middot; checked 21 August 2026</div></div>';
+}
+function viewPriority(){
+  var s=surplus();
+  return lightBar()+'<div class="body page" id="scroll">'+
+   '<div class="pghead">'+
+     '<span class="urg high">Running</span>'+
+     '<h2 class="pgt">Get the debt under control</h2>'+
+     '<div class="progbar"><i style="width:0%"></i></div>'+
+     '<div class="progl">0 of 4 actions done &middot; started 21 August</div>'+
+   '</div>'+
+   '<div class="mod"><div class="modk">Target</div>'+
+   '<h3 class="modh">$50,000 cleared, on a schedule built from real rates rather than a band.</h3>'+
+   '<div class="trow"><span>Balance</span><b>'+usd(S.debt)+'</b></div>'+
+   '<div class="trow"><span>Accounts</span><b>4&ndash;6</b></div>'+
+   '<div class="trow"><span>Interest accruing</span><b>'+usd(intMo(S.apr))+'/mo</b></div>'+
+   '<div class="trow"><span>Surplus</span><b>$500&ndash;$2,000</b></div>'+
+   '<div class="trow"><span>Payoff order</span><b>Not yet built</b></div>'+
+   '<p class="modp">No schedule exists yet, and one built on a 15&ndash;20% band would be a guess. The card list is what turns this into a plan.</p></div>'+
+   '<h1 class="secH">Actions for this priority</h1>'+
+   '<div class="mod plain">'+ACTIONS.map(actionCard).join('')+'</div>'+
+   aprTracker()+
+   '<div class="mod"><div class="modk">What could change this</div>'+
+   '<h3 class="modh">Which end of the surplus band you are actually on</h3>'+
+   '<p class="modp">At $2,000 a month this clears in under three years. At $500 the balance grows, because interest alone is '+usd(intMo(S.apr))+'. Those are not two versions of the same plan &mdash; one of them is not a plan. One month of tracking settles it.</p></div>'+
+   '<div class="mod"><div class="modk">Questions you&rsquo;ve asked</div>'+
+   '<div class="qrow"><div><div class="pt2">What questions do I need to answer to begin a plan?</div>'+
+   '<div class="pb">Answered directly &mdash; nine figures held, two missing, one conflict resolved &mdash; 21 August</div></div>'+
+   '<span class="chev">&#9656;</span></div></div>'+
+   '<div class="mod"><div class="modk">Related</div>'+
+   '<div class="qrow"><div><div class="pt2">Build a budget</div>'+
+   '<div class="pb">The same month of tracking answers both. You said getting a budget under control was the bigger challenge of the two.</div></div>'+
+   '<span class="chev">&#9656;</span></div>'+
+   '<div class="qrow"><div><div class="pt2">The emergency buffer</div>'+
+   '<div class="pb">$5,000&ndash;$15,000. At the bottom of that it outranks the debt payoff; at the top it does not.</div></div>'+
+   '<span class="chev">&#9656;</span></div></div>'+
+   '<div style="height:20px"></div></div>'+dock();
+}
+function viewPack(){
+  return lightBar()+'<div class="body page" id="scroll">'+
+   '<div class="pghead">'+
+     '<span class="eyebrow">GET THE DEBT UNDER CONTROL</span>'+
+     '<h2 class="pgt">Pull the APR and balance on each card</h2>'+
+     '<div class="progbar"><i style="width:0%"></i></div>'+
+     '<div class="progl">0 of 3 steps done</div>'+
+   '</div>'+
+   '<div class="mod"><div class="modk">Why this first</div>'+
+   '<h3 class="modh">Every branch of the analysis turns on it.</h3>'+
+   '<div class="modnote">Which method saves the most, whether a transfer beats paying down, how long this takes and what it costs &mdash; all four are decided by the per-card rates, and none of them can be answered honestly without them. '+
+   'It is twenty minutes of looking things up, which is tedious rather than difficult. You said it yourself: the output is only as good as what goes in.</div></div>'+
+   '<div class="mod"><div class="modk">Steps</div>'+
+   ACT_STEPS.map(function(p){
+     return '<div class="stepc"><div class="stepn">'+p.n+'</div><div class="stepb">'+
+       '<div class="pt">'+p.t+'</div><div class="pb">'+p.b+'</div>'+
+       '<div class="prow"><span class="dur">'+p.tag.toUpperCase()+'</span>'+
+       '<span class="ta">'+p.cta+' <i>&#9656;</i></span></div></div></div>';
+   }).join('')+'</div>'+
+   '<div class="mod"><div class="modk">Also counts toward</div>'+
+   '<div class="qrow" data-go="priority"><div><div class="pt2">Get the debt under control</div>'+
+   '<div class="pb">The payoff order, the timeline and the transfer decision all unlock from this one list.</div></div>'+
+   '<span class="chev">&#9656;</span></div></div>'+
+   '<div style="height:20px"></div></div>'+dock();
+}
+function viewEntry(){
+  return topBar()+'<div class="body" style="display:flex;flex-direction:column;justify-content:center">'+
+   '<div class="avatar c">F</div><div class="hero">What&rsquo;s on your<br>money mind?</div></div>'+
+   '<div class="dock"><div class="inp"><span class="ic">&#128206;</span><span class="ic">&#127908;</span>'+
+   '<span class="ph" style="color:#2c1d24">I am in roughly $50,000 in credit card debt due to some recent major purchases. My wife and I currently bring home roughly $11,000 per month. Our family consists of myself, my wife, and our two children. We What questions do I need to answer for you to help me begin a plan to get out of that debt?</span>'+
+   '<button class="snd" data-go="0">&uarr;</button></div></div>';
+}
+
+function viewTurn(){
+  var t=D[S.t];
+  var h=thread()+henceBlock(S.t,false);
+  if(t.opts){
+    h+='<div class="opts">'+t.opts.map(function(o,i){
+      return '<button class="opt" data-opt="'+i+'">'+o+'</button>'}).join('')+'</div>';
+    if(t.banded) h+='<div class="fieldfoot"><span>Or enter a specific answer below</span>'+
+      '<span class="skip" data-opt="0">Skip this question</span></div>';
+  }
+  if(t.more && !t.gate) h+='<button class="pill-more" data-more="1">'+t.cta+'</button>';
+  h+='</div><div style="height:26px"></div>';
+  return topBar()+'<div class="body" id="scroll">'+h+'</div>'+
+    (t.answer?dockTyped(t.answer):dock());
+}
+
+function render(){
+  var s=document.getElementById('screen');
+  s.innerHTML = S.t==='signup' ? viewSignup() : S.t==='welcome' ? viewWelcome() : S.t==='home' ? viewHome() : S.t==='entry' ? viewEntry() : S.t==='priority' ? viewPriority() : S.t==='pack' ? viewPack() : viewTurn();
+  wire();
+  document.getElementById('note').textContent=NOTES[S.t]||'';
+  document.querySelectorAll('#vsw button').forEach(function(b){
+    b.classList.toggle('on',b.getAttribute('data-m')===S.mode)});
+  document.querySelectorAll('#steps button').forEach(function(b){
+    b.classList.toggle('on',b.getAttribute('data-v')===String(S.t))});
+  if(S.welcomeTimer){clearTimeout(S.welcomeTimer);S.welcomeTimer=null;}
+  if(S.t==='welcome') S.welcomeTimer=setTimeout(function(){S.t='home';render();},1900);
+}
+
+function wire(){
+  var s=document.getElementById('screen');
+  s.querySelectorAll('[data-go]').forEach(function(e){e.onclick=function(){
+    var g=e.getAttribute('data-go');
+    if(g==='entry'){S.t='entry';S.log=[];}
+    else if(g==='priority'||g==='pack'||g==='home'||g==='signup'||g==='welcome'){S.t=g;}
+    else {S.t=parseInt(g,10);}
+    render();scrollToTurn();}});
+  s.querySelectorAll('[data-opt]').forEach(function(e){e.onclick=function(){
+    var t=D[S.t];
+    S.log.push({who:'hence',i:S.t});
+    if(t.answered) S.log.push({who:'me',text:t.answered});
+    S.t=S.t+1;syncCorrected();render();scrollToTurn();}});
+  s.querySelectorAll('[data-send]').forEach(function(e){e.onclick=function(){
+    var t=D[S.t];
+    S.log.push({who:'hence',i:S.t});
+    S.log.push({who:'me',text:t.answer});
+    S.t=S.t+1;syncCorrected();render();scrollToTurn();}});
+  s.querySelectorAll('[data-more]').forEach(function(e){e.onclick=function(){
+    S.log.push({who:'hence',i:S.t});
+    S.t=S.t+1;syncCorrected();render();scrollToTurn();}});
+  s.querySelectorAll('input[type=range]').forEach(function(e){e.oninput=function(){
+    var k=this.getAttribute('data-k');
+    if(k==='apr10') S.apr=parseInt(this.value,10)/10;
+    else S[k]=parseInt(this.value,10);
+    var b=document.getElementById('scroll'), pos=b?b.scrollTop:0;
+    render(); var nb=document.getElementById('scroll'); if(nb) nb.scrollTop=pos;
+  }});
+  s.querySelectorAll('[data-exp]').forEach(function(e){e.onclick=function(){
+    S.expOpen=true; render();
+    var mods=document.querySelectorAll('#curturn .mod');
+    if(mods.length) mods[mods.length-1].scrollIntoView({block:'start'});}});
+  s.querySelectorAll('[data-goal]').forEach(function(e){e.onclick=function(){
+    S.goalSet=true; S.log.push({who:'hence',i:S.t}); S.t=S.t+1; S.expOpen=false;
+    render(); scrollToTurn();}});
+  s.querySelectorAll('[data-decline]').forEach(function(e){e.onclick=function(){
+    S.declined=true;
+    var b=document.getElementById('scroll'), pos=b?b.scrollTop:0;
+    render(); var nb=document.getElementById('scroll'); if(nb) nb.scrollTop=pos;}});
+  s.querySelectorAll('[data-path]').forEach(function(e){e.onclick=function(){
+    S.path=this.getAttribute('data-path');
+    var b=document.getElementById('scroll'), pos=b?b.scrollTop:0;
+    render(); var nb=document.getElementById('scroll'); if(nb) nb.scrollTop=pos;}});
+  s.querySelectorAll('[data-refopen]').forEach(function(e){e.onclick=function(){
+    S.refineOpen=!S.refineOpen;
+    var b=document.getElementById('scroll'), pos=b?b.scrollTop:0;
+    render(); var nb=document.getElementById('scroll'); if(nb) nb.scrollTop=pos;}});
+  s.querySelectorAll('[data-refine]').forEach(function(e){e.onclick=function(){
+    var k=this.getAttribute('data-refine'); S.refine[k]=!S.refine[k];
+    var b=document.getElementById('scroll'), pos=b?b.scrollTop:0;
+    render(); var nb=document.getElementById('scroll'); if(nb) nb.scrollTop=pos;}});
+  s.querySelectorAll('[data-fan]').forEach(function(e){e.onclick=function(){S.fan=true;render();}});
+  s.querySelectorAll('[data-sheet]').forEach(function(e){e.onclick=function(){
+    S.sheet=this.getAttribute('data-sheet')==='1'; render();}});
+  s.querySelectorAll('[data-tab]').forEach(function(e){e.onclick=function(){
+    S.tab=this.getAttribute('data-tab'); render();}});
+  s.querySelectorAll('[data-conf]').forEach(function(e){e.onclick=function(){
+    S.confOpen=!S.confOpen;
+    var b=document.getElementById('scroll'), pos=b?b.scrollTop:0;
+    render(); var nb=document.getElementById('scroll'); if(nb) nb.scrollTop=pos;}});
+}
+
+/* the income conflict is resolved at beat 9 and stays resolved after it */
+function syncCorrected(){
+  return;
+}
+
+function scrollToTurn(){
+  var b=document.getElementById('scroll');
+  if(!b) return;
+  var t=document.getElementById('curturn');
+  if(!t){ b.scrollTop=0; return; }
+  b.scrollTop += t.getBoundingClientRect().top - b.getBoundingClientRect().top - 8;
+}
+
+document.getElementById('steps').innerHTML=STEPS.map(function(x){
+  return '<button data-v="'+x[1]+'">'+x[0]+'</button>'}).join('');
+document.getElementById('vsw').onclick=function(e){
+  var m=e.target.getAttribute&&e.target.getAttribute('data-m'); if(!m) return;
+  S.mode=m; render(); scrollToTurn();
+};
+document.getElementById('steps').onclick=function(e){
+  var v=e.target.getAttribute&&e.target.getAttribute('data-v');if(!v)return;
+  S.log=[];
+  S.expOpen=false;
+  if(v==='entry'||v==='priority'||v==='pack'||v==='home'||v==='signup'||v==='welcome'){S.t=v;syncCorrected();render();return;}
+  var n=parseInt(v,10);
+  for(var i=0;i<n;i++){ S.log.push({who:'hence',i:i});
+    var a=D[i].answer||D[i].answered; if(a) S.log.push({who:'me',text:a}); }
+  S.t=n; syncCorrected(); render(); scrollToTurn();
+};
+
+render();
+</script>
+</body>
+</html>

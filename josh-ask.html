@@ -1,0 +1,1515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Finneas — Ask, paced. Joshua / retiring at 55</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --plum:#4b2a39;--cream:#f3efe5;--cream-2:#e9e4d6;--ink:#2c1d24;--lilac:#b57ce0;
+  --t-a:#f0a47f;--t-b:#f2e076;--t-c:#abdfa6;--dim:rgba(255,255,255,.72);
+  --ok:#5fa85f;--warn:#d8a24a;--bad:#c96a5a;
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-font-smoothing:antialiased}
+body{font-family:'Hanken Grotesk',-apple-system,sans-serif;background:#171015;color:#fff;
+  min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:26px 16px 60px;gap:14px}
+
+.chrome{width:100%;max-width:930px;display:flex;flex-direction:column;gap:9px}
+.chrome h1{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#8a7a83}
+.steps{display:flex;gap:5px;flex-wrap:wrap}
+.steps button{background:#241a20;border:1px solid #3a2c33;color:#bda9b4;font:inherit;font-size:11px;
+  font-weight:600;padding:6px 10px;border-radius:7px;cursor:pointer}
+.steps button.on{background:#fff;color:#171015;border-color:#fff}
+.steps button.home{border-color:#6b4f5e}
+.vsw{display:flex;gap:6px;align-items:center;margin-top:2px}
+.vsw span{font-size:11px;color:#7d6d76;margin-right:4px}
+.vsw button{background:#241a20;border:1px solid #3a2c33;color:#bda9b4;font:inherit;font-size:11px;
+  font-weight:600;padding:6px 11px;border-radius:7px;cursor:pointer}
+.vsw button.on{background:var(--lilac);color:#fff;border-color:var(--lilac)}
+.slout{font-size:12px;color:#7a6f62;margin-top:5px}
+.slout b{color:var(--ink);font-weight:700}
+.cmpt th.selth{color:var(--ink);border-bottom:2px solid var(--ink)}
+.cmpt td.selc{background:#efe9db}
+.selbox{background:#efe9db;border-radius:9px;padding:13px 14px;margin-top:14px}
+.selk{font-size:9.5px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:#a3967f}
+.selp{font-size:13px;line-height:1.5;color:#5c5145;margin-top:6px}
+.refm{padding-top:14px;padding-bottom:14px}
+.rfhead{display:flex;align-items:center;justify-content:space-between;gap:12px;cursor:pointer}
+.rfk{font-size:13.5px;font-weight:700;color:var(--ink)}
+.rfs{font-size:12px;color:#7a6f62;margin-top:3px}
+.rfchev{font-size:10px;color:#a3967f}
+.rfbody{border-top:1px solid #e0d9c9;margin-top:13px;padding-top:4px}
+.rfi{border-top:1px solid #e0d9c9;padding:13px 0}
+.rfi:first-of-type{border-top:0;padding-top:4px}
+.rfh{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+.rft{font-size:14px;font-weight:600;color:var(--ink);line-height:1.35}
+.rfw{font-size:12.5px;line-height:1.5;color:#7a6f62;margin-top:5px}
+.rfb{flex:none;background:transparent;border:1px solid #b3a795;color:#4a4038;font:inherit;font-size:11.5px;
+  font-weight:700;padding:6px 12px;border-radius:999px;cursor:pointer;white-space:nowrap}
+.rfb.on{background:var(--ink);border-color:var(--ink);color:#fff}
+.modfoot{display:flex;align-items:center;justify-content:space-between;gap:12px;
+  border-top:1px solid #e0d9c9;margin-top:15px;padding-top:14px}
+.mfl{flex:1}
+.mfh{font-family:'Newsreader',serif;font-size:21px;line-height:1.15;color:var(--ink)}
+.mfs{font-size:11.5px;color:#7a6f62;margin-top:3px}
+.tgtset{border-top:1px solid #e0d9c9;margin-top:15px;padding-top:14px;text-align:center}
+.tgtl{font-size:13px;line-height:1.45;color:#5c5145}
+.btn-set{flex:none;background:var(--ink);color:#fff;border:0;font:inherit;font-size:12px;font-weight:700;
+  padding:8px 14px;border-radius:999px;cursor:pointer;margin-top:2px;white-space:nowrap}
+.btn-set.ghost{background:#e6dfd0;border:0;color:#6b5f52;font-weight:600}
+.tgtset.done .tgtl{font-weight:700;color:var(--ink)}
+.declined{background:rgba(255,255,255,.08);border-radius:12px;padding:15px 16px 16px;margin-top:16px;text-align:center}
+.declined .dh{font-size:16px;font-weight:600;color:#fff}
+.declined .dp{font-size:12.5px;line-height:1.5;color:var(--dim);margin-top:6px}
+.setgoal{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.22);border-radius:12px;
+  padding:15px 16px 16px;margin-top:16px;text-align:center}
+.setgoal.done{background:rgba(181,124,224,.16);border-color:rgba(181,124,224,.5)}
+.sgp{font-size:14.5px;font-weight:600;color:#fff}
+.sgn{font-size:12.5px;line-height:1.45;color:var(--dim);margin-top:5px}
+.pill-ghost{background:transparent;border:1px solid rgba(255,255,255,.34);color:#fff;font:inherit;
+  font-size:13px;font-weight:600;padding:9px 18px;border-radius:999px;cursor:pointer;display:block}
+.expw{border-top:1px solid #e0d9c9;margin-top:16px;padding-top:14px}
+.exph{font-size:13px;font-weight:700;color:var(--ink)}
+.expc{font-size:12.5px;line-height:1.5;color:#7a6f62;margin-top:11px}
+.agew{margin-top:16px}
+.agel{font-size:12.5px;font-weight:600;color:#7a6f62}
+.ages{display:flex;gap:4px;margin-top:8px;background:#e0d9c9;border-radius:9px;padding:4px}
+.ageb{flex:1;background:transparent;border:0;color:#7a6f62;font:inherit;font-size:13px;font-weight:600;
+  padding:9px 0;border-radius:7px;cursor:pointer}
+.ageb.on{background:#fff;color:var(--ink);box-shadow:0 1px 3px rgba(0,0,0,.14)}
+.conf{border-top:1px solid #e0d9c9;margin-top:15px;padding-top:13px;cursor:pointer}
+.conf .ch{display:flex;align-items:center;gap:9px}
+.conf .ck{font-size:9.5px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:#a3967f}
+.conf .cv{font-size:13px;font-weight:700;margin-left:auto}
+.conf .cchev{font-size:10px;color:#a89b8a}
+.conf .cbar{height:5px;background:#ddd7c9;border-radius:5px;margin-top:9px;overflow:hidden}
+.conf .cbar i{display:block;height:100%;background:#c9a227;border-radius:5px}
+.conf .cd{font-size:11.5px;color:#7a6f62;margin-top:7px;line-height:1.45}
+.conf .clist{margin-top:12px}
+.conf .cli{display:flex;gap:9px;font-size:12px;line-height:1.45;color:#5f5459;margin-top:7px}
+.conf .cli i{flex:none;font-style:normal;font-size:11px;width:12px}
+.conf .cli.miss{color:#8a5a4e}
+.toast{display:flex;align-items:center;gap:11px;background:rgba(255,255,255,.10);
+  border-radius:10px;padding:13px 15px;margin-top:16px}
+.toast .tk{flex:none;width:22px;height:22px;border-radius:6px;background:var(--lilac);color:#fff;
+  display:flex;align-items:center;justify-content:center;font-size:12px}
+.toast .tt{font-size:14px;line-height:1.4;color:rgba(255,255,255,.9)}
+.toast .tt b{color:#fff;font-weight:600}
+.toast .tv{font-size:12.5px;font-weight:700;color:var(--lilac);cursor:pointer;flex:none;margin-left:auto}
+.lace{background:rgba(255,255,255,.08);border-radius:9px;padding:12px 14px;margin-top:14px}
+.lace .lk{font-size:10px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;color:var(--lilac)}
+.lace p{font-size:13.5px;line-height:1.5;color:rgba(255,255,255,.82);margin-top:7px}
+.digest{margin-top:18px}
+.digest .dk{font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--dim)}
+.digest .di{background:var(--cream);color:var(--ink);border-radius:12px;padding:15px 16px;margin-top:11px}
+.digest .dt{font-family:'Newsreader',serif;font-size:19px;line-height:1.2}
+.digest .dd{font-size:13.5px;line-height:1.5;color:#6b5f64;margin-top:6px}
+.rowa{display:flex;justify-content:space-between;gap:12px;align-items:baseline;
+  border-bottom:1px solid rgba(255,255,255,.14);padding:10px 0;font-size:13.5px}
+.rowa .q{color:var(--dim);flex:1}
+.rowa .a{color:#fff;font-weight:600}
+.rowa .ed{color:var(--lilac);font-size:12px;text-decoration:underline;cursor:pointer;flex:none}
+.two{display:flex;gap:9px;margin-top:16px}
+.two .f{flex:1;background:var(--cream);color:var(--ink);border-radius:12px;padding:15px 14px}
+.two .f .fk{font-size:9.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#a3967f}
+.two .f .fh{font-family:'Newsreader',serif;font-size:18px;line-height:1.2;margin-top:7px}
+.two .f .fd{font-size:12.5px;line-height:1.5;color:#5f5459;margin-top:9px}
+.two .f .fd b{color:var(--ink)}
+.note{font-size:12px;color:#7d6d76;max-width:930px;line-height:1.5;text-align:center}
+
+.device{width:392px;height:812px;background:var(--plum);border-radius:44px;
+  box-shadow:0 0 0 10px #100b0e,0 0 0 12px #2c2027,0 34px 70px rgba(0,0,0,.6);overflow:hidden;position:relative}
+.screen{position:absolute;inset:0;display:flex;flex-direction:column}
+.body{flex:1;overflow-y:auto;overflow-x:hidden;padding:0 20px}
+.body::-webkit-scrollbar{width:0}
+.top{display:flex;justify-content:space-between;align-items:flex-start;padding:22px 22px 6px;flex:none}
+.wm{font-family:'Newsreader',serif;font-size:19px}
+.burger{width:22px}.burger span{display:block;height:1.5px;background:#fff;margin:5px 0}
+.avatar{width:34px;height:34px;border-radius:9px;background:var(--lilac);display:flex;align-items:center;
+  justify-content:center;font-family:'Newsreader',serif;font-size:19px;margin:16px 0 14px}
+.avatar.c{margin:14px auto 16px}
+.hero{font-family:'Newsreader',serif;font-size:29px;line-height:1.16;text-align:center}
+
+.said{font-family:'Newsreader',serif;font-size:23px;line-height:1.26;color:#fff}
+.sub{font-size:16px;line-height:1.5;color:rgba(255,255,255,.78);margin-top:11px}
+.sub b{color:#fff;font-weight:600}
+.ask{font-size:16px;font-weight:600;line-height:1.4;margin-top:18px;color:#fff}
+.qwhy{font-size:13.5px;line-height:1.5;color:rgba(255,255,255,.6);font-style:italic;margin-top:9px}
+.fieldfoot{display:flex;justify-content:space-between;gap:12px;margin-top:12px;font-size:12.5px;color:var(--dim)}
+.fieldfoot .skip{cursor:pointer;text-decoration:underline}
+.opts{display:flex;flex-direction:column;gap:8px;margin-top:16px}
+.opt{background:transparent;border:1px solid rgba(255,255,255,.42);color:#fff;font:inherit;font-size:14.5px;
+  padding:12px 15px;border-radius:22px;text-align:left;cursor:pointer;transition:.14s}
+.opt:hover{background:rgba(255,255,255,.1)}
+.opt.ghost{border-style:dashed;color:var(--dim)}
+.turn{margin-top:8px;max-width:96%;margin-right:auto}
+.fade{animation:fu .34s cubic-bezier(.2,.7,.2,1) both}
+.fade2{animation:fu .40s cubic-bezier(.2,.7,.2,1) .16s both}
+.fade3{animation:fu .40s cubic-bezier(.2,.7,.2,1) .32s both}
+@keyframes fu{from{opacity:0;transform:translateY(9px)}to{opacity:1;transform:translateY(0)}}
+@keyframes dis{from{opacity:0}to{opacity:1}}
+.dissolve{animation:dis .34s ease both}
+
+.mine{display:flex;justify-content:flex-end;margin:26px 0 30px}
+.mine .b{background:#5e4557;color:#f3efe5;border-radius:14px;padding:18px 20px;
+  font-size:16.5px;line-height:1.45;max-width:88%;text-align:left}
+.recap{background:rgba(255,255,255,.08);border-radius:9px;padding:12px 14px;font-size:13.5px;
+  line-height:1.45;color:rgba(255,255,255,.8);margin-top:13px}
+
+.mathhead{font-family:'Newsreader',serif;font-size:22px;color:#fff;margin-top:26px}
+ul.t{margin:13px 0 0;padding:0;list-style:none}
+ul.t li{font-size:15px;line-height:1.5;color:rgba(255,255,255,.8);padding-left:16px;position:relative;margin-top:9px}
+ul.t li:before{content:'';position:absolute;left:0;top:8px;width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,.4)}
+ul.t li b{color:#fff;font-weight:600}
+.closing{background:rgba(255,255,255,.09);border-left:3px solid var(--lilac);border-radius:0 9px 9px 0;
+  padding:14px 15px;margin-top:17px;font-size:15px;line-height:1.5}
+
+/* ---- cream artifacts ---- */
+.mod{background:var(--cream);color:var(--ink);border-radius:12px;padding:17px;margin-top:18px}
+.mod h3{font-family:'Newsreader',serif;font-size:21px;font-weight:400;line-height:1.18}
+.mod .cap{font-size:12px;color:#7a6f74;margin-top:4px;line-height:1.45}
+.mod .modnote{font-size:11.5px;line-height:1.5;color:#7a6f74;margin-top:12px}
+.mod .modnote b{color:var(--ink)}
+.big{font-family:'Newsreader',serif;font-size:36px;line-height:1;margin-top:13px}
+.bigsub{font-size:12.5px;color:#7a6f74;margin-top:3px}
+.sl{margin-top:15px}
+.sl label{display:flex;justify-content:space-between;font-size:12.5px;font-weight:600;color:#7a6f74;margin-bottom:2px}
+.sl label b{color:var(--ink);font-size:13.5px}
+input[type=range]{width:100%;-webkit-appearance:none;height:4px;background:#d3ccbd;border-radius:4px;outline:0;margin-top:7px}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;height:22px;border-radius:50%;
+  background:var(--ink);cursor:pointer;border:3px solid var(--cream)}
+input[type=range]::-moz-range-thumb{width:22px;height:22px;border-radius:50%;background:var(--ink);
+  cursor:pointer;border:3px solid var(--cream)}
+.trow{display:flex;justify-content:space-between;gap:12px;font-size:13.5px;color:#6b5f52;
+  padding:10px 0;border-bottom:1px solid #e0d9c9}
+.trows{margin-top:14px;border-top:1px solid #e0d9c9}
+.trow b{color:var(--ink);font-weight:700;text-align:right;white-space:nowrap}
+.trow.tot{border-bottom:0;padding-top:12px}
+.trow.tot span{font-weight:700;color:var(--ink)}
+.trow.tot b{font-size:18px}
+.trow .neg{color:#8a5a4e}
+.cmpt{background:var(--cream);color:var(--ink);border-radius:12px;padding:6px 14px 14px;margin-top:18px}
+.cmpt table{border-collapse:collapse;width:100%;font-size:12px;table-layout:fixed}
+.cmpt th{text-align:right;font-size:9px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+  color:#7a6f62;padding:12px 0 8px 6px;border-bottom:1px solid #cfc6b5;line-height:1.25}
+.cmpt th:first-child{text-align:left;width:42%;padding-left:0}
+.cmpt th:nth-child(2){width:26%}
+.cmpt td{padding:9px 0 9px 6px;border-bottom:1px solid #e6dfd0;line-height:1.3;text-align:right;
+  font-weight:700}
+.cmpt td:first-child{text-align:left;font-weight:400;color:#6b5f52;padding-left:0}
+.cmpt tr:last-child td{border-bottom:0}
+.cmpt tr.hi td{background:#e6dfd0}
+.cmpt tr.sec td{padding-top:16px;border-bottom:1px solid #cfc6b5}
+.cmpt tr.sec td:first-child{font-size:9px;font-weight:700;letter-spacing:.08em;
+  text-transform:uppercase;color:#a3967f}
+/* three-lender variant — four columns in 392px */
+.cmpt.three table{font-size:11px}
+.cmpt.three th:first-child{width:31%}
+.cmpt.three th{width:23%;padding-left:4px}
+.cmpt.three td{padding-left:4px;font-size:11px}
+.cmpt.three td:first-child{font-size:11.5px}
+.cmpt.three .dl{font-size:9.5px}
+.qb{background:#e9e2d4;border-left:3px solid var(--plum);border-radius:0 8px 8px 0;
+  padding:12px 13px;margin-top:14px;font-size:14px;line-height:1.5;color:#4a4038;font-style:italic}
+.opd{margin-top:15px;border-top:1px solid #e0d9c9;padding-top:14px}
+.opd .oh{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.opd .on1{font-family:'Newsreader',serif;font-size:21px;line-height:1.15}
+.opd .op{font-size:19px;font-weight:700;white-space:nowrap}
+.opd .om{font-size:12.5px;color:#7a6f62;margin-top:6px;line-height:1.45}
+.opd .orow{display:flex;justify-content:space-between;font-size:13.5px;
+  border-bottom:1px solid #e0d9c9;padding:10px 0}
+.opd .orow:first-of-type{border-top:1px solid #e0d9c9;margin-top:13px}
+.opd .orow span{color:#6b5f52}
+.opd .orow b{font-weight:700}
+.opd .orow b.up{color:#8a5a4e}
+.dl2{display:block;font-size:10.5px;color:#a3967f;margin-top:2px;font-weight:400}
+.cmpt td.ql{font-weight:400;font-size:11.5px;color:#4a4038;line-height:1.35;text-align:right}
+.cmpt .dl{font-size:10.5px;font-weight:400;color:#8a7f70;display:block;margin-top:2px}
+.cmpt .up{color:#8a5a4e}
+.cmpt .neu{color:#4a4038}
+.cmpt .win{color:#3f6b3f}
+.scen{display:flex;gap:7px;margin-top:15px}
+.scen .c{flex:1;background:var(--cream-2);border-radius:9px;padding:11px 9px;cursor:pointer;
+  border:2px solid transparent;transition:.15s}
+.scen .c.on{border-color:var(--ink);background:#fff}
+.scen .c .k{font-size:9.5px;letter-spacing:.05em;text-transform:uppercase;color:#7a6f74;font-weight:700;line-height:1.3}
+.scen .c .v{font-family:'Newsreader',serif;font-size:21px;line-height:1;margin-top:6px}
+.scen .c .s{font-size:10.5px;color:#7a6f74;margin-top:3px}
+.bar{margin-top:13px}
+.bar .bl{display:flex;justify-content:space-between;font-size:12px;color:#6b5f52;margin-bottom:5px}
+.bar .bl b{color:var(--ink)}
+.bar .tr{height:11px;background:#ddd7c9;border-radius:6px;position:relative;overflow:visible}
+.bar .fl{height:100%;border-radius:6px;transition:width .5s cubic-bezier(.2,.7,.2,1)}
+.bar .ceil{position:absolute;top:-3px;bottom:-3px;width:2px;background:#7a6f74}
+.bar .ceill{font-size:10px;color:#8a5a4e;margin-top:6px}
+.stack{display:flex;height:36px;border-radius:8px;overflow:hidden;margin-top:15px}
+.stack div{display:flex;align-items:center;justify-content:center;font-size:10.5px;font-weight:700;
+  color:#2c1d24;transition:flex-grow .5s cubic-bezier(.2,.7,.2,1);overflow:hidden;white-space:nowrap}
+.stackkey{display:flex;gap:12px;flex-wrap:wrap;font-size:11.5px;color:#6b5f52;margin-top:10px}
+.stackkey i{display:inline-block;width:10px;height:10px;border-radius:3px;vertical-align:-1px;margin-right:5px}
+
+.grp{font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--dim);
+  font-weight:700;margin-top:20px}
+
+/* handoff / proposed pack — in chat */
+.prop{background:var(--cream);color:var(--ink);border-radius:12px;padding:18px 17px;margin-top:16px}
+.prop .lab{font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:#7a6f74}
+.prop h3{font-family:'Newsreader',serif;font-size:25px;font-weight:400;margin-top:5px;line-height:1.2}
+.prop .tgt{font-size:14px;line-height:1.45;color:#4d4048;margin-top:9px}
+.pgrp{font-size:10px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:#a3967f;
+  margin-top:16px;padding-top:14px;border-top:1px solid #ddd7c9}
+.prop .pgrp:first-of-type{margin-top:10px;padding-top:0;border-top:0}
+.pact.watch .pn{border:0;background:#e6dfd0;color:#7a6f62;font-size:11px}
+.pact.watch .pt{font-weight:500}
+.pact{display:flex;gap:11px;padding:13px 0;border-top:1px solid #ddd7c9}
+.pact .pn{flex:none;width:23px;height:23px;border:1px solid #9c948a;border-radius:5px;display:flex;
+  align-items:center;justify-content:center;font-size:12px;margin-top:1px}
+.pact .pt{font-size:15px;font-weight:600;line-height:1.3;margin-top:0}
+.pact .pd{font-size:12.5px;line-height:1.4;color:#6b5f64;margin-top:3px}
+.who{display:inline-block;font-size:9px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;
+  padding:2px 7px;border-radius:20px;margin-top:6px}
+.who.h{background:#dfd8c8;color:#5c5145}
+.who.u{background:#e6d3dd;color:#6b3f56}
+.assume{background:#e6e0d1;border-radius:8px;padding:12px 13px;font-size:12.5px;line-height:1.45;
+  margin-top:14px;color:#5c5145}
+.assume b{color:var(--ink)}
+
+/* ---- object pages ---- */
+.body.page{background:#f6f2e9;color:var(--ink);padding:0 18px 0}
+.top.light{background:#f6f2e9}
+.top.light .wm{color:var(--ink)}
+.top.light .burger span{background:var(--ink)}
+.pghead{padding:14px 0 4px}
+.pgt{font-family:'Newsreader',serif;font-size:30px;font-weight:400;line-height:1.12;
+  letter-spacing:-.012em;margin-top:11px}
+.progbar{height:5px;background:#e2dac9;border-radius:5px;overflow:hidden;margin-top:16px}
+.progbar i{display:block;height:100%;background:var(--lilac);border-radius:5px}
+.progl{font-size:11.5px;color:#8a7f70;margin-top:7px}
+.secH{font-family:'Newsreader',serif;font-size:25px;font-weight:400;letter-spacing:-.012em;
+  line-height:1.15;margin:28px 0 0}
+.page .mod{background:#fdfbf6;border:1px solid #e6dfd0;border-radius:12px;padding:15px 15px 14px;margin-top:13px}
+.page .mod.plain{padding:14px 13px 12px}
+.modk{font-size:9px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:#a3967f}
+.modh{font-family:'Newsreader',serif;font-size:20px;font-weight:400;line-height:1.22;margin-top:8px}
+.modp{font-size:13px;line-height:1.55;color:#5c5145;margin-top:11px}
+.page .trow{display:flex;justify-content:space-between;gap:12px;font-size:13px;color:#6b5f52;
+  padding:9px 0;border-bottom:1px solid #e6dfd0;font-weight:400}
+.page .trow:last-of-type{border-bottom:0}
+.page .trow b{color:var(--ink);font-weight:600;text-align:right}
+.page .modnote{font-size:12px;line-height:1.5;color:#7a6f62;margin-top:11px}
+.src{font-size:10.5px;color:#a89b8a;margin-top:12px}
+.page .mod .pcard{background:#f0eade}
+.pcard{background:#e9e2d4;color:var(--ink);border-radius:7px;padding:12px 13px 11px;margin-bottom:10px}
+.eyebrow{display:inline-block;font-size:8.5px;font-weight:700;letter-spacing:.07em;
+  color:#5c5145;background:#f3eee4;border:1px solid #ddd5c6;border-radius:4px;padding:3px 7px}
+.pt{font-size:15.5px;font-weight:500;line-height:1.25;margin-top:9px;letter-spacing:-.005em}
+.pb{font-size:12.5px;line-height:1.42;color:#7a6f62;margin-top:3px}
+.prow{display:flex;align-items:center;justify-content:space-between;margin-top:11px}
+.dur{font-size:8.5px;font-weight:700;letter-spacing:.07em;color:#5c5145;
+  border:1px solid #c9bda9;border-radius:4px;padding:3px 8px}
+.ta{font-size:12.5px;font-weight:700;cursor:pointer}
+.ta i{font-style:normal;font-size:9px;vertical-align:1px;margin-left:2px}
+.urg{display:inline-block;font-size:8.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;
+  border-radius:999px;padding:3px 9px}
+.urg.high{background:#f0dc7a;color:#5c4a10}
+.stepc{display:flex;gap:11px;padding:13px 0;border-bottom:1px solid #e6dfd0}
+.stepc:last-child{border-bottom:0}
+.stepn{flex:none;width:24px;height:24px;border:1px solid #b3a795;border-radius:5px;display:flex;
+  align-items:center;justify-content:center;font-size:12px;font-weight:600;color:#5c5145;margin-top:8px}
+.stepb{flex:1}
+.qrow{display:flex;align-items:center;justify-content:space-between;gap:12px;
+  padding:13px 0;border-bottom:1px solid #e6dfd0}
+.qrow:last-child{border-bottom:0}
+.chev{color:#a89b8a;font-size:11px;flex:none}
+.pt2{font-family:'Newsreader',serif;font-size:19px;font-weight:400}
+.ratenow{font-family:'Newsreader',serif;font-size:31px;margin-top:10px}
+.ratenow span{font-size:12px;font-family:'Hanken Grotesk';color:#3f6b3f;margin-left:8px}
+.ratesvg{width:100%;display:block;margin-top:8px}
+.ratex{display:flex;justify-content:space-between;font-size:10px;color:#a89b8a;margin-top:4px}
+.pill-more{display:block;margin:20px auto 0;background:#fff;color:#2c1d24;border:0;font:inherit;
+  font-size:15px;font-weight:600;padding:13px 26px;border-radius:999px;cursor:pointer}
+
+.dock{flex:none;padding:12px 20px 14px}
+.inp{display:flex;align-items:center;gap:11px;background:#fff;border-radius:26px;padding:11px 11px 11px 16px}
+.inp .ph{flex:1;font-size:14.5px;color:#8c8189;line-height:1.35;max-height:74px;overflow:hidden}
+.ic{color:#5d525a;font-size:15px}
+.snd{width:34px;height:34px;border-radius:50%;background:var(--ink);color:#fff;border:0;font-size:15px;
+  cursor:pointer;flex:none}
+.hstack{position:relative;margin:26px 4px 0;cursor:pointer}
+.hstack .ghost{position:absolute;left:12px;right:12px;top:12px;bottom:-12px;background:#e4dfd2;
+  border-radius:9px;box-shadow:0 4px 10px rgba(0,0,0,.14)}
+.hstack .ghost.g2{left:26px;right:26px;top:26px;bottom:-26px;background:#d6d1c3}
+.hcard{background:var(--cream);color:var(--ink);border-radius:9px;padding:15px 16px;position:relative}
+.card.muted{background:#cfc9bd;color:#6a5f63}
+.tag{display:inline-block;font-size:9px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;
+  padding:3px 8px;border-radius:20px;color:#3a2a22}
+.tag.neutral{background:#d8d2c4;color:#4a4038}
+.tag.buy{background:var(--t-buy)}.tag.gap{background:var(--t-gap)}.tag.run{background:var(--t-run)}
+.crow2{display:flex;gap:11px;margin-top:11px}
+.num{flex:none;width:26px;height:26px;border:1px solid #9c948a;border-radius:5px;
+  display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:500}
+.num.ok{background:var(--ink);color:#fff;border-color:var(--ink);font-size:13px}
+.ctitle{font-family:'Newsreader',serif;font-size:19px;line-height:1.2}
+.cbody{font-size:12.5px;line-height:1.45;color:#6b5f64;margin-top:5px}
+.hcard .eyebrow{display:inline-block;font-size:8.5px;font-weight:700;letter-spacing:.08em;
+  color:#6b5f52;background:rgba(44,29,36,.055);border-radius:4px;padding:4px 8px}
+.clearall{text-align:center;font-size:12.5px;color:var(--dim);margin-top:20px;cursor:pointer}
+.pill-more{display:block;margin:0 auto;background:#fff;color:#2c1d24;border:0;font:inherit;
+  font-size:15px;font-weight:600;padding:14px 26px;border-radius:999px;cursor:pointer}
+.cwhy{font-size:12px;line-height:1.4;color:#8a7d70;font-style:italic;margin-top:5px}
+.cact{font-size:13px;font-weight:700;margin-top:11px;display:inline-block;cursor:pointer}
+.btn-work{background:#2c1d24;color:#fff;border:0;font:inherit;font-size:12px;font-weight:700;
+  padding:9px 13px;border-radius:5px;margin-top:12px;cursor:pointer}
+.cards{display:flex;flex-direction:column;gap:13px;margin-top:22px}
+.since{background:rgba(255,255,255,.10);border-radius:12px;padding:16px 17px;margin-top:22px}
+.since .k{font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--dim)}
+.since .chk{display:flex;gap:10px;font-size:14.5px;line-height:1.35;margin-top:10px;color:#fff}
+.since .chk span:first-child{flex:none;opacity:.75}
+.moved{background:var(--cream);color:var(--ink);border-radius:12px;padding:17px;margin-top:20px}
+.moved .k{font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:#7a6f74}
+.moved .m{font-family:'Newsreader',serif;font-size:31px;margin-top:6px;line-height:1.05}
+.moved .d{font-size:13.5px;line-height:1.45;color:#6b5f64;margin-top:8px}
+
+.dock{flex:none;padding:12px 20px 14px}
+.inp{display:flex;align-items:center;gap:11px;background:#fff;border-radius:26px;padding:11px 11px 11px 16px}
+.inp .ph{flex:1;font-size:14.5px;color:#8c8189}
+.ic{color:#5d525a;font-size:15px}
+.snd{width:34px;height:34px;border-radius:50%;background:var(--ink);color:#fff;border:0;font-size:15px;cursor:pointer}
+.elseline{font-size:14px;color:var(--dim);margin-bottom:9px}
+.sheet{position:absolute;inset:0;background:#f3eee4;color:#2f2620;z-index:30;
+  overflow-y:auto;padding:18px 20px 34px}
+.sheet.enter{animation:up .3s cubic-bezier(.2,.7,.2,1) both}
+@keyframes up{from{transform:translateY(100%)}to{transform:translateY(0)}}
+.sheet.dissolvein{animation:dis .3s ease both}
+@keyframes slideL{from{opacity:0;transform:translateX(26px)}to{opacity:1;transform:translateX(0)}}
+@keyframes slideR{from{opacity:0;transform:translateX(-26px)}to{opacity:1;transform:translateX(0)}}
+.tabbody{animation:slideL .26s cubic-bezier(.2,.7,.2,1) both}
+.tabbody.back{animation-name:slideR}
+.sheet::-webkit-scrollbar{width:0}
+.shead{display:flex;align-items:center;justify-content:space-between}
+.shead .close{font-size:14px;cursor:pointer;color:#8a7f70;width:16px}
+.shead .wm2{font-size:10.5px;font-weight:700;letter-spacing:.16em;color:#4a4038}
+.sheet h2{font-family:'Newsreader',serif;font-size:30px;font-weight:400;margin:20px 0 0;
+  text-align:center;letter-spacing:-.01em}
+.tabs{display:flex;background:#fbf8f1;border:1px solid #ddd5c6;border-radius:999px;
+  padding:4px;gap:2px;margin:16px 0 0}
+.tb{flex:1;border:0;background:transparent;font:inherit;font-size:12.5px;font-weight:600;
+  color:#5c5145;padding:8px 4px;border-radius:999px;cursor:pointer}
+.tb.on{background:#2e2620;color:#f6f1e6}
+.sheet .sect{text-align:center;margin-top:30px}
+.sheet .sect.sm{margin-top:34px}
+.sect.nogap{margin-top:10px}
+.sheet .sicon{font-size:15px;color:#4a4038;margin-bottom:4px}
+.sheet .stitle{font-family:'Newsreader',serif;font-size:24px;letter-spacing:-.01em}
+.sheet .ssub{font-size:12.5px;line-height:1.45;color:#7a6f62;margin-top:6px;padding:0 6px}
+.sheet .filt{display:flex;align-items:center;justify-content:center;gap:8px;font-size:12.5px;
+  color:#4a4038;margin-top:26px;font-weight:600}
+.filt .sep{color:#b3a795;font-weight:400}
+.sheet .weeks{display:flex;gap:6px;overflow-x:auto;margin-top:16px}
+.weeks::-webkit-scrollbar{height:0}
+.sheet .wk{flex:none;background:#ebe4d6;border-radius:6px;padding:9px 12px 8px;min-width:76px}
+.wk span{display:block;font-size:8.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#8a7f70}
+.wk b{display:block;font-family:'Newsreader',serif;font-size:17px;font-weight:400;margin-top:2px}
+.wk i{display:block;font-style:normal;font-size:10.5px;color:#8a7f70;margin-top:1px}
+.wk.now{background:#2e2620;color:#f6f1e6}
+.wk.now span,.wk.now i{color:#a89b8a}
+.wk.done{background:#c9dcc0}
+.sheet .grp{margin-top:20px}
+.mod .pcard{background:#f0eade;}
+.pcard{background:#e9e2d4;border-radius:7px;padding:12px 13px 11px;margin-bottom:10px}
+.eyebrow{display:inline-block;font-size:8.5px;font-weight:700;letter-spacing:.07em;
+  color:#5c5145;background:#f3eee4;border:1px solid #ddd5c6;border-radius:4px;padding:3px 7px}
+.sheet .pt{font-size:15.5px;font-weight:500;line-height:1.25;margin-top:9px;letter-spacing:-.005em}
+.sheet .pb{font-size:12.5px;line-height:1.42;color:#7a6f62;margin-top:3px}
+.pwhy{font-size:12.5px;line-height:1.42;color:#7a6f62;font-style:italic;margin-top:7px}
+.prow{display:flex;align-items:center;justify-content:space-between;margin-top:11px}
+.dur{font-size:8.5px;font-weight:700;letter-spacing:.07em;color:#5c5145;
+  border:1px solid #c9bda9;border-radius:4px;padding:3px 8px}
+.ta{font-size:12.5px;font-weight:700;cursor:pointer}
+.ta i{font-style:normal;font-size:9px;vertical-align:1px;margin-left:2px}
+.sheet .prio{background:#ebe4d6;border-radius:7px;padding:13px 13px;margin-top:14px;
+  display:flex;gap:11px;align-items:center}
+.prio .pn{flex:none;width:28px;height:28px;border-radius:5px;background:#f3eee4;display:flex;
+  align-items:center;justify-content:center;font-size:13px;font-weight:500}
+.prio .pbody{flex:1}
+.prio .sheet .pt{font-family:'Newsreader',serif;font-size:19px;font-weight:400;margin-top:5px}
+.urg{display:inline-block;font-size:8.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;
+  border-radius:999px;padding:3px 9px}
+.urg.high{background:#f0dc7a;color:#5c4a10}
+.urg.urgent{background:#e8a98c;color:#6b3320}
+.chev{color:#a89b8a;font-size:11px;flex:none}
+.sheet .rec{background:#ebe4d6;border-radius:7px;padding:13px;margin-top:14px}
+.recpill{display:inline-block;font-size:8.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;
+  color:#fff;background:var(--lilac);padding:3px 9px;border-radius:4px}
+.recflag{display:inline-block;font-size:8.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;
+  color:#fff;background:#b07cd8;padding:3px 9px;border-radius:4px}
+.rec .sheet .pt{font-family:'Newsreader',serif;font-size:19px;font-weight:400}
+.recbtns{display:flex;gap:9px;margin-top:14px}
+.recbtns button{flex:1;font:inherit;font-size:12.5px;font-weight:600;padding:10px;border-radius:5px;cursor:pointer}
+.recbtns .rj{background:#fbf8f1;border:1px solid #ddd5c6;color:#4a4038}
+.recbtns .ac{background:#2e2620;border:0;color:#f6f1e6}
+.pastwrap{background:#ebe4d6;border-radius:7px;padding:2px 13px;margin-top:10px}
+.sheet .past{display:flex;align-items:center;justify-content:space-between;gap:12px;
+  padding:14px 0;border-bottom:1px solid #ddd5c6}
+.past:last-child{border-bottom:0}
+.pt2{font-family:'Newsreader',serif;font-size:19px;font-weight:400}
+.sheet .lsect{display:flex;align-items:center;gap:9px;font-family:'Newsreader',serif;font-size:24px;
+  margin-top:36px;letter-spacing:-.01em}
+.licon{font-size:15px;color:#4a4038}
+.sheet .found{background:#ebe4d6;border:1px solid #ddd5c6;border-radius:7px;padding:18px 12px;margin-top:14px;
+  display:grid;grid-template-columns:repeat(3,1fr);gap:16px 6px}
+.fitem{text-align:center;font-size:12px;font-weight:600}
+.fdot{display:flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;
+  margin:0 auto 7px;color:#fff;font-size:15px}
+.fdot.ok{background:#7ba86c}.fdot.warn{background:#d9a04a}.fdot.bad{background:#cf5f52}
+.fdot.grey{background:transparent;border:1.5px dashed #bdb2a0;color:#a89b8a;font-size:14px}
+.fitem.unknown{color:#a89b8a}
+.fnote{font-size:11.5px;line-height:1.45;color:#8a7f70;margin-top:11px}
+.viewf{text-align:right;font-size:12.5px;font-weight:600;margin-top:12px;cursor:pointer}
+.viewf i{font-style:normal;font-size:9px;vertical-align:1px;margin-left:2px}
+.sheet .wknext{background:#ebe4d6;border-radius:9px;padding:13px 14px;margin-top:14px}
+.wnk{font-size:9.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#8a7f70}
+.wnr{font-size:12.5px;line-height:1.45;color:#6b5f52;padding:7px 0;border-bottom:1px solid #ddd5c6}
+.wnr:last-child{border-bottom:0}
+.sheet .abank{background:#ebe4d6;border-radius:9px;padding:4px 14px 6px;margin-top:14px}
+.abk{font-size:9.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#8a7f70;
+  padding:11px 0 4px}
+.abr{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:13px;
+  padding:11px 0;border-bottom:1px solid #ddd5c6}
+.abr:last-child{border-bottom:0}
+
+.signup{margin-top:22px}
+.sso{display:flex;align-items:center;justify-content:center;gap:9px;width:100%;background:#fff;color:#1c1c1c;
+  border:0;font:inherit;font-size:15px;font-weight:600;padding:14px;border-radius:10px;cursor:pointer;margin-bottom:9px}
+.ssoi{font-size:15px;font-weight:700}
+.ordiv{display:flex;align-items:center;gap:10px;margin:16px 0;color:var(--dim);font-size:12px}
+.ordiv::before,.ordiv::after{content:"";flex:1;height:1px;background:rgba(255,255,255,.22)}
+.signup .field{margin-top:4px}
+.signup label{display:block;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--dim);margin-bottom:6px}
+.fakefield{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.28);border-radius:10px;
+  padding:14px 15px;font-size:15px;color:rgba(255,255,255,.5)}
+.mkacct{width:100%;background:var(--lilac);color:#fff;border:0;font:inherit;font-size:15px;font-weight:600;
+  padding:14px;border-radius:10px;cursor:pointer;margin-top:12px}
+.fineprint{font-size:11.5px;line-height:1.45;color:var(--dim);margin-top:12px}
+.welcome{position:absolute;inset:0;z-index:40;display:flex;flex-direction:column;align-items:center;
+  justify-content:center;background:#2e2620;color:#f6f1e6}
+.wmark{font-family:'Newsreader',serif;font-size:20px;letter-spacing:.02em;opacity:.6}
+.wtitle{font-family:'Newsreader',serif;font-size:32px;margin-top:14px;animation:fu .6s ease both}
+.wsub{font-size:13.5px;color:#a89b8a;margin-top:8px;animation:fu .6s .2s ease both}
+.wbar{width:150px;height:3px;background:rgba(255,255,255,.16);border-radius:3px;margin-top:22px;overflow:hidden}
+.wbar i{display:block;height:100%;width:0;background:#b57ce0;border-radius:3px;animation:fill 1.6s ease-out forwards}
+@keyframes fill{to{width:100%}}
+.myh{flex:none;background:var(--cream-2);color:var(--ink);text-align:center;padding:15px;
+  font-size:13px;font-weight:700;letter-spacing:.15em;cursor:pointer}
+.subhero{text-align:center;font-size:15px;line-height:1.4;color:var(--dim);margin-top:9px}
+
+.sheet .pcard .pt{font-family:'Hanken Grotesk',sans-serif;font-size:15.5px;font-weight:600;
+  line-height:1.28;letter-spacing:0;text-transform:none;color:#2f2620;margin-top:9px}
+.sheet .pcard .pb{font-family:'Hanken Grotesk',sans-serif;font-size:12.5px;font-weight:400;
+  line-height:1.45;letter-spacing:0;text-transform:none;color:#7a6f62;margin-top:4px}
+.sheet .prio .pt,.sheet .rec .pt{font-family:'Newsreader',serif;font-size:19px;font-weight:400;
+  letter-spacing:0;text-transform:none;color:#2f2620}
+.sheet .prio .pb,.sheet .rec .pb,.sheet .past .pb{font-family:'Hanken Grotesk',sans-serif;
+  font-size:12.5px;font-weight:400;line-height:1.45;letter-spacing:0;text-transform:none;color:#7a6f62}
+.sheet .ta{font-family:'Hanken Grotesk',sans-serif;font-size:12.5px;font-weight:700;
+  letter-spacing:0;text-transform:none}
+
+</style>
+</head>
+<body>
+
+<div class="chrome">
+  <h1>Finneas · Ask, paced · Joshua · retiring at 55 &nbsp;·&nbsp; BUILD 15:51</h1>
+  <div class="steps" id="steps"></div>
+  <div class="vsw" id="vsw"><span>Insights:</span><button data-m="laced">Laced through</button><button data-m="held">Held to the end</button></div>
+</div>
+
+<div class="device"><div class="screen" id="screen"></div></div>
+<div class="note" id="note"></div>
+
+<script>
+/* ------------------------------------------------------------------
+   Joshua S — retiring at 55 on the FRS Special Risk pension.
+   His question and figures from the Round 1 session (34606).
+
+   Beat 0's answer is his own words, stitched from four moments in the
+   transcript: the young-man's-field line at 18:32, the "room to
+   breathe" passage at 11:56, "bulletproof plan" at 18:32, and the
+   distrust of the pension surviving at 9:04.
+
+   Housing: he was asked for his housing carry and answered with his
+   take-home. He caught it himself at 59:06 — "I may have answered
+   that wrong. Because I thought it was asking me what my total take
+   home was." This build asks the question so the mismatch cannot
+   happen (nested inside the essentials figure) and runs on his real
+   $2,393.90 and his real $859/mo surplus.
+
+   Durations: he distrusted invented time estimates — "I also
+   guarantee that calling my HR is going to be way more than 15
+   minutes." Nothing involving a third party carries one here, and the
+   FRS step says outright why it doesn't.
+------------------------------------------------------------------- */
+
+var S={ t:'entry', refineOpen:false, refine:{}, declined:false, goalSet:false, expOpen:false, path:'a', fan:false, sheet:false, tab:'cal', mode:'laced', log:[], confOpen:false,
+        afc:110000, contrib:0, spouse:0, retire:55,   start:20000 };
+
+function usd(n){return '$'+Math.round(n).toLocaleString('en-US');}
+function usd0(n){return '$'+Math.round(n/1000)+'K';}
+function svcYrs(){return 23+(S.retire-55);}
+function pensionPct(){return Math.min(svcYrs()*3,80);}
+function pensionMo(){return S.afc*pensionPct()/100/12;}
+function yrsToGo(){return S.retire-40;}
+function fv(start,pmt,rate,yrs){
+  var r=rate/100/12,n=yrs*12;
+  return start*Math.pow(1+r,n)+pmt*((Math.pow(1+r,n)-1)/r);
+}
+function potMo(pot){return pot*0.04/12;}
+var TARGET=10000;
+
+/* ---------------- artifacts ---------------- */
+
+function modPension(){
+  var y=svcYrs(), pct=pensionPct(), mo=pensionMo();
+  return '<div class="mod"><h3>'+usd(mo)+' a month, for life</h3>'+
+   '<div class="cap">'+y+' years of Special Risk service at 3% a year. Move the pay figure &mdash; it is the number the whole pension rests on.</div>'+
+   '<div class="sl"><label>Average final compensation <b>'+usd(S.afc)+'</b></label>'+
+     '<input type="range" data-k="afc" min="80000" max="140000" step="2500" value="'+S.afc+'"></div>'+
+   '<div class="trows">'+
+     '<div class="trow"><span>Service at '+S.retire+'</span><b>'+y+' years</b></div>'+
+     '<div class="trow"><span>Special Risk accrual<span class="dl2">Higher than the 1.6% for regular class &mdash; confirm the rate</span></span><b>3% assumed</b></div>'+
+     '<div class="trow"><span>Share of final pay</span><b>'+pct+'%</b></div>'+
+     '<div class="trow tot"><span>Pension, every month</span><b>'+usd(mo)+'</b></div>'+
+   '</div>'+
+   '<div class="modnote"><b>You have not told me your average final compensation, and I have not guessed at it.</b> '+
+   'It is the average of your highest eight years, not your last one. Across the range on that slider your pension moves by '+
+   usd(140000*0.69/12-80000*0.69/12)+' a month &mdash; which is why the FRS statement is the first thing on your list and not the fifth. '+
+   'Florida has no state income tax, so this figure arrives whole.</div></div>';
+}
+
+function modSurplus(){
+  var take=10724.84, ess=9865.55, house=2393.90, sur=take-ess;
+  var pct=sur/take*100;
+  return '<div class="mod"><h3>'+usd(sur)+' a month</h3>'+
+   '<div class="cap">Everything that lands, less everything that leaves. Your figures, to the cent.</div>'+
+   '<div class="bar"><div class="bl"><span>Share of take-home that is yours to direct</span><b>'+pct.toFixed(1)+'%</b></div>'+
+     '<div class="tr"><div class="fl" style="width:'+pct+'%;background:var(--t-b)"></div></div></div>'+
+   '<div class="trows">'+
+     '<div class="trow"><span>Household take-home</span><b>'+usd(take)+'</b></div>'+
+     '<div class="trow"><span>Essentials, all in<span class="dl2">Of which housing carry is '+usd(house)+'</span></span><b>&minus;'+usd(ess)+'</b></div>'+
+     '<div class="trow tot"><span>Yours to direct</span><b>'+usd(sur)+'</b></div>'+
+   '</div>'+
+   '<div class="modnote">Your housing carry is <b>22% of take-home</b>. That is low, and it is the reason there is a surplus here at all.</div></div>';
+}
+
+function ssMo(){ return 2400; }  /* estimate, named as one in the confidence list */
+
+function ceiling(){return 859.29;}
+
+function planAt(age,contrib){
+  var yrs=age-40;
+  var pot=contrib>0?fv(S.start,contrib,7,yrs):0;
+  var svc=23+(age-55);
+  var pct=Math.min(svc*3,100);
+  return { pen:S.afc*pct/100/12, sav:potMo(pot), pot:pot, svc:svc, pct:pct };
+}
+
+function modConfidence(){
+  var open=S.confOpen;
+  return '<div class="conf" data-conf="1">'+
+   '<div class="ch"><span class="ck">Confidence</span>'+
+     '<span class="cv">Moderate &middot; 45%</span>'+
+     '<span class="cchev">'+(open?'&#9650;':'&#9660;')+'</span></div>'+
+   '<div class="cbar"><i style="width:45%"></i></div>'+
+   '<div class="cd">Four figures are yours, two I looked up, and five I had to estimate. Tap to see which is which.</div>'+
+   (open?'<div class="clist">'+
+     '<div class="cli"><i>&#10003;</i><span><b>From you</b> &mdash; service years, take-home, essentials, housing carry. Used exactly as given.</span></div>'+
+     '<div class="cli"><i>&#10003;</i><span><b>Looked up today</b> &mdash; the 2026 457(b) limit, no Florida income tax, the WEP repeal, and current Special Risk accrual. IRS and SSA sources.</span></div>'+
+     '<div class="cli miss"><i>&#8722;</i><span><b>Your average final compensation.</b> One phone call. The biggest single estimate here.</span></div>'+
+     '<div class="cli miss"><i>&#8722;</i><span><b>Your union retiree premium.</b> Not priced &mdash; the range is $120,000 to $180,000 wide across ten years. One phone call.</span></div>'+
+     '<div class="cli miss"><i>&#8722;</i><span><b>What you have saved now.</b> $20,000 assumed, against your &ldquo;under $25,000&rdquo;.</span></div>'+
+     '<div class="cli miss"><i>&#8722;</i><span><b>Your Social Security at 62.</b> $2,400 assumed. Your SSA statement has the real one.</span></div>'+
+     '<div class="cli miss"><i>&#8722;</i><span><b>A 7% blended return.</b> An assumption about markets, and the one nobody can close.</span></div>'+
+     '<div class="cd">The two phone calls take this to high. The sliders aren&rsquo;t estimates &mdash; they&rsquo;re yours to set, and they don&rsquo;t count against this score.</div>'+
+   '</div>':'')+
+  '</div>';
+}
+
+var PATHS=[
+ {id:'a', n:'Stop at 55', age:55, tgt:10000,
+  d:'What you asked for. The pension is at its smallest and you fund ten years of healthcare yourself.'},
+ {id:'b', n:'Work to 58', age:58, tgt:10000,
+  d:'Three more years on the trucks. Three more points of pension a year, three fewer years of bridge to fund.'},
+ {id:'c', n:'Aim for $8K', age:55, tgt:8000,
+  d:'Stop at 55 on a smaller number. Nothing about the plan changes &mdash; only what you are measuring it against.'}
+];
+
+function modGap(){
+  var set=S.contrib>0;
+  var p=planAt(S.retire,S.contrib);
+  var pen=p.pen, fromPot=p.sav, ss=ssMo();
+  var at=pen+fromPot+S.spouse, at62=at+ss;
+  var gap=TARGET-at, gap62=TARGET-at62;
+  var MAX=12000;
+  return '<div class="mod">'+
+   '<div class="modk">Explore trade-offs</div>'+
+   '<div class="bar" style="margin-top:14px"><div class="bl"><span>At '+S.retire+'</span><b>'+usd(at)+'</b></div>'+
+     '<div class="tr"><div class="fl" style="width:'+Math.min(at/MAX*100,100)+'%;background:'+(gap>0?'var(--t-a)':'var(--t-c)')+'"></div>'+
+     '<div class="ceil" style="left:'+(TARGET/MAX*100)+'%"></div></div></div>'+
+   '<div class="bar"><div class="bl"><span>From 62</span><b>'+usd(at62)+'</b></div>'+
+     '<div class="tr"><div class="fl" style="width:'+Math.min(at62/MAX*100,100)+'%;background:'+(gap62>0?'var(--t-b)':'var(--t-c)')+'"></div>'+
+     '<div class="ceil" style="left:'+(TARGET/MAX*100)+'%"></div></div>'+
+     '<div class="ceill">Line: '+usd(TARGET)+' a month.</div></div>'+
+   '<div class="trows">'+
+     '<div class="trow"><span>FRS pension<span class="dl2">'+p.pct+'% of '+usd(S.afc)+', my estimate of your final pay</span></span><b>'+usd(pen)+'</b></div>'+
+     '<div class="trow"><span>Social Security, from 62</span><b>'+usd(ss)+'</b></div>'+
+   '</div>'+
+   '<div class="agew"><div class="agel">Stop working at</div><div class="ages">'+
+     [55,56,57,58,59,60].map(function(y){
+       return '<button class="ageb'+(S.retire===y?' on':'')+'" data-age="'+y+'">'+y+'</button>';}).join('')+'</div></div>'+
+   '<div class="sl"><label>Added monthly savings <b>'+(set?usd(S.contrib)+'/mo':'&mdash;')+'</b></label>'+
+     '<input type="range" data-k="contrib" min="0" max="'+Math.round(ceiling())+'" step="25" value="'+S.contrib+'"></div>'+
+   (set?'<div class="slout">Adds <b>'+usd(fromPot)+' a month</b> in retirement</div>':'')+
+   '<div class="sl"><label>Her retirement income <b>'+(S.spouse>0?usd(S.spouse)+'/mo':'&mdash;')+'</b></label>'+
+     '<input type="range" data-k="spouse" min="0" max="5000" step="100" value="'+S.spouse+'"></div>'+
+   modConfidence()+
+   '<div class="modfoot"><div class="mfl"><div class="mfh">'+usd(at)+' a month at '+S.retire+'</div>'+
+     '<div class="mfs">'+usd(at62)+' once Social Security starts at 62</div></div>'+
+     (S.goalSet
+       ? '<span class="btn-set ghost">Target set &#10003;</span>'
+       : '<button class="btn-set" data-goal="1">Set my target</button>')+
+   '</div></div>';
+}
+
+function goalIncome(){
+  var q=planAt(S.retire,S.contrib);
+  return q.pen+q.sav+S.spouse;
+}
+
+var REFINE=[
+ {id:'afc', t:'Your average final compensation',
+  w:'The pension is a percentage of it, and I have modelled $110,000. If your real average is nearer $90,000, the pension covers materially less of the target and the 457(b) stops being optional.'},
+ {id:'prem', t:'The union retiree premium at 55',
+  w:'I have not priced it at all. Under $800 a month and you are in good shape; over $1,500 and the bridge alone eats $180,000 and wants its own bucket.'},
+ {id:'has457', t:'Whether your department offers a 457(b)',
+  w:'One question to HR. If it doesn&rsquo;t, the bridge vehicle becomes Roth contributions plus a taxable brokerage, and the Rule of 55 matters again.'},
+ {id:'spouse', t:'What your wife&rsquo;s retirement brings',
+  w:'If she has her own, $10,000 a month is a household number rather than yours alone. Nothing here needs to know where she works.'}
+];
+
+function modRefine(){
+  var n=0; REFINE.forEach(function(r){ if(S.refine[r.id]) n++; });
+  var open=S.refineOpen;
+  var h='<div class="mod refm"><div class="rfhead" data-refopen="1">'+
+    '<div><div class="rfk">Refine this answer</div>'+
+    '<div class="rfs">'+(n?n+' added &mdash; I&rsquo;ll redo the numbers when they land':REFINE.length+' figures I had to estimate. Optional.')+'</div></div>'+
+    '<span class="rfchev">'+(open?'&#9650;':'&#9660;')+'</span></div>';
+  if(open){
+    h+='<div class="rfbody">'+REFINE.map(function(r){
+      var on=S.refine[r.id];
+      return '<div class="rfi"><div class="rfh"><div><div class="rft">'+r.t+'</div>'+
+        '<div class="rfw">'+r.w+'</div></div>'+
+        '<button class="rfb'+(on?' on':'')+'" data-refine="'+r.id+'">'+(on?'Added &#10003;':'&#43; Add')+'</button>'+
+        '</div></div>';
+    }).join('')+
+    '<div class="modnote">None of it is required &mdash; the answer stands without it. Anything you add goes on your plan as something to find.</div></div>';
+  }
+  return h+'</div>';
+}
+
+
+function modOptions(){
+  var path=PATHS.filter(function(x){return x.id===S.path})[0]||PATHS[0];
+  function incomeAt(x){ var q=planAt(x.age,S.contrib); return q.pen+q.sav+S.spouse; }
+  var h='<div class="mod"><h3>Three ways to close it</h3>'+
+   '<div class="cap">'+(S.contrib>0||S.spouse>0
+     ? 'Built on what you&rsquo;ve set &mdash; '+(S.contrib>0?usd(S.contrib)+' a month saved':'nothing saved')+
+       (S.spouse>0?' and '+usd(S.spouse)+' from her side':' and nothing from her side')+'.'
+     : 'On your income alone, with nothing set aside yet.')+' Tap a column.</div>'+
+   '<div class="cmpt three" style="background:transparent;padding:0;margin-top:14px"><table>'+
+   '<tr><th>&nbsp;</th>'+PATHS.map(function(x){
+      return '<th class="'+(x.id===S.path?'selth':'')+'" data-path="'+x.id+'" style="cursor:pointer">'+x.n+'</th>';}).join('')+'</tr>'+
+   '<tr><td>Pension</td>'+PATHS.map(function(x){
+      var q=planAt(x.age,S.contrib);
+      return '<td class="neu'+(x.id===S.path?' selc':'')+'" data-path="'+x.id+'">'+usd(q.pen)+'<span class="dl">'+q.svc+' yrs</span></td>';}).join('')+'</tr>'+
+   '<tr><td>Income at that age</td>'+PATHS.map(function(x){
+      return '<td class="neu'+(x.id===S.path?' selc':'')+'" data-path="'+x.id+'">'+usd(incomeAt(x))+'</td>';}).join('')+'</tr>'+
+   '<tr class="hi"><td>Against the target</td>'+PATHS.map(function(x){
+      var d=x.tgt-incomeAt(x);
+      return '<td class="'+(d>0?'up':'neu')+(x.id===S.path?' selc':'')+'" data-path="'+x.id+'">'+(d>0?'&minus;'+usd(d):'clears')+'<span class="dl">'+usd(x.tgt)+' target</span></td>';}).join('')+'</tr>'+
+   '<tr><td>Years of bridge</td>'+PATHS.map(function(x){
+      return '<td class="neu'+(x.id===S.path?' selc':'')+'" data-path="'+x.id+'" style="font-weight:400;font-size:11px">'+(65-x.age)+' years</td>';}).join('')+'</tr>'+
+   '</table></div>'+
+   '<div class="selbox"><div class="selk">'+path.n+'</div><div class="selp">'+path.d+'</div></div>';
+
+  h+='<div class="modnote">None of these is fixed. Open the trade-offs and you can move what you save, when you stop, or what her side brings &mdash; every column moves with it.</div></div>';
+  if(S.expOpen || S.goalSet) h+=modGap();
+  if(!S.expOpen && !S.goalSet) h+='<button class="pill-more" data-exp="1" style="margin:16px auto 0">Explore trade-offs</button>';
+  return h;
+}
+
+var ACC=[
+ {n:'457(b)',   lim:'$24,500', pen:'None, at any age', use:'The bridge account'},
+ {n:'Roth IRA', lim:'$7,500 each', pen:'None on contributions', use:'Tax-free later'},
+ {n:'HSA',      lim:'If HDHP', pen:'None for medical', use:'Best-taxed of the three'}
+];
+
+function modAccounts(){
+  return '<div class="mod"><h3>The three levers, in order</h3>'+
+   '<div class="cap">Ordered by what they do for someone stopping at 55, not by size.</div>'+
+   '<div class="cmpt three" style="background:transparent;padding:0;margin-top:14px"><table>'+
+   '<tr><th>&nbsp;</th><th>1 &middot; 457(b)</th><th>2 &middot; Roth</th><th>3 &middot; HSA</th></tr>'+
+   '<tr><td>2026 limit</td>'+ACC.map(function(a,i){
+      return '<td class="'+(i===0?'win':'neu')+'">'+a.lim+'</td>';}).join('')+'</tr>'+
+   '<tr class="hi"><td>Penalty before 59&frac12;</td>'+ACC.map(function(a,i){
+      return '<td class="'+(i===0?'win':'neu')+'" style="font-weight:'+(i===0?700:400)+';font-size:10.5px">'+a.pen+'</td>';}).join('')+'</tr>'+
+   '<tr><td>What it is for</td>'+ACC.map(function(a){
+      return '<td class="neu" style="font-weight:400;font-size:10.5px">'+a.use+'</td>';}).join('')+'</tr>'+
+   '</table></div></div>';
+}
+
+
+/* ---------------- handoff pack ---------------- */
+
+var PACK=[
+ {g:'Week 1 &mdash; get the numbers', n:1,
+  t:'Pull your FRS Personalized Benefits Statement',
+  d:'frs.myflorida.com &rarr; My FRS &rarr; Benefits Statement. Write down three things: your Special Risk accrual rate, your projected monthly benefit at 55 with your expected service, and your DROP eligibility date. <b>If it shows Regular Class instead of Special Risk, flag it with HR immediately</b> &mdash; that is a filing error worth thousands a year.',
+  who:'u',wl:'You pull it &middot; I&rsquo;ll read it with you'},
+ {n:2,t:'Get the union retiree health premium in writing',
+  d:'One call to your benefits office, the three questions, and ask them to email you the answer. Verbal quotes from benefits offices are worth what you paid for them.',
+  who:'u',wl:'You call &middot; I&rsquo;ll write the questions'},
+ {n:3,t:'Ask HR whether the department offers a 457(b)',
+  d:'One email. Availability, provider, and how to enrol. Most Florida departments do &mdash; often through Nationwide, MissionSquare or Voya.',
+  who:'u',wl:'You send it &middot; I&rsquo;ll draft it'},
+ {n:4,t:'List every debt on one page',
+  d:'Creditor, balance, rate, minimum payment, months remaining &mdash; mortgage, car loan, student loans, any cards. You need this before any sequencing decision, and I don&rsquo;t have any of it.',
+  who:'u',wl:'You list it &middot; I&rsquo;ll do the sequencing'},
+ {n:5,t:'Pull your Social Security statement',
+  d:'ssa.gov &rarr; my Social Security &rarr; download the latest statement. Note the projected benefit at 62, 67 and 70. The Fairness Act repealed WEP, so your statement should show the full number rather than a reduced one.',
+  who:'u',wl:'You pull it &middot; I&rsquo;ll slot it in'},
+
+ {g:'Week 2 &mdash; open the accounts', n:6,
+  t:'Enrol in the 457(b), if one exists',
+  d:'Start at $200 a month just to establish the account and get the auto-deduction rhythm going. Inside it, pick the target-date 2040 fund &mdash; it matches your timeline. If that isn&rsquo;t offered, take the lowest-expense S&amp;P 500 or total-market index option, ideally under 0.10%.',
+  who:'u',wl:'You enrol &middot; I&rsquo;ll check the fund choice'},
+ {n:7,t:'Open Roth IRAs for you and your spouse',
+  d:'Fidelity or Schwab &mdash; both free, no minimums. Set up automatic monthly contributions toward the $7,500 cap each, at whatever level works.',
+  who:'u',wl:'You open them &middot; I&rsquo;ll set the amounts'},
+
+ {g:'Month 2&ndash;3 &mdash; optimise and calibrate', n:8,
+  t:'Raise the 457(b) contribution',
+  d:'Once you have seen a couple of paychecks with the initial $200, bump toward the 2026 limit of $24,500 a year if cash flow allows. <b>If you can only hit half that you are still on track</b> &mdash; the account starting now matters more than maxing it.',
+  who:'u',wl:'You decide &middot; I&rsquo;ll tell you when the limit moves'},
+ {n:9,t:'Confirm whether you&rsquo;re HSA-eligible',
+  d:'Ask HR whether your health plan is HSA-compatible. If it is, open one &mdash; it is the best-taxed account there is. If your union plan isn&rsquo;t compatible, skip it and don&rsquo;t lose sleep over it.',
+  who:'u',wl:'You ask &middot; one question'},
+ {g:'What I&rsquo;ll watch', w:true,
+  t:'The 457(b) contribution limit',
+  d:'It rises most years. When it moves I&rsquo;ll tell you, so you raise the deduction rather than discovering it in April.'},
+ {w:true, t:'Any change to FRS Special Risk',
+  d:'Accrual rate, DROP terms, vesting. You said part of why you want your own plan is in case the retirement you were promised isn&rsquo;t there &mdash; so I&rsquo;ll watch it rather than assume it.'},
+ {w:true, t:'Your two numbers landing',
+  d:'The moment the FRS statement and the premium quote arrive, every figure here gets recomputed and the confidence on this answer moves.'}
+];
+
+function packHTML(){
+  var pot=fv(S.start,S.contrib,7,yrsToGo());
+  var h='<div class="prop"><div class="lab">What to do next</div>'+
+   '<h3>Retire at 55</h3>'+
+   '<div class="tgt">Nine steps across the next three months, and three things I&rsquo;ll keep an eye on. Week one is all information &mdash; five errands that turn my estimates into your numbers.</div>';
+  PACK.forEach(function(p){
+    if(p.g) h+='<div class="pgrp">'+p.g+'</div>';
+    if(p.w){
+      h+='<div class="pact watch"><div class="pn eye">&#9673;</div><div>'+
+         '<div class="pt">'+p.t+'</div><div class="pd">'+p.d+'</div></div></div>';
+    } else {
+      h+='<div class="pact"><div class="pn">'+p.n+'</div><div>'+
+         '<div class="pt">'+p.t+'</div><div class="pd">'+p.d+'</div>'+
+         '<span class="who '+p.who+'">'+p.wl+'</span></div></div>';
+    }
+  });
+  h+='<div class="assume">The figures here are calculated from the numbers you shared, or are reasonable estimates where a detail was unstated. The confidence note on the math names which is which.</div></div>';
+  return h;
+}
+
+/* ---------------- priority + action pages ---------------- */
+
+var ACTIONS=[
+ {pri:['Retire at 55'], t:'Pull the FRS benefits statement',
+  b:'Three numbers off one document. Your accrual rate, your projected benefit at 55, and your DROP date. Everything else on this priority sizes off them.',
+  tag:'3 STEPS'},
+ {pri:['Retire at 55'], t:'Get the union retiree premium in writing',
+  b:'The widest unknown in the plan. Between $48,000 and $180,000 across the ten-year bridge, and one call settles which.',
+  tag:'3 QUESTIONS', cta:'Draft the questions'},
+ {pri:['Retire at 55','Stay debt free'], t:'Open the 457(b) at $200 a month',
+  b:'No early-withdrawal penalty at any age once you separate. It is the only account built for stopping at 55.',
+  tag:'2 STEPS', cta:'Draft the email'},
+ {pri:['Retire at 55'], t:'Rebuild the plan when the numbers land',
+  b:'Four of my ten figures are estimates. Two phone calls turn them into facts, and I redo everything.',
+  tag:'I&rsquo;LL RUN IT', cta:'Send to Finneas'}
+];
+
+var ACT_STEPS=[
+ {n:1,t:'Log in at frs.myflorida.com and open your Benefits Statement',
+  b:'My FRS &rarr; Benefits Statement. I am not putting a time on this one: you said you have not been in there before, so finding your login could take two minutes or twenty and I would only be guessing.',
+  cta:'Walk me through it', tag:'No estimate'},
+ {n:2,t:'Write down three numbers',
+  b:'Your Special Risk accrual rate &mdash; it should read 3% a year, and if it says 1.6% you are filed as regular class and that needs fixing before anything else. Your projected benefit at 55 with 23 years. Your DROP eligibility date.',
+  cta:'Talk it through', tag:'On the statement'},
+ {n:3,t:'Bring them back and I&rsquo;ll redo every figure',
+  b:'Your average final compensation is the single biggest estimate in this plan. The moment I have the real one, the pension, the gap, the bridge and the confidence score all move together.',
+  cta:'Send to Finneas', tag:"I'll run it"}
+];
+
+var LIMITS=[{x:0,v:20500},{x:.25,v:22500},{x:.5,v:23000},{x:.75,v:23500},{x:1,v:24500}];
+
+/* ---------------- dialogue ---------------- */
+var D=[
+
+/* 0 — open, voiced. Asks nothing about money. */
+{ says:"Before I run anything &mdash; why fifteen years, and why now?",
+  sub:"Not the plan yet. Just what&rsquo;s behind it.",
+  answer:"I&rsquo;m 40, and 55 is when I age out. It&rsquo;s a young man&rsquo;s field &mdash; I don&rsquo;t want to be much older still trying to hop on and off trucks, because it does beat you up. For years the more I made, the more things cost, and we only just hit a place where we&rsquo;ve got room to breathe and don&rsquo;t feel like we&rsquo;re drowning. So now I want to shift from just paying the bills to actually building something. What I want is a bulletproof plan &mdash; one where I can feel confident there aren&rsquo;t holes in it. And part of it is in case the retirement I was promised isn&rsquo;t there when I reach that point." },
+
+/* 1 — the reframe. Short. Nothing asserted that he hasn't given me. */
+{ says:"You&rsquo;ve already built most of your plan &mdash; we just need two more numbers.",
+  sub:"You asked for one with no holes in it. So I&rsquo;ll show my work: run your figures, name anything I had to estimate, and tell you which parts are phone calls rather than guesses.",
+  ask:"Does that land right?",
+  opts:["That&rsquo;s it","Close, but there&rsquo;s more to it","Not really &mdash; let me restate it"],
+  answered:"That&rsquo;s it" },
+
+/* 2 — intake. Six questions, not ten. */
+{ bare:true,
+  toast:"Started a priority for you &mdash; <b>Retire at 55</b>. Nothing is saved until you say so.",
+  meta:"1 of 6",
+  ask:"Which FRS plan are you in?",
+  why:"This is the fork everything hangs off. The Pension Plan pays a formula for life; the Investment Plan is a portable balance. The whole strategy changes on the answer.",
+  opts:["FRS Pension Plan &mdash; a monthly check for life","FRS Investment Plan &mdash; a portable account","I&rsquo;m already in DROP","Not sure"],
+  answered:"FRS Pension Plan" },
+
+/* 3 */
+{ bare:true, meta:"2 of 6",
+  ask:"How many years of creditable service will you have at 55?",
+  why:"Special Risk accrues at 3% a year against your average final compensation. Every year is three percentage points of your pension, so 23 years and 28 years are a different retirement.",
+  banded:true,
+  opts:["Under 20","20&ndash;22","23&ndash;25","26&ndash;28","29+"],
+  answered:"23 years" },
+
+/* 4 */
+{ bare:true, meta:"3 of 6",
+  ask:"What monthly income do you want to be living on?",
+  why:"In today&rsquo;s dollars. This is the target everything gets measured against, and I&rsquo;d rather have it from you than infer it from your spending.",
+  banded:true,
+  opts:["Under $5,000","$5,000&ndash;$7,000","$7,000&ndash;$10,000","$10,000","More than $10,000"],
+  answered:"$10,000 a month",
+  lace:["Working while you answer","Two things are in your favour that most early retirees don&rsquo;t get. Florida has no state income tax, so a dollar of pension arrives whole. And the Social Security Fairness Act repealed WEP in January 2025 &mdash; your FRS pension no longer reduces your Social Security. If you&rsquo;ve read older planning material, it was wrong about that."] },
+
+/* 5 */
+{ bare:true, meta:"4 of 6",
+  ask:"What&rsquo;s your household take-home each month, after tax?",
+  why:"Both of you combined &mdash; what actually lands in the account. This is the top of the cash-flow picture and nothing below it makes sense without it.",
+  banded:true,
+  opts:["Under $6,000","$6,000&ndash;$8,000","$8,000&ndash;$11,000","Over $11,000"],
+  answered:"$10,724.84" },
+
+/* 6 */
+{ bare:true, meta:"5 of 6",
+  ask:"And your monthly essentials, all in?",
+  why:"Housing, food, utilities, insurance, transport, minimum debt payments. Everything that goes out whether or not you decide anything that month.",
+  banded:true,
+  opts:["Under $6,000","$6,000&ndash;$8,000","$8,000&ndash;$10,000","Over $10,000"],
+  answered:"$9,865.55" },
+
+/* 7 — the question he got wrong last time, asked so it can't happen */
+{ bare:true, meta:"6 of 6",
+  ask:"Of that, how much is the housing carry?",
+  why:"A slice of the number you just gave me, not a new one. Mortgage principal and interest, property tax, insurance, HOA. Not utilities, not repairs, and not any extra principal you throw at it.",
+  banded:true,
+  opts:["Under $2,000","$2,000&ndash;$3,000","$3,000&ndash;$4,500","Over $4,500"],
+  answered:"$2,393.90",
+  lace:["Working while you answer","Florida homeowners&rsquo; insurance is up more than 40% statewide since 2020, and for most people it sits inside this number rather than beside it. I&rsquo;m taking your figure as current rather than assuming a trend on top of it."] },
+
+/* 8 — the answered set */
+{ recapRows:true,
+  says:"That&rsquo;s everything I need.",
+  sub:"Six questions instead of ten. The rest I can look up, or it doesn&rsquo;t change the answer.",
+  cta:"Show me the math",
+  more:true },
+
+/* 9 — the math: the whole answer, first */
+{ more:true, math:"The Math",
+  says:"You&rsquo;re starting from a better position than most people who want to stop at 55.",
+  sub:"Three structural advantages, none of which you have to do anything to get. <b>Special Risk class</b> accrues your pension at a higher rate per year than regular class. <b>Florida has no state income tax</b>, so every dollar of that pension arrives whole. And a <b>union plan that follows you into retirement</b> covers the ten years before Medicare that stop most early retirements dead.<br><br>On your income alone, $10,000 a month probably means retiring later than 55. Right now you clear about $859/mo after expenses. Saving that into a retirement account and stopping at 55 gets you to about $7,423.",
+  mod:function(){return modAccounts()+modRefine();}, recap:"The three levers, side by side.",
+  cta:"See my options" },
+
+/* 10 — the options, with the explorer generated inside */
+{ more:true,
+  mod:modOptions, recap:"Three paths, and the trade-off you opened.", gate:true,
+  cta:"Let&rsquo;s talk about healthcare" },
+
+/* 11 — the bridge */
+{ more:true, math:"The healthcare bridge",
+  toastFn:function(){
+    return 'Target added to <b>Retire at 55</b> &mdash; '+usd(goalIncome())+' a month at '+S.retire+
+      (S.contrib>0?', saving '+usd(S.contrib)+' a month':'')+
+      (S.spouse>0?', '+usd(S.spouse)+' from her side':'')+'.';
+  },
+  says:"Retiring at 55 means ten years before Medicare.",
+  sub:"The premium is the single biggest unknown in this plan, and it isn&rsquo;t a number I can look up. It varies by department, by contract, and by whether your wife is covered too.",
+  after:"<b>Close this now, not at 54.</b> One call to your union benefits office, and I&rsquo;ve put the three questions on your plan.<br><br><b>$500&ndash;$800 a month and you&rsquo;re in great shape.</b> At $1,500+, or with gaps in the cover, ten years of it is $120,000&ndash;$180,000 &mdash; a line item rather than a footnote, and one that wants its own bucket.",
+  cta:"And the debt?" },
+
+/* 12 — the debt piece */
+{ more:true, math:"Your debt",
+  says:"Nothing here needs fixing. One thing needs a date.",
+  sub:"You&rsquo;re debt-free apart from the house and the cars, and you want to keep it that way. I don&rsquo;t have the balances or the rates, so I won&rsquo;t price any of it &mdash; but car loans at moderate rates can run alongside a savings plan rather than blocking it.",
+  after:"The one to put a date on is the mortgage. <b>Aim to have it paid off, or refinanced to a low fixed rate, well before 55.</b> Carrying it into early retirement is workable &mdash; it just shrinks your margin in the years where the margin is doing the most work.",
+  cta:"Get a step-by-step guide" },
+
+/* 13 — the handoff */
+{ more:true,
+  says:"Here&rsquo;s what I&rsquo;d put on your plan.",
+  sub:"Grouped by when. Week one is all information-gathering &mdash; nothing here asks you to move money before you know what you&rsquo;re working with.",
+  handoff:true, authorise:true, gate:true },
+
+];
+
+var ROWS=[
+ ['Why this matters','A plan without holes in it'],
+ ['FRS plan','Pension Plan &middot; Special Risk'],
+ ['Service at 55','23 years'],
+ ['Target in retirement','$10,000/mo'],
+ ['Household take-home','$10,724.84/mo'],
+ ['Essentials, all in','$9,865.55/mo'],
+ ['Of that, housing','$2,393.90/mo']];
+
+var STEPS=[['Entry','entry'],['Why are you asking','0'],['The reframe','1'],['Intake','2'],
+ ['What you told me','8'],['The math','9'],['Your options','10'],['The bridge','11'],['Your debt','12'],
+ ['Handoff','13'],['SIGN UP','signup'],['LOADER','welcome'],['HOME','home'],['PRIORITY page','priority'],['ACTION page','pack']];
+
+var NOTES={
+ entry:"His question, as he typed it — with the firefighter context he added himself.",
+ '0':"Asks nothing about money. His answer is his own, stitched from four moments in the transcript.",
+ '1':"The reframe. 'Bulletproof plan' is his phrase, and the honesty promise is the only thing that earns it.",
+ '2':"Six questions, down from ten. He complained about being re-asked things he'd already answered.",
+ '3':"He answered this in the real session — 23 years — but no screenshot captured it. It's his, from the transcript.",
+ '5':"Household, both of you. The real session derived a gross income from this that he never supplied.",
+ '7':"The question he got wrong last time. Nested inside the essentials figure, so answering it with take-home is no longer possible.",
+ '8':"Answered set, editable. In held mode the insights arrive here instead.",
+ '9':"The advantages, the constraint, and the four things that would rewrite it.",
+ '10':"One component. The options table, and Explore trade-offs opens the interactive part inside it.",
+ '11':"A factor and a phone call, not a module. Finneas gave no math here.",
+ '12':"Nothing to fix, one thing to date.",
+ '13':"The pack, what I'll watch, and the save decision — all one beat.",
+ 
+ priority:"Priority detail. Target, actions, what's being watched, questions asked, related.",
+ pack:"Action detail. Note step 1 carries no time estimate, and says why.",
+};
+
+
+var HOME={hero:'Welcome back, Josh.', sub:'Two calls and a form. The calls matter more.'};
+var HOME_CARDS=[
+ {n:1, pri:['Retire at 55'], title:'Pull your FRS benefits statement',
+  body:"frs.myflorida.com. Your accrual rate, your projected benefit at 55, and your DROP date. Every figure I&rsquo;ve shown you sizes off the first one.",
+  cta:'Walk me through it'},
+ {n:2, pri:['Retire at 55'], title:'Get the union retiree premium in writing',
+  body:"One call, three questions, answer by email. Ten years of it is somewhere between $48,000 and $180,000 &mdash; the widest unknown in your plan.",
+  cta:'Talk it through'},
+ {n:3, pri:['Retire at 55','Cash flow'], title:'Open the 457(b) at $200 a month',
+  body:"Not the plan &mdash; the ignition. Once the deduction is running, raising it later is a slider rather than a week of paperwork.",
+  cta:'Send to Finneas'}
+];
+var WEEK_STEPS=[
+ {pri:['Retire at 55'], t:'Pull your FRS benefits statement',
+  b:"Accrual rate, projected benefit at 55 with 23 years, DROP eligibility date.",
+  tag:'YOU PULL IT', cta:'Walk me through it'},
+ {pri:['Retire at 55'], t:'Get the union retiree premium in writing',
+  b:"Three questions, and ask for the answer by email.",
+  tag:'ONE CALL', cta:'Talk it through'},
+ {pri:['Retire at 55','Cash flow'], t:'Open the 457(b) at $200 a month',
+  b:"Payroll deduction. Start small; raise it whenever you want.",
+  tag:"I'LL PREP IT", cta:'Send to Finneas'}
+];
+var CAL={title:'To-Do: Week of Aug 25', sub:'Two phone calls decide whether any of this is real. The form can wait a week; the calls cannot, because four of my ten figures are sitting behind them.',
+ weeks:[['Aug 18','Done','done'],['Aug 25','Now','now'],['Sep 1','Next',''],['Sep 8','',''],['Sep 15','','']],
+ next:['Read the FRS statement together &mdash; once it arrives','Set the 457(b) contribution once the account is open']};
+var PRI={t:'Retire at 55', b:'Two unknowns decide whether fifteen years reaches $10,000 a month. Go and get them.', n:3};
+var REC={t:'Check your class before anything else', b:'If the FRS statement comes back showing regular class rather than Special Risk, your accrual is 1.6% rather than 3% and the whole retirement is rewritten. It is rare, and it is a filing error rather than a judgement call.',
+ why:'It is the one thing on your plan that would reverse the answer rather than adjust it.'};
+var PAST={t:'Retiring at 55', b:'What the pension pays, what $859 a month builds, and the ten years before Medicare &mdash; 20 August'};
+var NOTSTARTED=['Model the DROP option','Price the bridge at 60 instead of 55','Check whether your plan is HSA-eligible'];
+var FOUND=[
+ ['Cash','&#9635;','ok','Take-home and essentials known'],
+ ['Safety','&#9679;','warn','Under $25,000 saved'],
+ ['Protection','&#10039;','grey','Retiree premium unknown'],
+ ['Debt','&#9636;','ok','House and cars only'],
+ ['Long game','&#9650;','warn','Pension known, AFC is not'],
+ ['Taxes','&#9638;','ok','No Florida income tax']
+];
+var FOUND_NOTE='4 of 6 measured. Two are waiting on phone calls, not on guesses.';
+var ASKS=[
+ ['What if the pension is not there?','Special Risk is statutory, not discretionary'],
+ ['Should I take DROP instead?','It changes when you stop, not what you get'],
+ ['How do I fact-check your numbers?','Four of the ten are estimates, and they are named']
+];
+
+/* ---------------- home + plan sheet ---------------- */
+
+function ebText(pri){
+  var t=pri.slice(0,2).join(', ')+(pri.length>2?', +'+(pri.length-2):'');
+  return t.replace(/&rsquo;s/g,'S').toUpperCase().replace(/&NDASH;/g,'&ndash;').replace(/&MDASH;/g,'&mdash;');
+}
+function homeCard(c){
+  var eb=ebText(c.pri);
+  var act = c.cta==='Send to Finneas'
+    ? '<button class="btn-work">Send to Finneas</button>'
+    : '<div class="cact">'+c.cta+' &nbsp;&#9656;</div>';
+  return '<div class="hcard"><span class="eyebrow">'+eb+'</span>'+
+   '<div class="crow2"><div class="num">'+c.n+'</div><div>'+
+   '<div class="ctitle">'+c.title+'</div>'+
+   '<div class="cbody">'+c.body+'</div>'+act+
+   '</div></div></div>';
+}
+
+function stepRow(st){
+  var eb=ebText(st.pri);
+  return '<div class="pcard"><div class="eyebrow">'+eb+'</div>'+
+   '<div class="pt">'+st.t+'</div><div class="pb">'+st.b+'</div>'+
+   '<div class="prow"><span class="dur">'+st.tag+'</span>'+
+   '<span class="ta">'+st.cta+' <i>&#9656;</i></span></div></div>';
+}
+
+function tabCalendar(){
+  return '<div class="sect"><div class="sicon">&#9776;</div>'+
+   '<div class="stitle">'+CAL.title+'</div>'+
+   '<div class="ssub">'+CAL.sub+'</div></div>'+
+   '<div class="weeks">'+CAL.weeks.map(function(w){
+     return '<div class="wk '+w[2]+'"><span>Week of</span><b>'+w[0]+'</b>'+(w[1]?'<i>'+w[1]+'</i>':'')+'</div>';
+   }).join('')+'</div>'+
+   '<div class="grp">'+WEEK_STEPS.map(stepRow).join('')+'</div>'+
+   '<div class="wknext"><div class="wnk">Next week</div>'+
+   CAL.next.map(function(n){return '<div class="wnr">'+n+'</div>'}).join('')+'</div>';
+}
+
+function tabPriorities(){
+  return '<div class="sect"><div class="sicon">&#9781;</div><div class="stitle">My Priorities</div></div>'+
+   '<div class="prio" data-go="priority"><div class="pn">1</div><div class="pbody">'+
+   '<span class="urg high">Active</span>'+
+   '<div class="pt">'+PRI.t+'</div>'+
+   '<div class="pb">'+PRI.b+'</div>'+
+   '<div class="ta">View all '+PRI.n+' actions <i>&#9656;</i></div></div><span class="chev">&#9656;</span></div>'+
+   '<div class="sect sm"><div class="sicon">&#9788;</div><div class="stitle">To think about</div></div>'+
+   '<div class="rec"><span class="recpill">Finneas recommends</span>'+
+   '<div class="pt">'+REC.t+'</div>'+
+   '<div class="pb">'+REC.b+'</div>'+
+   '<div class="pwhy">'+REC.why+'</div>'+
+   '<div class="recbtns"><button class="rj">Not for us</button><button class="ac">Look into it</button></div></div>'+
+   '<div class="pastwrap">'+
+   '<div class="past"><div><div class="pt2">'+PAST.t+'</div>'+
+   '<div class="pb">'+PAST.b+'</div></div>'+
+   '<span class="chev">&#9656;</span></div></div>';
+}
+
+function tabActions(){
+  return '<div class="filt"><span>&#9906; Filter</span><span class="sep">|</span><span>Sort by type</span></div>'+
+   '<div class="sect nogap"><div class="stitle">Action bank</div></div>'+
+   '<div class="grp">'+WEEK_STEPS.map(stepRow).join('')+'</div>'+
+   '<div class="abank"><div class="abk">Not started</div>'+
+   NOTSTARTED.map(function(r){
+     return '<div class="abr"><span>'+r+'</span><span class="chev">&#9656;</span></div>';
+   }).join('')+'</div>';
+}
+
+function sheetHTML(){
+  var tabs=[['cal','Calendar'],['pri','Priorities'],['act','Actions']];
+  var body = S.tab==='pri'?tabPriorities() : S.tab==='act'?tabActions() : tabCalendar();
+  return '<div class="sheet">'+
+   '<div class="shead"><span class="close" data-sheet="0">&darr;</span>'+
+   '<span class="wm2">MY FINNEAS</span><span class="close" style="opacity:0">&darr;</span></div>'+
+   '<h2>Your plan</h2>'+
+   '<div class="tabs">'+tabs.map(function(t){
+     return '<button class="tb'+(S.tab===t[0]?' on':'')+'" data-tab="'+t[0]+'">'+t[1]+'</button>';
+   }).join('')+'</div>'+
+   '<div class="tabbody" key="'+S.tab+'">'+body+'</div>'+
+   '<div class="lsect"><span class="licon">&#9671;</span>Foundations</div>'+
+   '<div class="found">'+FOUND.map(function(f){
+     return '<div class="fitem'+(f[2]==='grey'?' unknown':'')+'" title="'+f[3]+'">'+
+       '<span class="fdot '+f[2]+'">'+(f[2]==='grey'?'?':f[1])+'</span>'+f[0]+'</div>';
+   }).join('')+'</div>'+
+   '<div class="fnote">'+FOUND_NOTE+'</div>'+
+   '<div class="viewf">View Foundations <i>&#9656;</i></div>'+
+   '<div class="lsect"><span class="licon">&#9993;</span>Ask us anything</div>'+
+   ASKS.map(function(a){
+     return '<div class="askrow"><div><div class="aq">'+a[0]+'</div>'+
+       '<div class="as">'+a[1]+'</div></div><span class="chev">&#9656;</span></div>';
+   }).join('')+
+   '<div class="askbar"><span>&#10022; &nbsp;Ask us anything..</span><button>Ask</button></div>'+
+   '</div>';
+}
+
+function viewSignup(){
+  return topBar()+'<div class="body" id="scroll"><div class="turn"><div class="avatar">F</div>'+
+   '<div class="said">I&rsquo;ll need somewhere to keep it.</div>'+
+   '<div class="sub">Your target, the ten steps, and the two numbers you&rsquo;re going to go and get &mdash; they all stay with your account. It&rsquo;s also what lets me carry on in the background: watching the 457(b) limit, and anything that changes in FRS Special Risk.</div>'+
+   '<div class="signup">'+
+     '<button class="sso"><span class="ssoi">&#63743;</span> Continue with Apple</button>'+
+     '<button class="sso"><span class="ssoi">G</span> Continue with Google</button>'+
+     '<div class="ordiv"><span>or</span></div>'+
+     '<div class="field"><label>Email</label><div class="fakefield">you@example.com</div></div>'+
+     '<button class="mkacct" data-go="welcome">Create my account</button>'+
+     '<div class="fineprint">You can delete the plan or the account at any time. I&rsquo;ll only email you when something needs you.</div>'+
+   '</div>'+
+   '<div class="opts"><button class="opt ghost" data-go="13">Back to the plan</button></div>'+
+   '</div><div style="height:20px"></div></div>'+dock();
+}
+
+function viewWelcome(){
+  return topBar()+'<div class="body" id="scroll"></div>'+dock()+
+   '<div class="welcome"><div class="wmark">Finneas</div>'+
+   '<div class="wtitle">Welcome to Finneas</div>'+
+   '<div class="wsub">Setting up your plan&hellip;</div>'+
+   '<div class="wbar"><i></i></div></div>';
+}
+
+function viewHome(){
+  var body;
+  if(!S.fan){
+    body = '<div class="avatar c">F</div>'+
+     '<div class="hero">'+HOME.hero+'</div>'+
+     '<div class="subhero">'+HOME.sub+'</div>'+
+     '<div class="hstack" data-fan="1"><div class="ghost g2"></div><div class="ghost"></div>'+
+     homeCard(HOME_CARDS[0])+'</div><div style="height:34px"></div>';
+  }else{
+    body = '<div class="avatar c">F</div>'+
+     '<div class="hero">Let&rsquo;s get started.</div>'+
+     '<div class="cards">'+HOME_CARDS.map(homeCard).join('')+'</div>';
+  }
+  return topBar()+'<div class="body" id="scroll">'+body+
+   '<div style="height:16px"></div></div>'+dock()+
+   '<div class="myh" data-sheet="1">MY FINNEAS</div>'+
+   (S.sheet?sheetHTML():'');
+}
+
+/* ---------------- rendering ---------------- */
+
+function topBar(){return '<div class="top"><div class="wm" data-go="entry">Finneas</div>'+
+  '<div class="burger"><span></span><span></span></div></div>'}
+function dockTyped(txt){
+  return '<div class="dock"><div class="inp">'+
+   '<span class="ic">&#128206;</span><span class="ic">&#127908;</span>'+
+   '<span class="ph" style="color:#2c1d24">'+txt+'</span>'+
+   '<button class="snd" data-send="1">&uarr;</button></div></div>';
+}
+function dock(){
+  return '<div class="dock"><div class="inp">'+
+   '<span class="ic">&#128206;</span><span class="ic">&#127908;</span>'+
+   '<span class="ph">Speak or type a message</span><button class="snd">&uarr;</button></div></div>';
+}
+function digest(){
+  return '<div class="digest"><div class="dk">What I found while you were answering</div>'+
+   '<div class="di"><div class="dt">Special Risk accrues at nearly twice the regular rate</div>'+
+   '<div class="dd">3% a year against 1.6% for regular class. At 23 years that is the difference between 69% of your final pay and 37%.</div></div>'+
+   '<div class="di"><div class="dt">Your pension no longer reduces your Social Security</div>'+
+   '<div class="dd">The Social Security Fairness Act repealed WEP in January 2025. Any planning material older than that got this wrong.</div></div>'+
+   '<div class="di"><div class="dt">A governmental 457(b) has no early-withdrawal penalty at any age</div>'+
+   '<div class="dd">Once you separate from service you can draw at 55. No rule-of-55 conditions, no 72(t). It is the account built for stopping early.</div></div></div>';
+}
+
+function henceBlock(n,past){
+  var t=D[n];
+  var h='<div class="turn'+(past?'':(t.bare?' dissolve':' fade'))+'"'+(past?'':' id="curturn"')+'>';
+  if(t.toastFn) h+='<div class="toast'+(past?'':' fade3')+'" data-go="priority">'+
+    '<span class="tk">&#10003;</span>'+
+    '<span class="tt">'+t.toastFn()+'</span>'+
+    '<span class="tv">View</span></div>';
+  if(!t.bare&&t.says) h+='<div class="avatar">F</div>';
+  if(t.says) h+='<div class="said">'+t.says+'</div>';
+  if(t.math) h+='<div class="mathhead">'+t.math+'</div>';
+  if(t.sub) h+='<div class="sub'+(past?'':' fade2')+'">'+t.sub+'</div>';
+  if(t.toast) h+='<div class="toast'+(past?'':' fade3')+'" data-go="priority">'+
+    '<span class="tk">&#10003;</span>'+
+    '<span class="tt">'+t.toast+'</span>'+
+    '<span class="tv">View</span></div>';
+  if(t.lace && S.mode==='laced') h+='<div class="lace'+(past?'':' fade3')+'"><div class="lk">'+t.lace[0]+'</div><p>'+t.lace[1]+'</p></div>';
+  if(t.recapRows){ h+='<div class="fade2">'+ROWS.map(function(r){
+      return '<div class="rowa"><span class="q">'+r[0]+'</span><span class="a">'+r[1]+'</span><span class="ed">Edit</span></div>';}).join('')+'</div>';
+      if(S.mode==='held') h+=digest(); }
+  if(t.mod) h+= past ? '<div>'+t.mod()+'</div>' : '<div class="fade2">'+t.mod()+'</div>';
+  if(t.after) h+='<div class="sub'+(past?'':' fade3')+'">'+t.after+'</div>';
+  if(t.handoff) h+= past ? '<div>'+packHTML()+'</div>' : '<div class="fade2">'+packHTML()+'</div>';
+  if(t.authorise) h+=
+    '<div class="said fade3" style="font-size:20px;margin-top:26px">Want me to keep this?</div>'+
+    '<div class="sub fade3">Saving it puts these in your plan and starts watching the 457(b) limit and any change to FRS Special Risk. I&rsquo;ll only come back to you when something needs a decision.</div>'+
+    '<div class="opts fade3">'+
+    '<button class="opt" data-go="signup">Save it to my plan</button>'+
+    '<button class="opt" data-go="10">Change the target first</button>'+
+    '<button class="opt ghost" data-decline="1">Not now &mdash; just keep the answer</button></div>'+
+    (S.declined?'<div class="declined fade3"><div class="dh">Kept, but not saved.</div>'+
+      '<div class="dp">The answer stays in this conversation. Without an account I can&rsquo;t hold the plan, and I can&rsquo;t watch the 457(b) limit or anything that changes in FRS Special Risk &mdash; so nothing will reach you when it moves.</div>'+
+      '<button class="pill-more" data-go="signup" style="margin:14px auto 0">Actually, save it</button></div>':'');
+  if(false) h+='<div class="avatar">F</div><div class="said">Kept, but not saved.</div>'+
+    '<div class="sub">The answer stays in this conversation. Without an account I can&rsquo;t hold the plan, and I can&rsquo;t watch the 457(b) limit or anything that changes in FRS Special Risk &mdash; so nothing will reach you when it moves.</div>'+
+    '<button class="pill-more" data-go="signup" style="margin:22px auto 4px">Actually, save it</button>';
+  if(t.meta) h+='<div class="ask" style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.5);font-weight:700">'+t.meta+'</div>';
+  if(t.ask) h+='<div class="ask">'+t.ask+'</div>';
+  if(t.why) h+='<div class="qwhy">'+t.why+'</div>';
+  return h;
+}
+
+function thread(){
+  return S.log.map(function(m){
+    return m.who==='me'
+      ? '<div class="mine"><div class="b">'+m.text+'</div></div>'
+      : henceBlock(m.i,true)+'</div>';
+  }).join('');
+}
+
+function lightBar(){
+  return '<div class="top light"><div class="wm" data-go="entry">Finneas</div>'+
+    '<div class="burger"><span></span><span></span></div></div>';
+}
+function eyebrowOf(p){ return ebText(p.pri); }
+function actionCard(p,i){
+  return '<div class="pcard" data-go="pack"><div class="eyebrow">'+eyebrowOf(p)+'</div>'+
+   '<div class="pt">'+p.t+'</div><div class="pb">'+p.b+'</div>'+
+   '<div class="prow"><span class="dur">'+p.tag+'</span>'+
+   '<span class="ta">'+(p.cta||'Take action')+' <i>&#9656;</i></span></div></div>';
+}
+function limitTracker(){
+  var W=300,H=72,PAD=8, v=LIMITS.map(function(r){return r.v});
+  var mx=Math.max.apply(null,v), mn=Math.min.apply(null,v);
+  var X=function(r){return PAD+r.x*(W-PAD*2)};
+  var Y=function(x){return H-PAD-((x-mn)/((mx-mn)||1))*(H-PAD*2)};
+  var last=LIMITS[LIMITS.length-1];
+  var pts=LIMITS.map(function(r){return X(r)+','+Y(r.v)}).join(' ');
+  var area='M'+X(LIMITS[0])+','+(H-PAD)+' L'+pts.split(' ').join(' L')+' L'+X(last)+','+(H-PAD)+' Z';
+  return '<div class="mod"><div class="modk">Monitoring</div>'+
+   '<h3 class="modh">The 457(b) limit rises most years</h3>'+
+   '<div class="ratenow">$24,500<span>&uarr; $4,000 since 2022</span></div>'+
+   '<svg viewBox="0 0 '+W+' '+H+'" class="ratesvg">'+
+     '<path d="'+area+'" fill="rgba(176,124,216,.14)"/>'+
+     '<polyline fill="none" stroke="#b07cd8" stroke-width="2" points="'+pts+'"/>'+
+     '<circle cx="'+X(last)+'" cy="'+Y(last.v)+'" r="3.5" fill="#b07cd8"/>'+
+   '</svg>'+
+   '<div class="ratex"><span>2022</span><span>2023</span><span>2024</span><span>2025</span><span>2026</span></div>'+
+   '<p class="modp">Not urgent while you are contributing $200 a month against a $24,500 ceiling. It matters later, if what you put aside grows into it &mdash; I will tell you when the limit moves so you can raise the deduction rather than discovering it in April.</p>'+
+   '<div class="src">IRS elective deferral limit, governmental 457(b) &middot; checked 21 August 2026</div></div>';
+}
+function viewPriority(){
+  var pot=fv(S.start,S.contrib,7,yrsToGo());
+  return lightBar()+'<div class="body page" id="scroll">'+
+   '<div class="pghead">'+
+     '<span class="urg high">Running</span>'+
+     '<h2 class="pgt">Retire at 55</h2>'+
+     '<div class="progbar"><i style="width:0%"></i></div>'+
+     '<div class="progl">0 of 4 actions done &middot; started 21 August</div>'+
+   '</div>'+
+   '<div class="mod"><div class="modk">Target</div>'+
+   '<h3 class="modh">'+(S.goalSet?usd(goalIncome())+' a month at '+S.retire+', from the trade-offs you set.':usd(TARGET)+' a month at 55, on a plan with the holes named.')+'</h3>'+
+   '<div class="trow"><span>Years to go</span><b>'+yrsToGo()+'</b></div>'+
+   '<div class="trow"><span>Service at 55</span><b>'+svcYrs()+' years &middot; '+pensionPct()+'%</b></div>'+
+   '<div class="trow"><span>Clearing each month</span><b>'+usd(859.29)+'</b></div>'+
+   '<div class="trow"><span>Going into savings</span><b>'+(S.goalSet&&S.contrib>0?usd(S.contrib)+'/mo':'Not set')+'</b></div>'+
+   '<div class="trow"><span>Projected at 55</span><b>'+usd(pensionMo()+potMo(pot))+'/mo</b></div>'+
+   '<p class="modp">Nothing is set up yet, and four of the ten figures behind that projection are estimates. Two phone calls fix that.</p></div>'+
+   '<h1 class="secH">Actions for this priority</h1>'+
+   '<div class="mod plain">'+ACTIONS.map(actionCard).join('')+'</div>'+
+   limitTracker()+
+   '<div class="mod"><div class="modk">Also watching</div>'+
+   '<h3 class="modh">Any change to FRS Special Risk</h3>'+
+   '<p class="modp">You said part of why you want your own plan is in case the retirement you were promised isn&rsquo;t there when you reach it. That is a reasonable thing to watch rather than worry about, so I will watch it: if the legislature moves on Special Risk accrual, the DROP terms, or the vesting rules, you hear it from me and we re-run the numbers that day.</p></div>'+
+   '<div class="mod"><div class="modk">What could change this</div>'+
+   '<h3 class="modh">A regular-class filing error</h3>'+
+   '<p class="modp">If your FRS statement shows 1.6% rather than 3%, you are filed as regular class and the whole retirement math changes. It is rare and it is a clerical fix, but it outranks everything else on this page until you have looked.</p></div>'+
+   '<div class="mod"><div class="modk">Questions you&rsquo;ve asked</div>'+
+   '<div class="qrow"><div><div class="pt2">How should I plan to retire at 55?</div>'+
+   '<div class="pb">The pension, the surplus, the ten-year healthcare bridge, and what actually closes the gap &mdash; 21 August</div></div>'+
+   '<span class="chev">&#9656;</span></div></div>'+
+   '<div class="mod"><div class="modk">Related</div>'+
+   '<div class="qrow"><div><div class="pt2">Stay debt free</div>'+
+   '<div class="pb">House and cars only, and you want to keep it that way. The car clearing is worth more to this plan than the account you pick.</div></div>'+
+   '<span class="chev">&#9656;</span></div>'+
+   '<div class="qrow"><div><div class="pt2">Three months of expenses in reserve</div>'+
+   '<div class="pb">Your own short-term goal. It draws on the same $859 as this does, and it should probably go first.</div></div>'+
+   '<span class="chev">&#9656;</span></div></div>'+
+   '<div style="height:20px"></div></div>'+dock();
+}
+function viewPack(){
+  return lightBar()+'<div class="body page" id="scroll">'+
+   '<div class="pghead">'+
+     '<span class="eyebrow">RETIRE AT 55</span>'+
+     '<h2 class="pgt">Pull the FRS benefits statement</h2>'+
+     '<div class="progbar"><i style="width:0%"></i></div>'+
+     '<div class="progl">0 of 3 steps done</div>'+
+   '</div>'+
+   '<div class="mod"><div class="modk">Why this first</div>'+
+   '<h3 class="modh">Your pension is 69% of a number you have not seen.</h3>'+
+   '<div class="modnote">Everything else on this priority sizes off your average final compensation. Across the range I had to model, it moves your monthly pension by '+
+   usd(140000*0.69/12-80000*0.69/12)+' &mdash; which is larger than every other lever on the page put together. '+
+   'It is one document, and it also tells you whether you are correctly filed as Special Risk.</div></div>'+
+   '<div class="mod"><div class="modk">Steps</div>'+
+   ACT_STEPS.map(function(p){
+     return '<div class="stepc"><div class="stepn">'+p.n+'</div><div class="stepb">'+
+       '<div class="pt">'+p.t+'</div><div class="pb">'+p.b+'</div>'+
+       '<div class="prow"><span class="dur">'+p.tag.toUpperCase()+'</span>'+
+       '<span class="ta">'+p.cta+' <i>&#9656;</i></span></div></div></div>';
+   }).join('')+'</div>'+
+   '<div class="mod"><div class="modk">On the timings</div>'+
+   '<h3 class="modh">Where there is no honest estimate, there is no estimate.</h3>'+
+   '<p class="modp">You said you would guarantee that calling HR takes longer than fifteen minutes, and you were right &mdash; that is their queue, not your task. Anything on this plan that depends on somebody else answering the phone carries no time estimate at all. Where a duration appears, it is because the step is yours alone and the figure comes from the provider&rsquo;s own published flow.</p></div>'+
+   '<div class="mod"><div class="modk">The three questions</div>'+
+   '<h3 class="modh">Ask for the answer in an email.</h3>'+
+   '<div class="trow"><span>1. What is the monthly premium for retiree coverage at 55, for me and my spouse?</span></div>'+
+   '<div class="trow"><span>2. Does it change at 60, at 62, or at Medicare eligibility at 65?</span></div>'+
+   '<div class="trow"><span>3. Is the plan guaranteed for life, or renegotiated each year?</span></div>'+
+   '<p class="modp">A verbal quote from a benefits office is worth what you paid for it. Ask them to put it in writing.</p></div>'+
+   '<div class="mod"><div class="modk">Also counts toward</div>'+
+   '<div class="qrow" data-go="priority"><div><div class="pt2">Retire at 55</div>'+
+   '<div class="pb">Four of the ten figures behind your projection unlock from this one document.</div></div>'+
+   '<span class="chev">&#9656;</span></div></div>'+
+   '<div style="height:20px"></div></div>'+dock();
+}
+function viewEntry(){
+  return topBar()+'<div class="body" style="display:flex;flex-direction:column;justify-content:center">'+
+   '<div class="avatar c">F</div><div class="hero">What&rsquo;s on your<br>money mind?</div></div>'+
+   '<div class="dock"><div class="inp"><span class="ic">&#128206;</span><span class="ic">&#127908;</span>'+
+   '<span class="ph" style="color:#2c1d24">I am looking for ways to retire within the next 15 years when I reach 55. I am a firefighter in the state of Florida and will &ldquo;age out&rdquo; in my department so I will not take a penalty on my FRS retirement. How should I start planning and saving so I can live comfortably and well within my means if I retire at 55?</span>'+
+   '<button class="snd" data-go="0">&uarr;</button></div></div>';
+}
+
+function viewTurn(){
+  var t=D[S.t];
+  var h=thread()+henceBlock(S.t,false);
+  if(t.opts){
+    h+='<div class="opts">'+t.opts.map(function(o,i){
+      return '<button class="opt" data-opt="'+i+'">'+o+'</button>'}).join('')+'</div>';
+    if(t.banded) h+='<div class="fieldfoot"><span>Or enter a specific answer below</span>'+
+      '<span class="skip" data-opt="0">Skip this question</span></div>';
+  }
+  if(t.more && !t.gate) h+='<button class="pill-more" data-more="1">'+t.cta+'</button>';
+  h+='</div><div style="height:26px"></div>';
+  return topBar()+'<div class="body" id="scroll">'+h+'</div>'+
+    (t.answer?dockTyped(t.answer):dock());
+}
+
+function render(){
+  var s=document.getElementById('screen');
+  s.innerHTML = S.t==='signup' ? viewSignup() : S.t==='welcome' ? viewWelcome() : S.t==='home' ? viewHome() : S.t==='entry' ? viewEntry() : S.t==='priority' ? viewPriority() : S.t==='pack' ? viewPack() : viewTurn();
+  wire();
+  document.getElementById('note').textContent=NOTES[S.t]||'';
+  document.querySelectorAll('#vsw button').forEach(function(b){
+    b.classList.toggle('on',b.getAttribute('data-m')===S.mode)});
+  document.querySelectorAll('#steps button').forEach(function(b){
+    b.classList.toggle('on',b.getAttribute('data-v')===String(S.t))});
+  if(S.welcomeTimer){clearTimeout(S.welcomeTimer);S.welcomeTimer=null;}
+  if(S.t==='welcome') S.welcomeTimer=setTimeout(function(){S.t='home';render();},1900);
+}
+
+function wire(){
+  var s=document.getElementById('screen');
+  s.querySelectorAll('[data-go]').forEach(function(e){e.onclick=function(){
+    var g=e.getAttribute('data-go');
+    if(g==='entry'){S.t='entry';S.log=[];}
+    else if(g==='priority'||g==='pack'||g==='home'||g==='signup'||g==='welcome'){S.t=g;}
+    else {S.t=parseInt(g,10);}
+    render();scrollToTurn();}});
+  s.querySelectorAll('[data-opt]').forEach(function(e){e.onclick=function(){
+    var t=D[S.t]; var ix=parseInt(this.getAttribute('data-opt'),10);
+    if(t.optSet && t.optSet[ix]) S.explore=t.optSet[ix];
+    S.log.push({who:'hence',i:S.t});
+    if(t.answered) S.log.push({who:'me',text:(t.optSet? t.opts[ix] : t.answered)});
+    S.t=S.t+1;render();scrollToTurn();}});
+  s.querySelectorAll('[data-send]').forEach(function(e){e.onclick=function(){
+    var t=D[S.t];
+    S.log.push({who:'hence',i:S.t});
+    S.log.push({who:'me',text:t.answer});
+    S.t=S.t+1;render();scrollToTurn();}});
+  s.querySelectorAll('[data-more]').forEach(function(e){e.onclick=function(){
+    S.log.push({who:'hence',i:S.t});
+    S.t=S.t+1; S.expOpen=false; render();scrollToTurn();}});
+  s.querySelectorAll('[data-decline]').forEach(function(e){e.onclick=function(){
+    S.declined=true;
+    var b=document.getElementById('scroll'), pos=b?b.scrollTop:0;
+    render(); var nb=document.getElementById('scroll'); if(nb) nb.scrollTop=pos;}});
+  s.querySelectorAll('[data-goal]').forEach(function(e){e.onclick=function(){
+    S.goalSet=true;
+    S.log.push({who:'hence',i:S.t});
+    S.t=S.t+1; S.expOpen=false;
+    render(); scrollToTurn();}});
+  s.querySelectorAll('[data-refopen]').forEach(function(e){e.onclick=function(){
+    S.refineOpen=!S.refineOpen;
+    var b=document.getElementById('scroll'), pos=b?b.scrollTop:0;
+    render(); var nb=document.getElementById('scroll'); if(nb) nb.scrollTop=pos;}});
+  s.querySelectorAll('[data-refine]').forEach(function(e){e.onclick=function(){
+    var k=this.getAttribute('data-refine'); S.refine[k]=!S.refine[k];
+    var b=document.getElementById('scroll'), pos=b?b.scrollTop:0;
+    render(); var nb=document.getElementById('scroll'); if(nb) nb.scrollTop=pos;}});
+  s.querySelectorAll('[data-exp]').forEach(function(e){e.onclick=function(){
+    S.expOpen=true; render();
+    var mods=document.querySelectorAll('#curturn .mod');
+    if(mods.length) mods[mods.length-1].scrollIntoView({block:'start'});}});
+  s.querySelectorAll('[data-path]').forEach(function(e){e.onclick=function(){
+    S.path=this.getAttribute('data-path');
+    S.retire=(PATHS.filter(function(x){return x.id===S.path})[0]||PATHS[0]).age;
+    var b=document.getElementById('scroll'), pos=b?b.scrollTop:0;
+    render(); var nb=document.getElementById('scroll'); if(nb) nb.scrollTop=pos;
+  }});
+  s.querySelectorAll('input[type=range]').forEach(function(e){
+    /* live label while dragging; full recompute on release, so the drag
+       isn't interrupted by the DOM being rebuilt underneath the thumb */
+    e.oninput=function(){
+      var k=this.getAttribute('data-k');
+      S[k]=parseInt(this.value,10);
+      var lab=this.parentNode.querySelector('label b');
+      if(lab) lab.innerHTML = (k==='spouse'||k==='contrib') ? usd(S[k])+'/mo' : usd(S[k]);
+    };
+    e.onchange=function(){
+      var b=document.getElementById('scroll'), pos=b?b.scrollTop:0;
+      render(); var nb=document.getElementById('scroll'); if(nb) nb.scrollTop=pos;
+    };
+  });
+  s.querySelectorAll('[data-fan]').forEach(function(e){e.onclick=function(){S.fan=true;render();}});
+  s.querySelectorAll('[data-sheet]').forEach(function(e){e.onclick=function(){
+    S.sheet=this.getAttribute('data-sheet')==='1'; render();}});
+  s.querySelectorAll('[data-tab]').forEach(function(e){e.onclick=function(){
+    S.tab=this.getAttribute('data-tab'); render();}});
+  s.querySelectorAll('[data-conf]').forEach(function(e){e.onclick=function(){
+    S.confOpen=!S.confOpen;
+    var b=document.getElementById('scroll'), pos=b?b.scrollTop:0;
+    render(); var nb=document.getElementById('scroll'); if(nb) nb.scrollTop=pos;}});
+}
+
+function scrollToTurn(){
+  var b=document.getElementById('scroll');
+  if(!b) return;
+  var t=document.getElementById('curturn');
+  if(!t){ b.scrollTop=0; return; }
+  b.scrollTop += t.getBoundingClientRect().top - b.getBoundingClientRect().top - 8;
+}
+
+document.getElementById('steps').innerHTML=STEPS.map(function(x){
+  return '<button data-v="'+x[1]+'">'+x[0]+'</button>'}).join('');
+document.getElementById('vsw').onclick=function(e){
+  var m=e.target.getAttribute&&e.target.getAttribute('data-m'); if(!m) return;
+  S.mode=m; render(); scrollToTurn();
+};
+document.getElementById('steps').onclick=function(e){
+  var v=e.target.getAttribute&&e.target.getAttribute('data-v');if(!v)return;
+  S.log=[];
+  S.expOpen=false;
+  if(v==='entry'||v==='priority'||v==='pack'||v==='home'||v==='signup'||v==='welcome'){S.t=v;render();return;}
+  var n=parseInt(v,10);
+  for(var i=0;i<n;i++){ S.log.push({who:'hence',i:i});
+    var a=D[i].answer||D[i].answered; if(a) S.log.push({who:'me',text:a}); }
+  S.t=n; render(); scrollToTurn();
+};
+
+render();
+</script>
+</body>
+</html>

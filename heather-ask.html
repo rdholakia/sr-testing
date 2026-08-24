@@ -1,0 +1,1469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Finneas — Ask, paced. Heather / saving for Nolan's car</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --plum:#4b2a39;--cream:#f3efe5;--cream-2:#e9e4d6;--ink:#2c1d24;--lilac:#b57ce0;
+  --t-a:#f0a47f;--t-b:#f2e076;--t-c:#abdfa6;--dim:rgba(255,255,255,.72);
+  --ok:#5fa85f;--warn:#d8a24a;--bad:#c96a5a;
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-font-smoothing:antialiased}
+body{font-family:'Hanken Grotesk',-apple-system,sans-serif;background:#171015;color:#fff;
+  min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:26px 16px 60px;gap:14px}
+
+.chrome{width:100%;max-width:930px;display:flex;flex-direction:column;gap:9px}
+.chrome h1{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#8a7a83}
+.steps{display:flex;gap:5px;flex-wrap:wrap}
+.steps button{background:#241a20;border:1px solid #3a2c33;color:#bda9b4;font:inherit;font-size:11px;
+  font-weight:600;padding:6px 10px;border-radius:7px;cursor:pointer}
+.steps button.on{background:#fff;color:#171015;border-color:#fff}
+.steps button.home{border-color:#6b4f5e}
+.vsw{display:flex;gap:6px;align-items:center;margin-top:2px}
+.vsw span{font-size:11px;color:#7d6d76;margin-right:4px}
+.vsw button{background:#241a20;border:1px solid #3a2c33;color:#bda9b4;font:inherit;font-size:11px;
+  font-weight:600;padding:6px 11px;border-radius:7px;cursor:pointer}
+.vsw button.on{background:var(--lilac);color:#fff;border-color:var(--lilac)}
+.rule{border:1px solid #ddd7c9;border-radius:9px;padding:12px 13px;margin-top:10px;cursor:pointer;transition:.15s}
+.rule.on{border-color:var(--ink);background:#fdfbf6}
+.rule .rh{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.rule .rt{font-size:14.5px;font-weight:700;line-height:1.25}
+.rule .rc{flex:none;width:20px;height:20px;border-radius:5px;border:1px solid #b3a795;
+  display:flex;align-items:center;justify-content:center;font-size:11px;color:#5c5145}
+.rule.on .rc{background:var(--ink);color:#fff;border-color:var(--ink)}
+.rule .rd{font-size:12.5px;line-height:1.45;color:#7a6f62;margin-top:5px}
+.ask2{border-top:1px solid #e0d9c9;margin-top:15px;padding-top:14px}
+.a2h{font-size:14.5px;font-weight:700}
+.a2p{font-size:12.5px;line-height:1.5;color:#7a6f62;margin-top:6px}
+.ctas{display:flex;flex-wrap:wrap;gap:6px;margin-top:11px}
+.ctas button{background:#e0d9c9;border:0;color:#4a4038;font:inherit;font-size:11.5px;font-weight:700;
+  padding:8px 11px;border-radius:6px;cursor:pointer}
+.ctas button.primary{background:var(--ink);color:#fff}
+.cmpt th.selth{color:var(--ink);border-bottom:2px solid var(--ink)}
+.cmpt td.selc{background:#efe9db}
+.pgrp{font-size:10px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:#a3967f;
+  margin-top:16px;padding-top:14px;border-top:1px solid #ddd7c9}
+.prop .pgrp:first-of-type{margin-top:10px;padding-top:0;border-top:0}
+.pact.watch .pn{border:0;background:#e6dfd0;color:#7a6f62;font-size:11px}
+.pact.watch .pt{font-weight:500}
+.declined{background:rgba(255,255,255,.08);border-radius:12px;padding:15px 16px 16px;margin-top:16px;text-align:center}
+.declined .dh{font-size:16px;font-weight:600;color:#fff}
+.declined .dp{font-size:12.5px;line-height:1.5;color:var(--dim);margin-top:6px}
+.signup{margin-top:22px}
+.sso{display:flex;align-items:center;justify-content:center;gap:9px;width:100%;background:#fff;color:#1c1c1c;
+  border:0;font:inherit;font-size:15px;font-weight:600;padding:14px;border-radius:10px;cursor:pointer;margin-bottom:9px}
+.ssoi{font-size:15px;font-weight:700}
+.ordiv{display:flex;align-items:center;gap:10px;margin:16px 0;color:var(--dim);font-size:12px}
+.ordiv::before,.ordiv::after{content:"";flex:1;height:1px;background:rgba(255,255,255,.22)}
+.signup .field{margin-top:4px}
+.signup label{display:block;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--dim);margin-bottom:6px}
+.fakefield{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.28);border-radius:10px;
+  padding:14px 15px;font-size:15px;color:rgba(255,255,255,.5)}
+.mkacct{width:100%;background:var(--lilac);color:#fff;border:0;font:inherit;font-size:15px;font-weight:600;
+  padding:14px;border-radius:10px;cursor:pointer;margin-top:12px}
+.fineprint{font-size:11.5px;line-height:1.45;color:var(--dim);margin-top:12px}
+.welcome{position:absolute;inset:0;z-index:40;display:flex;flex-direction:column;align-items:center;
+  justify-content:center;background:#2e2620;color:#f6f1e6}
+.wmark{font-family:'Newsreader',serif;font-size:20px;letter-spacing:.02em;opacity:.6}
+.wtitle{font-family:'Newsreader',serif;font-size:32px;margin-top:14px;animation:fu .6s ease both}
+.wsub{font-size:13.5px;color:#a89b8a;margin-top:8px;animation:fu .6s .2s ease both}
+.wbar{width:150px;height:3px;background:rgba(255,255,255,.16);border-radius:3px;margin-top:22px;overflow:hidden}
+.wbar i{display:block;height:100%;width:0;background:#b57ce0;border-radius:3px;animation:fill 1.6s ease-out forwards}
+@keyframes fill{to{width:100%}}
+.refm{padding-top:14px;padding-bottom:14px}
+.rfhead{display:flex;align-items:center;justify-content:space-between;gap:12px;cursor:pointer}
+.rfk{font-size:13.5px;font-weight:700;color:var(--ink)}
+.rfs{font-size:12px;color:#7a6f62;margin-top:3px}
+.rfchev{font-size:10px;color:#a3967f}
+.rfbody{border-top:1px solid #e0d9c9;margin-top:13px;padding-top:4px}
+.rfi{border-top:1px solid #e0d9c9;padding:13px 0}
+.rfi:first-of-type{border-top:0;padding-top:4px}
+.rfh{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+.rft{font-size:14px;font-weight:600;color:var(--ink);line-height:1.35}
+.rfw{font-size:12.5px;line-height:1.5;color:#7a6f62;margin-top:5px}
+.rfb{flex:none;background:transparent;border:1px solid #b3a795;color:#4a4038;font:inherit;font-size:11.5px;
+  font-weight:700;padding:6px 12px;border-radius:999px;cursor:pointer;white-space:nowrap}
+.rfb.on{background:var(--ink);border-color:var(--ink);color:#fff}
+.modfoot{display:flex;align-items:center;justify-content:space-between;gap:12px;
+  border-top:1px solid #e0d9c9;margin-top:15px;padding-top:14px}
+.mfl{flex:1}
+.mfh{font-family:'Newsreader',serif;font-size:20px;line-height:1.15;color:var(--ink)}
+.mfs{font-size:11.5px;color:#7a6f62;margin-top:3px}
+.btn-set{flex:none;background:var(--ink);color:#fff;border:0;font:inherit;font-size:12px;font-weight:700;
+  padding:8px 14px;border-radius:999px;cursor:pointer;white-space:nowrap}
+.btn-set.ghost{background:#e6dfd0;color:#6b5f52;font-weight:600}
+.selbox{background:#efe9db;border-radius:9px;padding:13px 14px;margin-top:14px}
+.selk{font-size:9.5px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:#a3967f}
+.selp{font-size:13px;line-height:1.5;color:#5c5145;margin-top:6px}
+.conf{border-top:1px solid #e0d9c9;margin-top:15px;padding-top:13px;cursor:pointer}
+.conf .ch{display:flex;align-items:center;gap:9px}
+.conf .ck{font-size:9.5px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:#a3967f}
+.conf .cv{font-size:13px;font-weight:700;margin-left:auto}
+.conf .cchev{font-size:10px;color:#a89b8a}
+.conf .cbar{height:5px;background:#ddd7c9;border-radius:5px;margin-top:9px;overflow:hidden}
+.conf .cbar i{display:block;height:100%;background:#c9a227;border-radius:5px}
+.conf .cd{font-size:11.5px;color:#7a6f62;margin-top:7px;line-height:1.45}
+.conf .clist{margin-top:12px}
+.conf .cli{display:flex;gap:9px;font-size:12px;line-height:1.45;color:#5f5459;margin-top:7px}
+.conf .cli i{flex:none;font-style:normal;font-size:11px;width:12px}
+.conf .cli.miss{color:#8a5a4e}
+.toast{display:flex;align-items:center;gap:11px;background:rgba(255,255,255,.10);
+  border-radius:10px;padding:13px 15px;margin-top:16px}
+.toast .tk{flex:none;width:22px;height:22px;border-radius:6px;background:var(--lilac);color:#fff;
+  display:flex;align-items:center;justify-content:center;font-size:12px}
+.toast .tt{font-size:14px;line-height:1.4;color:rgba(255,255,255,.9)}
+.toast .tt b{color:#fff;font-weight:600}
+.toast .tv{font-size:12.5px;font-weight:700;color:var(--lilac);cursor:pointer;flex:none;margin-left:auto}
+.lace{background:rgba(255,255,255,.08);border-radius:9px;padding:12px 14px;margin-top:14px}
+.lace .lk{font-size:10px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;color:var(--lilac)}
+.lace p{font-size:13.5px;line-height:1.5;color:rgba(255,255,255,.82);margin-top:7px}
+.digest{margin-top:18px}
+.digest .dk{font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--dim)}
+.digest .di{background:var(--cream);color:var(--ink);border-radius:12px;padding:15px 16px;margin-top:11px}
+.digest .dt{font-family:'Newsreader',serif;font-size:19px;line-height:1.2}
+.digest .dd{font-size:13.5px;line-height:1.5;color:#6b5f64;margin-top:6px}
+.rowa{display:flex;justify-content:space-between;gap:12px;align-items:baseline;
+  border-bottom:1px solid rgba(255,255,255,.14);padding:10px 0;font-size:13.5px}
+.rowa .q{color:var(--dim);flex:1}
+.rowa .a{color:#fff;font-weight:600}
+.rowa .ed{color:var(--lilac);font-size:12px;text-decoration:underline;cursor:pointer;flex:none}
+.two{display:flex;gap:9px;margin-top:16px}
+.two .f{flex:1;background:var(--cream);color:var(--ink);border-radius:12px;padding:15px 14px}
+.two .f .fk{font-size:9.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#a3967f}
+.two .f .fh{font-family:'Newsreader',serif;font-size:18px;line-height:1.2;margin-top:7px}
+.two .f .fd{font-size:12.5px;line-height:1.5;color:#5f5459;margin-top:9px}
+.two .f .fd b{color:var(--ink)}
+.note{font-size:12px;color:#7d6d76;max-width:930px;line-height:1.5;text-align:center}
+
+.device{width:392px;height:812px;background:var(--plum);border-radius:44px;
+  box-shadow:0 0 0 10px #100b0e,0 0 0 12px #2c2027,0 34px 70px rgba(0,0,0,.6);overflow:hidden;position:relative}
+.screen{position:absolute;inset:0;display:flex;flex-direction:column}
+.body{flex:1;overflow-y:auto;overflow-x:hidden;padding:0 20px}
+.body::-webkit-scrollbar{width:0}
+.top{display:flex;justify-content:space-between;align-items:flex-start;padding:22px 22px 6px;flex:none}
+.wm{font-family:'Newsreader',serif;font-size:19px}
+.burger{width:22px}.burger span{display:block;height:1.5px;background:#fff;margin:5px 0}
+.avatar{width:34px;height:34px;border-radius:9px;background:var(--lilac);display:flex;align-items:center;
+  justify-content:center;font-family:'Newsreader',serif;font-size:19px;margin:16px 0 14px}
+.avatar.c{margin:14px auto 16px}
+.hero{font-family:'Newsreader',serif;font-size:29px;line-height:1.16;text-align:center}
+
+.said{font-family:'Newsreader',serif;font-size:23px;line-height:1.26;color:#fff}
+.sub{font-size:16px;line-height:1.5;color:rgba(255,255,255,.78);margin-top:11px}
+.sub b{color:#fff;font-weight:600}
+.ask{font-size:16px;font-weight:600;line-height:1.4;margin-top:18px;color:#fff}
+.qwhy{font-size:13.5px;line-height:1.5;color:rgba(255,255,255,.6);font-style:italic;margin-top:9px}
+.fieldfoot{display:flex;justify-content:space-between;gap:12px;margin-top:12px;font-size:12.5px;color:var(--dim)}
+.fieldfoot .skip{cursor:pointer;text-decoration:underline}
+.opts{display:flex;flex-direction:column;gap:8px;margin-top:16px}
+.opt{background:transparent;border:1px solid rgba(255,255,255,.42);color:#fff;font:inherit;font-size:14.5px;
+  padding:12px 15px;border-radius:22px;text-align:left;cursor:pointer;transition:.14s}
+.opt:hover{background:rgba(255,255,255,.1)}
+.opt.ghost{border-style:dashed;color:var(--dim)}
+.turn{margin-top:8px;max-width:96%;margin-right:auto}
+.fade{animation:fu .34s cubic-bezier(.2,.7,.2,1) both}
+.fade2{animation:fu .40s cubic-bezier(.2,.7,.2,1) .16s both}
+.fade3{animation:fu .40s cubic-bezier(.2,.7,.2,1) .32s both}
+@keyframes fu{from{opacity:0;transform:translateY(9px)}to{opacity:1;transform:translateY(0)}}
+@keyframes dis{from{opacity:0}to{opacity:1}}
+.dissolve{animation:dis .34s ease both}
+
+.mine{display:flex;justify-content:flex-end;margin:26px 0 30px}
+.mine .b{background:#5e4557;color:#f3efe5;border-radius:14px;padding:18px 20px;
+  font-size:16.5px;line-height:1.45;max-width:88%;text-align:left}
+.recap{background:rgba(255,255,255,.08);border-radius:9px;padding:12px 14px;font-size:13.5px;
+  line-height:1.45;color:rgba(255,255,255,.8);margin-top:13px}
+
+
+.mathhead{font-family:'Newsreader',serif;font-size:22px;color:#fff;margin-top:26px}
+ul.t{margin:13px 0 0;padding:0;list-style:none}
+ul.t li{font-size:15px;line-height:1.5;color:rgba(255,255,255,.8);padding-left:16px;position:relative;margin-top:9px}
+ul.t li:before{content:'';position:absolute;left:0;top:8px;width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,.4)}
+ul.t li b{color:#fff;font-weight:600}
+.closing{background:rgba(255,255,255,.09);border-left:3px solid var(--lilac);border-radius:0 9px 9px 0;
+  padding:14px 15px;margin-top:17px;font-size:15px;line-height:1.5}
+.gapbox{border:1px dashed rgba(255,255,255,.3);border-radius:11px;padding:14px 15px;margin-top:15px}
+.gapbox .gl{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:var(--lilac)}
+.gapbox p{font-size:13.5px;line-height:1.5;color:var(--dim);margin-top:8px}
+
+/* ---- cream artifacts ---- */
+.mod{background:var(--cream);color:var(--ink);border-radius:12px;padding:17px;margin-top:18px}
+.mod h3{font-family:'Newsreader',serif;font-size:21px;font-weight:400;line-height:1.18}
+.mod .cap{font-size:12px;color:#7a6f74;margin-top:4px;line-height:1.45}
+.mod .modnote{font-size:11.5px;line-height:1.5;color:#7a6f74;margin-top:12px}
+.mod .modnote b{color:var(--ink)}
+.big{font-family:'Newsreader',serif;font-size:36px;line-height:1;margin-top:13px}
+.bigsub{font-size:12.5px;color:#7a6f74;margin-top:3px}
+.sl{margin-top:15px}
+.sl label{display:flex;justify-content:space-between;font-size:12.5px;font-weight:600;color:#7a6f74;margin-bottom:2px}
+.sl label b{color:var(--ink);font-size:13.5px}
+input[type=range]{width:100%;-webkit-appearance:none;height:4px;background:#d3ccbd;border-radius:4px;outline:0;margin-top:7px}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;height:22px;border-radius:50%;
+  background:var(--ink);cursor:pointer;border:3px solid var(--cream)}
+input[type=range]::-moz-range-thumb{width:22px;height:22px;border-radius:50%;background:var(--ink);
+  cursor:pointer;border:3px solid var(--cream)}
+.trow{display:flex;justify-content:space-between;gap:12px;font-size:13.5px;color:#6b5f52;
+  padding:10px 0;border-bottom:1px solid #e0d9c9}
+.trows{margin-top:14px;border-top:1px solid #e0d9c9}
+.trow b{color:var(--ink);font-weight:700;text-align:right;white-space:nowrap}
+.trow.tot{border-bottom:0;padding-top:12px}
+.trow.tot span{font-weight:700;color:var(--ink)}
+.trow.tot b{font-size:18px}
+.trow .neg{color:#8a5a4e}
+.cmpt{background:var(--cream);color:var(--ink);border-radius:12px;padding:6px 14px 14px;margin-top:18px}
+.cmpt table{border-collapse:collapse;width:100%;font-size:12px;table-layout:fixed}
+.cmpt th{text-align:right;font-size:9px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+  color:#7a6f62;padding:12px 0 8px 6px;border-bottom:1px solid #cfc6b5;line-height:1.25}
+.cmpt th:first-child{text-align:left;width:42%;padding-left:0}
+.cmpt th:nth-child(2){width:26%}
+.cmpt td{padding:9px 0 9px 6px;border-bottom:1px solid #e6dfd0;line-height:1.3;text-align:right;
+  font-weight:700}
+.cmpt td:first-child{text-align:left;font-weight:400;color:#6b5f52;padding-left:0}
+.cmpt tr:last-child td{border-bottom:0}
+.cmpt tr.hi td{background:#e6dfd0}
+.cmpt tr.sec td{padding-top:16px;border-bottom:1px solid #cfc6b5}
+.cmpt tr.sec td:first-child{font-size:9px;font-weight:700;letter-spacing:.08em;
+  text-transform:uppercase;color:#a3967f}
+.mapw{margin-top:15px}
+.mapw svg{width:100%;display:block;border-radius:9px;background:#e6dfd0}
+.mapsl{margin-top:2px}
+.maplab{display:flex;justify-content:space-between;font-size:10px;color:#8a7f70;margin-top:6px}
+.maplab span{flex:1;text-align:center}
+.maplab span:first-child{text-align:left}
+.maplab span:last-child{text-align:right}
+.maplab span.on{color:var(--ink);font-weight:700}
+.opd{margin-top:15px;border-top:1px solid #e0d9c9;padding-top:14px}
+.opd .oh{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.opd .on1{font-family:'Newsreader',serif;font-size:21px;line-height:1.15}
+.opd .op{font-size:19px;font-weight:700;white-space:nowrap}
+.opd .om{font-size:12.5px;color:#7a6f62;margin-top:6px;line-height:1.45}
+.opd .orow{display:flex;justify-content:space-between;font-size:13.5px;
+  border-bottom:1px solid #e0d9c9;padding:10px 0}
+.opd .orow:first-of-type{border-top:1px solid #e0d9c9;margin-top:13px}
+.opd .orow span{color:#6b5f52}
+.opd .orow b{font-weight:700}
+.opd .orow b.up{color:#8a5a4e}
+.dl2{display:block;font-size:10.5px;color:#a3967f;margin-top:2px;font-weight:400}
+.cmpt td.ql{font-weight:400;font-size:11.5px;color:#4a4038;line-height:1.35;text-align:right}
+.cmpt .dl{font-size:10.5px;font-weight:400;color:#8a7f70;display:block;margin-top:2px}
+.cmpt .up{color:#8a5a4e}
+.cmpt .neu{color:#4a4038}
+.scen{display:flex;gap:7px;margin-top:15px}
+.scen .c{flex:1;background:var(--cream-2);border-radius:9px;padding:11px 9px;cursor:pointer;
+  border:2px solid transparent;transition:.15s}
+.scen .c.on{border-color:var(--ink);background:#fff}
+.scen .c .k{font-size:9.5px;letter-spacing:.05em;text-transform:uppercase;color:#7a6f74;font-weight:700;line-height:1.3}
+.scen .c .v{font-family:'Newsreader',serif;font-size:21px;line-height:1;margin-top:6px}
+.scen .c .s{font-size:10.5px;color:#7a6f74;margin-top:3px}
+.bar{margin-top:13px}
+.bar .bl{display:flex;justify-content:space-between;font-size:12px;color:#6b5f52;margin-bottom:5px}
+.bar .bl b{color:var(--ink)}
+.bar .tr{height:11px;background:#ddd7c9;border-radius:6px;position:relative;overflow:visible}
+.bar .fl{height:100%;border-radius:6px;transition:width .5s cubic-bezier(.2,.7,.2,1)}
+.bar .ceil{position:absolute;top:-3px;bottom:-3px;width:2px;background:#7a6f74}
+.stack{display:flex;height:36px;border-radius:8px;overflow:hidden;margin-top:15px}
+.stack div{display:flex;align-items:center;justify-content:center;font-size:10.5px;font-weight:700;
+  color:#2c1d24;transition:flex-grow .5s cubic-bezier(.2,.7,.2,1);overflow:hidden;white-space:nowrap}
+.stackkey{display:flex;gap:12px;flex-wrap:wrap;font-size:11.5px;color:#6b5f52;margin-top:10px}
+.stackkey i{display:inline-block;width:10px;height:10px;border-radius:3px;vertical-align:-1px;margin-right:5px}
+
+.grp{font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--dim);
+  font-weight:700;margin-top:20px}
+
+
+/* handoff / proposed pack — in chat */
+.prop{background:var(--cream);color:var(--ink);border-radius:12px;padding:18px 17px;margin-top:16px}
+.prop .lab{font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:#7a6f74}
+.prop h3{font-family:'Newsreader',serif;font-size:25px;font-weight:400;margin-top:5px;line-height:1.2}
+.prop .tgt{font-size:14px;line-height:1.45;color:#4d4048;margin-top:9px}
+.pact{display:flex;gap:11px;padding:13px 0;border-top:1px solid #ddd7c9}
+.pact .pn{flex:none;width:23px;height:23px;border:1px solid #9c948a;border-radius:5px;display:flex;
+  align-items:center;justify-content:center;font-size:12px;margin-top:1px}
+.pact .pt{font-size:15px;font-weight:600;line-height:1.3;margin-top:0}
+.pact .pd{font-size:12.5px;line-height:1.4;color:#6b5f64;margin-top:3px}
+.who{display:inline-block;font-size:9px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;
+  padding:2px 7px;border-radius:20px;margin-top:6px}
+.who.h{background:#dfd8c8;color:#5c5145}
+.who.u{background:#e6d3dd;color:#6b3f56}
+.assume{background:#e6e0d1;border-radius:8px;padding:12px 13px;font-size:12.5px;line-height:1.45;
+  margin-top:14px;color:#5c5145}
+.assume b{color:var(--ink)}
+
+/* ---- object pages: same system as the rent/buy prototype ---- */
+.body.page{background:#f6f2e9;color:var(--ink);padding:0 18px 0}
+.top.light{background:#f6f2e9}
+.top.light .wm{color:var(--ink)}
+.top.light .burger span{background:var(--ink)}
+.pghead{padding:14px 0 4px}
+.pgt{font-family:'Newsreader',serif;font-size:30px;font-weight:400;line-height:1.12;
+  letter-spacing:-.012em;margin-top:11px}
+.progbar{height:5px;background:#e2dac9;border-radius:5px;overflow:hidden;margin-top:16px}
+.progbar i{display:block;height:100%;background:var(--lilac);border-radius:5px}
+.progl{font-size:11.5px;color:#8a7f70;margin-top:7px}
+.secH{font-family:'Newsreader',serif;font-size:25px;font-weight:400;letter-spacing:-.012em;
+  line-height:1.15;margin:28px 0 0}
+.page .mod{background:#fdfbf6;border:1px solid #e6dfd0;border-radius:12px;padding:15px 15px 14px;margin-top:13px}
+.page .mod.plain{padding:14px 13px 12px}
+.modk{font-size:9px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:#a3967f}
+.modh{font-family:'Newsreader',serif;font-size:20px;font-weight:400;line-height:1.22;margin-top:8px}
+.modp{font-size:13px;line-height:1.55;color:#5c5145;margin-top:11px}
+.page .trow{display:flex;justify-content:space-between;gap:12px;font-size:13px;color:#6b5f52;
+  padding:9px 0;border-bottom:1px solid #e6dfd0;font-weight:400}
+.page .trow:last-of-type{border-bottom:0}
+.page .trow b{color:var(--ink);font-weight:600;text-align:right}
+.page .modnote{font-size:12px;line-height:1.5;color:#7a6f62;margin-top:11px}
+.src{font-size:10.5px;color:#a89b8a;margin-top:12px}
+.page .mod .pcard{background:#f0eade}
+.pcard{background:#e9e2d4;color:var(--ink);border-radius:7px;padding:12px 13px 11px;margin-bottom:10px}
+.eyebrow{display:inline-block;font-size:8.5px;font-weight:700;letter-spacing:.07em;
+  color:#5c5145;background:#f3eee4;border:1px solid #ddd5c6;border-radius:4px;padding:3px 7px}
+.pt{font-size:15.5px;font-weight:500;line-height:1.25;margin-top:9px;letter-spacing:-.005em}
+.pb{font-size:12.5px;line-height:1.42;color:#7a6f62;margin-top:3px}
+.prow{display:flex;align-items:center;justify-content:space-between;margin-top:11px}
+.dur{font-size:8.5px;font-weight:700;letter-spacing:.07em;color:#5c5145;
+  border:1px solid #c9bda9;border-radius:4px;padding:3px 8px}
+.ta{font-size:12.5px;font-weight:700;cursor:pointer}
+.ta i{font-style:normal;font-size:9px;vertical-align:1px;margin-left:2px}
+.urg{display:inline-block;font-size:8.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;
+  border-radius:999px;padding:3px 9px}
+.urg.high{background:#f0dc7a;color:#5c4a10}
+.stepc{display:flex;gap:11px;padding:13px 0;border-bottom:1px solid #e6dfd0}
+.stepc:last-child{border-bottom:0}
+.stepn{flex:none;width:24px;height:24px;border:1px solid #b3a795;border-radius:5px;display:flex;
+  align-items:center;justify-content:center;font-size:12px;font-weight:600;color:#5c5145;margin-top:8px}
+.stepb{flex:1}
+.qrow{display:flex;align-items:center;justify-content:space-between;gap:12px;
+  padding:13px 0;border-bottom:1px solid #e6dfd0}
+.qrow:last-child{border-bottom:0}
+.chev{color:#a89b8a;font-size:11px;flex:none}
+.pt2{font-family:'Newsreader',serif;font-size:19px;font-weight:400}
+.ratenow{font-family:'Newsreader',serif;font-size:31px;margin-top:10px}
+.ratenow span{font-size:12px;font-family:'Hanken Grotesk';color:#8a5a4e;margin-left:8px}
+.ratesvg{width:100%;display:block;margin-top:8px}
+.ratex{display:flex;justify-content:space-between;font-size:10px;color:#a89b8a;margin-top:4px}
+.pill-more{display:block;margin:20px auto 0;background:#fff;color:#2c1d24;border:0;font:inherit;
+  font-size:15px;font-weight:600;padding:13px 26px;border-radius:999px;cursor:pointer}
+
+.dock{flex:none;padding:12px 20px 14px}
+.inp{display:flex;align-items:center;gap:11px;background:#fff;border-radius:26px;padding:11px 11px 11px 16px}
+.inp .ph{flex:1;font-size:14.5px;color:#8c8189;line-height:1.35;max-height:74px;overflow:hidden}
+.ic{color:#5d525a;font-size:15px}
+.snd{width:34px;height:34px;border-radius:50%;background:var(--ink);color:#fff;border:0;font-size:15px;
+  cursor:pointer;flex:none}
+.hstack{position:relative;margin:26px 4px 0;cursor:pointer}
+.hstack .ghost{position:absolute;left:12px;right:12px;top:12px;bottom:-12px;background:#e4dfd2;
+  border-radius:9px;box-shadow:0 4px 10px rgba(0,0,0,.14)}
+.hstack .ghost.g2{left:26px;right:26px;top:26px;bottom:-26px;background:#d6d1c3}
+.hcard{background:var(--cream);color:var(--ink);border-radius:9px;padding:15px 16px;position:relative}
+.card.muted{background:#cfc9bd;color:#6a5f63}
+.tag{display:inline-block;font-size:9px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;
+  padding:3px 8px;border-radius:20px;color:#3a2a22}
+.tag.neutral{background:#d8d2c4;color:#4a4038}
+.tag.buy{background:var(--t-buy)}.tag.gap{background:var(--t-gap)}.tag.run{background:var(--t-run)}
+.crow2{display:flex;gap:11px;margin-top:11px}
+.num{flex:none;width:26px;height:26px;border:1px solid #9c948a;border-radius:5px;
+  display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:500}
+.num.ok{background:var(--ink);color:#fff;border-color:var(--ink);font-size:13px}
+.ctitle{font-family:'Newsreader',serif;font-size:19px;line-height:1.2}
+.cbody{font-size:12.5px;line-height:1.45;color:#6b5f64;margin-top:5px}
+.hcard .eyebrow{display:inline-block;font-size:8.5px;font-weight:700;letter-spacing:.08em;
+  color:#6b5f52;background:rgba(44,29,36,.055);border-radius:4px;padding:4px 8px}
+.clearall{text-align:center;font-size:12.5px;color:var(--dim);margin-top:20px;cursor:pointer}
+.pill-more{display:block;margin:0 auto;background:#fff;color:#2c1d24;border:0;font:inherit;
+  font-size:15px;font-weight:600;padding:14px 26px;border-radius:999px;cursor:pointer}
+.cwhy{font-size:12px;line-height:1.4;color:#8a7d70;font-style:italic;margin-top:5px}
+.cact{font-size:13px;font-weight:700;margin-top:11px;display:inline-block;cursor:pointer}
+.btn-work{background:#2c1d24;color:#fff;border:0;font:inherit;font-size:12px;font-weight:700;
+  padding:9px 13px;border-radius:5px;margin-top:12px;cursor:pointer}
+.cards{display:flex;flex-direction:column;gap:13px;margin-top:22px}
+.since{background:rgba(255,255,255,.10);border-radius:12px;padding:16px 17px;margin-top:22px}
+.since .k{font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--dim)}
+.since .chk{display:flex;gap:10px;font-size:14.5px;line-height:1.35;margin-top:10px;color:#fff}
+.since .chk span:first-child{flex:none;opacity:.75}
+.moved{background:var(--cream);color:var(--ink);border-radius:12px;padding:17px;margin-top:20px}
+.moved .k{font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:#7a6f74}
+.moved .m{font-family:'Newsreader',serif;font-size:31px;margin-top:6px;line-height:1.05}
+.moved .d{font-size:13.5px;line-height:1.45;color:#6b5f64;margin-top:8px}
+
+.dock{flex:none;padding:12px 20px 14px}
+.inp{display:flex;align-items:center;gap:11px;background:#fff;border-radius:26px;padding:11px 11px 11px 16px}
+.inp .ph{flex:1;font-size:14.5px;color:#8c8189}
+.ic{color:#5d525a;font-size:15px}
+.snd{width:34px;height:34px;border-radius:50%;background:var(--ink);color:#fff;border:0;font-size:15px;cursor:pointer}
+.elseline{font-size:14px;color:var(--dim);margin-bottom:9px}
+.sheet{position:absolute;inset:0;background:#f3eee4;color:#2f2620;z-index:30;
+  overflow-y:auto;padding:18px 20px 34px}
+.sheet.enter{animation:up .3s cubic-bezier(.2,.7,.2,1) both}
+@keyframes up{from{transform:translateY(100%)}to{transform:translateY(0)}}
+.sheet.dissolvein{animation:dis .3s ease both}
+@keyframes slideL{from{opacity:0;transform:translateX(26px)}to{opacity:1;transform:translateX(0)}}
+@keyframes slideR{from{opacity:0;transform:translateX(-26px)}to{opacity:1;transform:translateX(0)}}
+.tabbody{animation:slideL .26s cubic-bezier(.2,.7,.2,1) both}
+.tabbody.back{animation-name:slideR}
+.sheet::-webkit-scrollbar{width:0}
+.shead{display:flex;align-items:center;justify-content:space-between}
+.shead .close{font-size:14px;cursor:pointer;color:#8a7f70;width:16px}
+.shead .wm2{font-size:10.5px;font-weight:700;letter-spacing:.16em;color:#4a4038}
+.sheet h2{font-family:'Newsreader',serif;font-size:30px;font-weight:400;margin:20px 0 0;
+  text-align:center;letter-spacing:-.01em}
+.tabs{display:flex;background:#fbf8f1;border:1px solid #ddd5c6;border-radius:999px;
+  padding:4px;gap:2px;margin:16px 0 0}
+.tb{flex:1;border:0;background:transparent;font:inherit;font-size:12.5px;font-weight:600;
+  color:#5c5145;padding:8px 4px;border-radius:999px;cursor:pointer}
+.tb.on{background:#2e2620;color:#f6f1e6}
+.sheet .sect{text-align:center;margin-top:30px}
+.sheet .sect.sm{margin-top:34px}
+.sect.nogap{margin-top:10px}
+.sheet .sicon{font-size:15px;color:#4a4038;margin-bottom:4px}
+.sheet .stitle{font-family:'Newsreader',serif;font-size:24px;letter-spacing:-.01em}
+.sheet .ssub{font-size:12.5px;line-height:1.45;color:#7a6f62;margin-top:6px;padding:0 6px}
+.sheet .filt{display:flex;align-items:center;justify-content:center;gap:8px;font-size:12.5px;
+  color:#4a4038;margin-top:26px;font-weight:600}
+.filt .sep{color:#b3a795;font-weight:400}
+.sheet .weeks{display:flex;gap:6px;overflow-x:auto;margin-top:16px}
+.weeks::-webkit-scrollbar{height:0}
+.sheet .wk{flex:none;background:#ebe4d6;border-radius:6px;padding:9px 12px 8px;min-width:76px}
+.wk span{display:block;font-size:8.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#8a7f70}
+.wk b{display:block;font-family:'Newsreader',serif;font-size:17px;font-weight:400;margin-top:2px}
+.wk i{display:block;font-style:normal;font-size:10.5px;color:#8a7f70;margin-top:1px}
+.wk.now{background:#2e2620;color:#f6f1e6}
+.wk.now span,.wk.now i{color:#a89b8a}
+.wk.done{background:#c9dcc0}
+.sheet .grp{margin-top:20px}
+.mod .pcard{background:#f0eade;}
+.pcard{background:#e9e2d4;border-radius:7px;padding:12px 13px 11px;margin-bottom:10px}
+.eyebrow{display:inline-block;font-size:8.5px;font-weight:700;letter-spacing:.07em;
+  color:#5c5145;background:#f3eee4;border:1px solid #ddd5c6;border-radius:4px;padding:3px 7px}
+.sheet .pt{font-size:15.5px;font-weight:500;line-height:1.25;margin-top:9px;letter-spacing:-.005em}
+.sheet .pb{font-size:12.5px;line-height:1.42;color:#7a6f62;margin-top:3px}
+.pwhy{font-size:12.5px;line-height:1.42;color:#7a6f62;font-style:italic;margin-top:7px}
+.prow{display:flex;align-items:center;justify-content:space-between;margin-top:11px}
+.dur{font-size:8.5px;font-weight:700;letter-spacing:.07em;color:#5c5145;
+  border:1px solid #c9bda9;border-radius:4px;padding:3px 8px}
+.ta{font-size:12.5px;font-weight:700;cursor:pointer}
+.ta i{font-style:normal;font-size:9px;vertical-align:1px;margin-left:2px}
+.sheet .prio{background:#ebe4d6;border-radius:7px;padding:13px 13px;margin-top:14px;
+  display:flex;gap:11px;align-items:center}
+.prio .pn{flex:none;width:28px;height:28px;border-radius:5px;background:#f3eee4;display:flex;
+  align-items:center;justify-content:center;font-size:13px;font-weight:500}
+.prio .pbody{flex:1}
+.prio .sheet .pt{font-family:'Newsreader',serif;font-size:19px;font-weight:400;margin-top:5px}
+.urg{display:inline-block;font-size:8.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;
+  border-radius:999px;padding:3px 9px}
+.urg.high{background:#f0dc7a;color:#5c4a10}
+.urg.urgent{background:#e8a98c;color:#6b3320}
+.chev{color:#a89b8a;font-size:11px;flex:none}
+.sheet .rec{background:#ebe4d6;border-radius:7px;padding:13px;margin-top:14px}
+.recpill{display:inline-block;font-size:8.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;
+  color:#fff;background:var(--lilac);padding:3px 9px;border-radius:4px}
+.recflag{display:inline-block;font-size:8.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;
+  color:#fff;background:#b07cd8;padding:3px 9px;border-radius:4px}
+.rec .sheet .pt{font-family:'Newsreader',serif;font-size:19px;font-weight:400}
+.recbtns{display:flex;gap:9px;margin-top:14px}
+.recbtns button{flex:1;font:inherit;font-size:12.5px;font-weight:600;padding:10px;border-radius:5px;cursor:pointer}
+.recbtns .rj{background:#fbf8f1;border:1px solid #ddd5c6;color:#4a4038}
+.recbtns .ac{background:#2e2620;border:0;color:#f6f1e6}
+.pastwrap{background:#ebe4d6;border-radius:7px;padding:2px 13px;margin-top:10px}
+.sheet .past{display:flex;align-items:center;justify-content:space-between;gap:12px;
+  padding:14px 0;border-bottom:1px solid #ddd5c6}
+.past:last-child{border-bottom:0}
+.pt2{font-family:'Newsreader',serif;font-size:19px;font-weight:400}
+.sheet .lsect{display:flex;align-items:center;gap:9px;font-family:'Newsreader',serif;font-size:24px;
+  margin-top:36px;letter-spacing:-.01em}
+.licon{font-size:15px;color:#4a4038}
+.sheet .found{background:#ebe4d6;border:1px solid #ddd5c6;border-radius:7px;padding:18px 12px;margin-top:14px;
+  display:grid;grid-template-columns:repeat(3,1fr);gap:16px 6px}
+.fitem{text-align:center;font-size:12px;font-weight:600}
+.fdot{display:flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;
+  margin:0 auto 7px;color:#fff;font-size:15px}
+.fdot.ok{background:#7ba86c}.fdot.warn{background:#d9a04a}.fdot.bad{background:#cf5f52}
+.fdot.grey{background:transparent;border:1.5px dashed #bdb2a0;color:#a89b8a;font-size:14px}
+.fitem.unknown{color:#a89b8a}
+.fnote{font-size:11.5px;line-height:1.45;color:#8a7f70;margin-top:11px}
+.viewf{text-align:right;font-size:12.5px;font-weight:600;margin-top:12px;cursor:pointer}
+.viewf i{font-style:normal;font-size:9px;vertical-align:1px;margin-left:2px}
+.sheet .wknext{background:#ebe4d6;border-radius:9px;padding:13px 14px;margin-top:14px}
+.wnk{font-size:9.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#8a7f70}
+.wnr{font-size:12.5px;line-height:1.45;color:#6b5f52;padding:7px 0;border-bottom:1px solid #ddd5c6}
+.wnr:last-child{border-bottom:0}
+.sheet .abank{background:#ebe4d6;border-radius:9px;padding:4px 14px 6px;margin-top:14px}
+.abk{font-size:9.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#8a7f70;
+  padding:11px 0 4px}
+.abr{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:13px;
+  padding:11px 0;border-bottom:1px solid #ddd5c6}
+.abr:last-child{border-bottom:0}
+
+.myh{flex:none;background:var(--cream-2);color:var(--ink);text-align:center;padding:15px;
+  font-size:13px;font-weight:700;letter-spacing:.15em;cursor:pointer}
+.subhero{text-align:center;font-size:15px;line-height:1.4;color:var(--dim);margin-top:9px}
+
+
+.sheet .pcard .pt{font-family:'Hanken Grotesk',sans-serif;font-size:15.5px;font-weight:600;
+  line-height:1.28;letter-spacing:0;text-transform:none;color:#2f2620;margin-top:9px}
+.sheet .pcard .pb{font-family:'Hanken Grotesk',sans-serif;font-size:12.5px;font-weight:400;
+  line-height:1.45;letter-spacing:0;text-transform:none;color:#7a6f62;margin-top:4px}
+.sheet .prio .pt{font-family:'Newsreader',serif;font-size:19px;font-weight:400;
+  letter-spacing:0;text-transform:none;color:#2f2620}
+.sheet .rec .pt{font-family:'Newsreader',serif;font-size:19px;font-weight:400;
+  letter-spacing:0;text-transform:none;color:#2f2620}
+.sheet .prio .pb,.sheet .rec .pb,.sheet .past .pb{font-family:'Hanken Grotesk',sans-serif;
+  font-size:12.5px;font-weight:400;line-height:1.45;letter-spacing:0;text-transform:none;color:#7a6f62}
+.sheet .ta{font-family:'Hanken Grotesk',sans-serif;font-size:12.5px;font-weight:700;
+  letter-spacing:0;text-transform:none}
+
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<div class="chrome">
+  <h1>Finneas · Ask, paced · Heather · saving for Nolan's first car</h1>
+  <div class="steps" id="steps"></div>
+  <div class="vsw" id="vsw"><span>Insights:</span><button data-m="laced">Laced through</button><button data-m="held">Held to the end</button></div>
+</div>
+
+<div class="device"><div class="screen" id="screen"></div></div>
+<div class="note" id="note"></div>
+
+<script>
+/* ------------------------------------------------------------------
+   Luke Russell — home upgrade pathway.
+   Finneas copy verbatim from the session 34515 extraction.
+   Nothing invented to bridge a gap; gaps are shown as gaps.
+   Interaction mirrors the rent/buy prototype: typed answers send from
+   the dock, banded answers are pills, analysis advances on a pill.
+------------------------------------------------------------------- */
+
+var S={ t:'entry', refineOpen:false, refine:{}, fan:false, sheet:false, tab:'cal', mode:'laced', log:[], rules:{}, ruleAmt:{loan:310,debt:200,repair:50}, liquid:4.5, cd:5.0, confOpen:false, mo:100, yrs:6, apy:4.5, target:8000 };
+
+function usd(n){return '$'+Math.round(n).toLocaleString('en-US');}
+function usd0(n){return '$'+Math.round(n/1000)+'K';}
+function fv(pmt,rate,months){var r=rate/100/12;return pmt*((Math.pow(1+r,months)-1)/r);}
+
+/* ---------------- artifacts ---------------- */
+
+function ladderBalance(pmt,months){
+  // liquid at 4.5% for the first 3 months; from month 3 a rising share sits in 12-month CDs at 5%,
+  // reaching roughly 70% laddered by month 24. Blended rate climbs, then holds.
+  var bal=0;
+  for(var m=1;m<=months;m++){
+    var laddered = m<3 ? 0 : Math.min(0.70,(m-3)/21*0.70);
+    var r=(S.liquid*(1-laddered)+S.cd*laddered)/100/12;
+    bal=(bal+pmt)*(1+r);
+  }
+  return bal;
+}
+function blendedAt(m){
+  var laddered = m<3 ? 0 : Math.min(0.70,(m-3)/21*0.70);
+  return S.liquid*(1-laddered)+S.cd*laddered;
+}
+
+var RULES=[
+ {id:'loan', t:'When the car loan clears', d:'You owe $5,000&ndash;$15,000 on it. Whenever it ends, that payment is already leaving on a schedule &mdash; send it here instead.', amt:0},
+ {id:'debt', t:'When you&rsquo;re debt free', d:'About two years out, by your own reckoning. Everything that was going to the payoff becomes free.', amt:0},
+ {id:'repair', t:'When the repair fund is full', d:'That one has a ceiling. This one doesn&rsquo;t.', amt:0}
+];
+
+function modRedirect(){
+  var on=S.rules, base=S.mo;
+  var extra=0;
+  RULES.forEach(function(r){ if(on[r.id]) extra+=S.ruleAmt[r.id]; });
+  var later=base+extra;
+  var bal=ladderBalance(base,24)*Math.pow(1+blendedAt(S.yrs*12)/100/12,(S.yrs*12)-24)+ladderBalance(later,(S.yrs*12)-24);
+  return '<div class="mod"><h3>What happens when something frees up</h3>'+
+   '<div class="cap">Money that stops going somewhere else can come here automatically instead. Pick the ones you want and I&rsquo;ll set them up now, so you don&rsquo;t have to remember later.</div>'+
+   RULES.map(function(r){
+     var sel=on[r.id];
+     return '<div class="rule'+(sel?' on':'')+'" data-rule="'+r.id+'">'+
+       '<div class="rh"><span class="rt">'+r.t+'</span><span class="rc">'+(sel?'&#10003;':'&#43;')+'</span></div>'+
+       '<div class="rd">'+r.d+'</div>'+
+       (sel?'<div class="sl"><label>Send here each month <b>'+usd(S.ruleAmt[r.id])+'</b></label>'+
+         '<input type="range" data-k="rule:'+r.id+'" min="0" max="400" step="10" value="'+S.ruleAmt[r.id]+'"></div>':'')+
+     '</div>';}).join('')+
+   '<div class="trows">'+
+     '<div class="trow"><span>Now</span><b>'+usd(base)+'/mo</b></div>'+
+     '<div class="trow"><span>Once your rules fire</span><b>'+usd(later)+'/mo</b></div>'+
+     '<div class="trow tot"><span>At '+S.yrs+' years</span><b>'+usd(bal)+'</b></div>'+
+   '</div>'+
+   '<div class="modnote">'+(extra>0
+     ? 'Nothing about your paycheck changes. You&rsquo;re just deciding now where money goes when it stops going somewhere else &mdash; and I&rsquo;ll ask you to confirm before anything moves.'
+     : 'Nothing selected yet. Each of these is a decision you&rsquo;d otherwise have to remember to make, months or years from now.')+'</div></div>';
+}
+
+function modInvisible(){
+  var weekly=Math.round(S.mo/4.33), daily=(S.mo/30).toFixed(2);
+  return '<div class="mod"><h3>What '+usd(S.mo)+' a month actually feels like</h3>'+
+   '<div class="cap">The same money, four ways. Only the last one is invisible.</div>'+
+   '<div class="trows">'+
+     '<div class="trow"><span>Once a month, by hand</span><b>You decide '+S.yrs*12+' times</b></div>'+
+     '<div class="trow"><span>'+usd(weekly)+' a week, by hand</span><b>You decide '+(S.yrs*52)+' times</b></div>'+
+     '<div class="trow"><span>$'+daily+' a day, rounded up</span><b>You decide every day</b></div>'+
+     '<div class="trow tot"><span>Auto-transfer, day after payday</span><b>You decide once</b></div>'+
+   '</div>'+
+   '<div class="modnote">You said you want it to feel like it doesn&rsquo;t exist. That&rsquo;s about how many times you have to think about it, not how much goes in. <b>Pull it from checking rather than pushing it from savings</b>; a pull is harder to cancel by accident.</div></div>';
+}
+
+var ACCTS=[
+ {id:'hysa', n:'High-yield savings', apy:'4.5&ndash;5%', lock:'None &mdash; take it out any day',
+  who:'Ally, Marcus', good:'Simplest thing that works. Name it, automate it, ignore it.',
+  bad:'The rate floats. It can drop and nobody tells you.'},
+ {id:'cd', n:'CD ladder', apy:'~5%, locked', lock:'12&ndash;18 months at a time',
+  who:'Discover, or your own bank', good:'The rate is fixed. You know the number.',
+  bad:'Touching it early costs 3&ndash;6 months of interest. And it is more to keep track of.'},
+ {id:'both', n:'Savings now, CDs later', apy:'4.5% now, ~5% later', lock:'None for the first few months',
+  who:'Start at Ally, add CDs at month 3', good:'You can start this week and improve it later.',
+  bad:'It is two decisions instead of one, and the second one is easy to forget.'}
+];
+
+function modLadder(){
+  var start=3, bal=[];
+  for(var m=1;m<=24;m++){ bal.push(S.mo*m); }
+  return '<div class="mod"><h3>How the money moves into CDs, one piece at a time</h3>'+
+   '<div class="cap">Nothing moves for the first three months. After that, each rung locks in a rate for twelve months and rolls when it matures. The account underneath stays liquid the whole time.</div>'+
+   '<div class="trows">'+
+     '<div class="trow"><span>Months 1&ndash;3<span class="dl2">Building a base</span></span><b>All liquid</b></div>'+
+     '<div class="trow"><span>Month 3, once there&rsquo;s $300&ndash;$400<span class="dl2">Roll a portion into a 12-month CD</span></span><b>First rung</b></div>'+
+     '<div class="trow"><span>Every few months after<span class="dl2">Another portion, another 12-month CD</span></span><b>Next rung</b></div>'+
+     '<div class="trow"><span>Month 15 onward<span class="dl2">The first CD matures &mdash; roll it again</span></span><b>Ladder running</b></div>'+
+     '<div class="trow tot"><span>Always reachable</span><b>The newest months</b></div>'+
+   '</div>'+
+   '<div class="modnote">A ladder means something is always maturing soon, so the money isn&rsquo;t locked away all at once. <b>Check the early-withdrawal penalty before each one</b> &mdash; most charge three to six months of interest. Small, but worth knowing. And if you find a CD meaningfully above 5%, a 2-year now beats a floating savings rate for this goal.</div></div>';
+}
+
+var ACCT=[
+ {id:'hysa', n:'Savings', rate:4.75, rl:'4.5&ndash;5%, floats',
+  early:'Any day, no penalty', dec:'None after setup',
+  d:'Open it this week, name it, automate it. The rate moves with the market and nobody tells you when it drops.'},
+ {id:'cd',   n:'CD ladder', rate:5.0, rl:'~5%, locked',
+  early:'3&ndash;6 months&rsquo; interest', dec:'One every 12&ndash;18 months',
+  d:'Each rung fixes a rate for a year. More predictable, and more to keep track of.'},
+ {id:'both', n:'Both', rate:4.9, rl:'4.5% now, ~5% later',
+  early:'Free on the newest months', dec:'One at month three',
+  d:'Start liquid this week, roll a portion into a CD once there&rsquo;s $300&ndash;$400 in there, and roll it again as each matures.'}
+];
+
+function goalIncome(){
+  var sel=ACCT.filter(function(a){return a.id===S.acct})[0]||ACCT[2];
+  return fv(S.mo,sel.rate,S.yrs*12);
+}
+
+var REFINE=[
+ {id:'rates', t:'The rate on anything you owe',
+  w:'You said you&rsquo;d have to check. If any of it is above 6%, that gets the money first and this waits &mdash; it outranks everything else here.'},
+ {id:'timeline', t:'When he actually starts driving',
+  w:'I have used six years. If it is closer, the monthly figure has to rise and the CD ladder stops being worth the bother.'},
+ {id:'car', t:'Whether you have a car in mind',
+  w:'If it is a specific one rather than a range, I&rsquo;ll work back from its real price instead of your $6,000&ndash;$10,000 band.'}
+];
+
+function modRefine(){
+  var n=0; REFINE.forEach(function(r){ if(S.refine[r.id]) n++; });
+  var open=S.refineOpen;
+  var h='<div class="mod refm"><div class="rfhead" data-refopen="1">'+
+    '<div><div class="rfk">Refine this answer</div>'+
+    '<div class="rfs">'+(n?n+' added &mdash; I&rsquo;ll redo the numbers when they land':REFINE.length+' figures I had to estimate. Optional.')+'</div></div>'+
+    '<span class="rfchev">'+(open?'&#9650;':'&#9660;')+'</span></div>';
+  if(open){
+    h+='<div class="rfbody">'+REFINE.map(function(r){
+      var on=S.refine[r.id];
+      return '<div class="rfi"><div class="rfh"><div><div class="rft">'+r.t+'</div>'+
+        '<div class="rfw">'+r.w+'</div></div>'+
+        '<button class="rfb'+(on?' on':'')+'" data-refine="'+r.id+'">'+(on?'Added &#10003;':'&#43; Add')+'</button>'+
+        '</div></div>';
+    }).join('')+
+    '<div class="modnote">None of it is required &mdash; the answer stands without it. Anything you add goes on your plan as something to find.</div></div>';
+  }
+  return h+'</div>';
+}
+
+
+function modAccounts(){
+  var sel=ACCT.filter(function(a){return a.id===S.acct})[0]||ACCT[2];
+  var best=Math.max.apply(null,ACCT.map(function(a){return fv(S.mo,a.rate,S.yrs*12)}));
+  var h='<div class="mod"><h3>Three places to put it</h3>'+
+   '<div class="cap">All three reach your target on '+usd(S.mo)+' a month. They differ in how locked-in it feels. Tap a column.</div>'+
+   '<div class="cmpt" style="background:transparent;padding:0;margin-top:14px"><table>'+
+   '<tr><th>&nbsp;</th>'+ACCT.map(function(a){
+      return '<th class="'+(a.id===S.acct?'selth':'')+'" data-acct="'+a.id+'" style="cursor:pointer">'+a.n+'</th>';}).join('')+'</tr>'+
+   '<tr><td>Rate</td>'+ACCT.map(function(a){
+      return '<td class="neu'+(a.id===S.acct?' selc':'')+'" data-acct="'+a.id+'" style="font-weight:400;font-size:11px">'+a.rl+'</td>';}).join('')+'</tr>'+
+   '<tr class="hi"><td>At '+S.yrs+' years</td>'+ACCT.map(function(a){
+      return '<td class="neu'+(a.id===S.acct?' selc':'')+'" data-acct="'+a.id+'">'+usd(fv(S.mo,a.rate,S.yrs*12))+'</td>';}).join('')+'</tr>'+
+   '<tr><td>Getting at it early</td>'+ACCT.map(function(a){
+      return '<td class="neu'+(a.id===S.acct?' selc':'')+'" data-acct="'+a.id+'" style="font-weight:400;font-size:11px">'+a.early+'</td>';}).join('')+'</tr>'+
+   '<tr><td>Decisions to make</td>'+ACCT.map(function(a){
+      return '<td class="neu'+(a.id===S.acct?' selc':'')+'" data-acct="'+a.id+'" style="font-weight:400;font-size:11px">'+a.dec+'</td>';}).join('')+'</tr>'+
+   '</table></div>'+
+   '<div class="selbox"><div class="selk">'+sel.n+'</div><div class="selp">'+sel.d+'</div></div>'+
+   '<div class="modnote">The spread across all three is <b>'+usd(best-fv(S.mo,4.75,S.yrs*12))+'</b> at '+S.yrs+' years &mdash; less than the amount and the timeline move it.</div></div>';
+  if(S.expOpen || S.goalSet) h+=modTrade();
+  if(!S.expOpen && !S.goalSet) h+='<button class="pill-more" data-exp="1" style="margin:16px auto 0">Explore trade-offs</button>';
+  return h;
+}
+
+function modTrade(){
+  var sel=ACCT.filter(function(a){return a.id===S.acct})[0]||ACCT[2];
+  var bal=fv(S.mo,sel.rate,S.yrs*12), put=S.mo*S.yrs*12;
+  var pctPut=Math.max(put/bal*100,6);
+  return '<div class="mod">'+
+   '<div class="modk">Explore trade-offs</div>'+
+   '<div class="stack" style="margin-top:14px">'+
+     '<div style="flex:'+pctPut+';background:var(--t-a)">You put in</div>'+
+     '<div style="flex:'+(100-pctPut)+';background:var(--t-c)">Interest</div></div>'+
+   '<div class="stackkey"><span><i style="background:var(--t-a)"></i>'+usd(put)+' from you</span>'+
+     '<span><i style="background:var(--t-c)"></i>'+usd(bal-put)+' from the bank</span></div>'+
+   '<div class="sl"><label>Every month <b>'+usd(S.mo)+'</b></label>'+
+     '<input type="range" data-k="mo" min="25" max="250" step="5" value="'+S.mo+'"></div>'+
+   '<div class="sl"><label>Years until he drives <b>'+S.yrs+'</b></label>'+
+     '<input type="range" data-k="yrs" min="2" max="8" step="1" value="'+S.yrs+'"></div>'+
+   modConfidence()+
+   '<div class="modfoot"><div class="mfl"><div class="mfh">'+usd(bal)+' by the time he drives</div>'+
+     '<div class="mfs">'+usd(S.mo)+' a month for '+S.yrs+' years, in '+sel.n.toLowerCase()+'</div></div>'+
+     (S.goalSet
+       ? '<span class="btn-set ghost">Target set &#10003;</span>'
+       : '<button class="btn-set" data-goal="1">Set my target</button>')+
+   '</div></div>';
+}
+
+function modConfidence(){
+  var open=S.confOpen;
+  return '<div class="conf" data-conf="1">'+
+   '<div class="ch"><span class="ck">Confidence</span>'+
+     '<span class="cv">Moderate &middot; 60%</span>'+
+     '<span class="cchev">'+(open?'&#9650;':'&#9660;')+'</span></div>'+
+   '<div class="cbar"><i style="width:60%"></i></div>'+
+   '<div class="cd">Built on seven figures. Three are yours, three I looked up, and one I estimated because you haven&rsquo;t told me yet.</div>'+
+   (open?'<div class="clist">'+
+     '<div class="cli"><i>&#10003;</i><span>Nolan&rsquo;s age, what you can set aside, and the car budget you&rsquo;re aiming at &mdash; from your answers</span></div>'+
+     '<div class="cli"><i>&#10003;</i><span>Today&rsquo;s savings rates, CD rates and early-withdrawal penalties &mdash; looked up today</span></div>'+
+     '<div class="cli miss"><i>&#8722;</i><span>Whether you carry a balance above 6% anywhere. If you do, that gets paid before any of this &mdash; the guaranteed return beats the savings rate.</span></div>'+
+     '<div class="cd">Tell me that one and this goes to high.</div>'+
+   '</div>':'')+
+  '</div>';
+}
+
+function modPlans(){
+  return '<div class="mod"><h3>What this does to your other funds</h3>'+
+   '<div class="cap">You said you want several going at once without them fighting each other. Here they are together.</div>'+
+   '<div class="trows">'+
+     '<div class="trow"><span>Nolan&rsquo;s car &mdash; '+S.yrs+' years</span><b>'+usd(S.mo)+'/mo</b></div>'+
+     '<div class="trow"><span>Car repairs &mdash; ongoing</span><b>$50/mo</b></div>'+
+     '<div class="trow"><span>The cruise &mdash; no date yet</span><b>Not set</b></div>'+
+     '<div class="trow"><span>Debt payoff &mdash; your two-year goal</span><b>Running</b></div>'+
+     '<div class="trow tot"><span>Committed each month</span><b>'+usd(S.mo+50)+'</b></div>'+
+   '</div>'+
+   '<div class="modnote">The car fund and the cruise draw on the same money, and the cruise has no date. <b>If you fund the cruise first, Nolan&rsquo;s fund needs '+usd(Math.round(S.mo*1.5))+' a month to catch up.</b> Set the car fund to pull first and the cruise gets whatever is left &mdash; that way the one with a deadline wins by default.</div></div>';
+}
+
+/* ---------------- handoff pack ---------------- */
+
+var PACK=[
+ {n:1,t:'Open a separate account and name it after him',
+  d:'Somewhere that isn&rsquo;t your everyday bank &mdash; Ally or Marcus, no minimum, no monthly fee, currently 4.5&ndash;5%. Name it &ldquo;Nolan&rsquo;s car fund&rdquo; when you open it. Ten minutes, and the name does real work.',
+  who:'u',wl:'You open it &middot; I&rsquo;ll walk you through it'},
+ {n:2,t:'Set the auto-transfer the same day',
+  d:'The day after your paycheck lands, pulling from checking. '+'$100'+' to start. This is the step that makes it invisible &mdash; and the one people put off until the account has been empty for a month.',
+  who:'u',wl:'You set it &middot; I&rsquo;ll remind you'},
+ {n:3,t:'Add a CD after month three',
+  d:'Once there&rsquo;s $300&ndash;$400 in the account, roll a portion into a 12-month CD and roll it again when it matures. Slightly better rate, principal untouched. Check the early-withdrawal penalty first &mdash; usually three to six months of interest.',
+  who:'h',wl:'I&rsquo;ll tell you when &middot; you roll it'},
+ {n:4,t:'Then leave it alone',
+  d:'Don&rsquo;t check the balance more than quarterly. The invisible feeling you want is real and it works &mdash; the account doing its job quietly is the whole point. I&rsquo;ll watch the rate and only tell you if yours falls behind by half a point or more.',
+  who:'h',wl:'Nothing for you to do'}
+];
+
+function packHTML(){
+  var h='<div class="prop"><div class="lab">What to do next</div>'+
+   '<h3>Nolan&rsquo;s car fund</h3>'+
+   '<div class="tgt">'+usd(ladderBalance(S.mo,S.yrs*12))+' by the time he can drive, on '+usd(S.mo)+' a month you never have to think about again. Two things to set up this week, one number I still need, and one thing I&rsquo;ll watch.</div><div style="height:6px"></div>';
+  PACK.forEach(function(p){
+    if(p.g) h+='<div class="pgrp">'+p.g+'</div>';
+    if(p.w){
+      h+='<div class="pact watch"><div class="pn">&#9673;</div><div>'+
+         '<div class="pt">'+p.t+'</div><div class="pd">'+p.d+'</div></div></div>';
+    } else {
+      h+='<div class="pact"><div class="pn">'+p.n+'</div><div>'+
+         '<div class="pt">'+p.t+'</div><div class="pd">'+p.d+'</div>'+
+         '<span class="who '+p.who+'">'+p.wl+'</span></div></div>';
+    }
+  });
+  h+='<div class="assume"><b>One thing comes first.</b> If you&rsquo;re carrying a balance above 6% APR, that gets paid before this fund does &mdash; the guaranteed return beats the savings rate. You said you&rsquo;d have to check. Tell me either way and I&rsquo;ll redo the plan.</div></div>';
+  return h;
+}
+
+/* ---------------- priority + action pages ---------------- */
+
+var ACTIONS=[
+ {pri:['Nolan&rsquo;s car fund'], t:'Open the account and name it after him',
+  b:'Ally or Marcus, no minimum, 4.5&ndash;5%. The name is what stops the money getting spent.',
+  tag:'3 STEPS'},
+ {pri:['Nolan&rsquo;s car fund'], t:'Set the auto-transfer',
+  b:'Day after payday, pulling from checking. Once this is running, the goal needs nothing from you for six years.',
+  tag:'2 STEPS', cta:'Walk me through it'},
+ {pri:['Nolan&rsquo;s car fund','Debt payoff'], t:'Check whether anything you owe is above 6%',
+  b:'If it is, it gets paid first. This is the only thing that would change the answer.',
+  tag:'1 STEP', cta:'Add information'},
+ {pri:['Nolan&rsquo;s car fund'], t:'Watch the rate',
+  b:'Savings rates float quietly. I&rsquo;ll check monthly and tell you only if it moves enough to matter.',
+  tag:'I&rsquo;LL RUN IT', cta:'Send to Finneas'}
+];
+
+var ACT_STEPS=[
+ {n:1,t:'Pick the number and write it down',
+  b:'$100 a month clears the bottom of your target with room. $125 gets you closer to $10,000. Pick one &mdash; starting too high and cancelling later feels like failing, and this only works if it stays boring.',
+  cta:'Talk it through', tag:'5 min'},
+ {n:2,t:'Check what the rate is today, at three banks',
+  b:'Rates shift. Half a point over six years is $200&ndash;$400 on your balance. I&rsquo;ll pull the current numbers and hand you three, sorted, with the fees and minimums checked.',
+  cta:'Send to Finneas', tag:"I'll run it"},
+ {n:3,t:'Open it and name it',
+  b:'Individual savings account, Your account, earmarked for him, not a custodial one. Identity check, link your checking, then set the nickname. Most banks let you.',
+  cta:'Walk me through it', tag:'20 min'}
+];
+
+var RATES=[{x:0,v:5.05},{x:.34,v:4.90},{x:.67,v:4.72},{x:1,v:4.55}];
+
+
+/* ---------------- dialogue ---------------- */
+var D=[
+
+/* 0 — open, voiced. Asks nothing about money. */
+{ says:"Tell me a bit more about why this one&rsquo;s on your mind.",
+  sub:"Not the numbers yet &mdash; just what you&rsquo;re picturing.",
+  answer:"How do I go about it without feeling like I&rsquo;m dipping into savings or taking too much from paychecks? I&rsquo;ve got a few of these running already &mdash; the cruise, car repairs, retirement &mdash; and I&rsquo;m trying to be debt free in about two years. I want him to afford something that isn&rsquo;t a money pit, and I want him to learn something from it. And I want it to feel like it doesn&rsquo;t exist. If I can see it, I&rsquo;ll spend it." },
+
+/* 1 — Finneas names it back */
+{ says:"You need less than you think, and it doesn&rsquo;t have to come out of your paycheck.",
+  sub:"Six years is a long runway. The bottom of a $6K&ndash;$10K car costs about $67 a month &mdash; less than the cruise fund, less than most of what you&rsquo;re already tracking.<br><br>So this isn&rsquo;t a fifth thing competing with the other four. The question is just where that $67 comes from, and you probably already have it.",
+  after:"And wanting it out of sight is the right call. You know what you do when you can see it. A separate account with a name on it does that work for you &mdash; and once it&rsquo;s running it needs nothing from you at all.<br><br>One thing first: if any of what you&rsquo;re paying down is above 6%, that gets paid before this fund does. The guaranteed return beats the savings rate. I&rsquo;ll come back to it.",
+  ask:"Does that land right?",
+  opts:["That&rsquo;s it","Close, but there&rsquo;s more to it","Not really &mdash; let me restate it"],
+  answered:"That&rsquo;s it" },
+
+/* 2 — intake */
+{ bare:true,
+  toast:"Started a priority for you &mdash; <b>Nolan&rsquo;s car fund</b>. Nothing is saved until you say so.",
+  meta:"1 of 7",
+  ask:"How old is Nolan now?",
+  why:"This sets the real timeline. A 10-year-old gives you 5&ndash;6 years to grow the fund; a 14-year-old means something more conservative, ready in 2&ndash;3.",
+  banded:true,
+  opts:["Under 5","5&ndash;8","9&ndash;12","13&ndash;15","16+"],
+  answered:"9&ndash;12" },
+
+/* 3 */
+{ bare:true, meta:"2 of 7",
+  ask:"Roughly how much could you set aside each month?",
+  why:"This tells me what the fund realistically grows to, and whether it wants a lump-sum account or small automatic transfers.",
+  banded:true,
+  opts:["$25&ndash;$50","$50&ndash;$100","$100&ndash;$200","$200&ndash;$400","$400+"],
+  answered:"$100&ndash;$200",
+  lace:["Working while you answer","Savings rates are sitting at 4.5&ndash;5% right now &mdash; higher than they&rsquo;ve been for most of Nolan&rsquo;s life. I&rsquo;m checking what&rsquo;s available with no minimum and no monthly fee."] },
+
+/* 4 */
+{ bare:true, meta:"3 of 7",
+  ask:"What kind of car budget are you hoping to have saved?",
+  why:"Knowing the target lets me work backward to a monthly number, and flag early if the timeline and the contribution don&rsquo;t meet.",
+  banded:true,
+  opts:["$3K&ndash;$6K","$6K&ndash;$10K","$10K&ndash;$15K","$15K&ndash;$20K","$20K+"],
+  answered:"$6K&ndash;$10K" },
+
+/* 5 */
+{ bare:true, meta:"4 of 7",
+  ask:"How far into the debt payoff are you?",
+  why:"You said about two years to debt free. That&rsquo;s the date the money for his fund gets easier &mdash; and if any of that debt is above 6%, it gets paid before this fund does.",
+  opts:["Just started","About a year in","Nearly there","Some of it is above 6% &mdash; I&rsquo;d have to check"],
+  answered:"About a year in",
+  lace:["Working while you answer","If any of that debt sits above 6%, paying it returns more than saving does &mdash; guaranteed. I&rsquo;ll flag it rather than assume it either way."] },
+
+/* 5b — the rest of the intake */
+{ bare:true, meta:"5 of 7",
+  ask:"What&rsquo;s your monthly take-home pay, after tax and benefits?",
+  why:"It tells me whether $100 a month is comfortable or a stretch, and how much room there is to bump it later.",
+  banded:true,
+  opts:["Under $4,000","$4,000&ndash;$6,000","$6,000&ndash;$8,000","$8,000&ndash;$10,000","Over $10,000"],
+  answered:"$6,000&ndash;$8,000" },
+
+{ bare:true, meta:"6 of 7",
+  ask:"How much do you still owe on your current vehicle?",
+  why:"If a car payment ends before Nolan drives, that money is already budgeted and already invisible &mdash; the easiest source there is.",
+  banded:true,
+  opts:["Paid off","Under $5,000","$5,000&ndash;$15,000","Over $15,000"],
+  answered:"$5,000&ndash;$15,000",
+  lace:["Working while you answer","If that loan clears before he&rsquo;s driving, redirecting the payment covers this fund on its own &mdash; you&rsquo;d never feel the change."] },
+
+{ bare:true, meta:"7 of 7",
+  ask:"Will his car be personal use, or some business use too?",
+  why:"It changes what insurance costs him later, and whether any of it is deductible. Doesn&rsquo;t change the saving, but it changes what he needs at the end.",
+  opts:["Personal only","Mostly personal, some business","Not sure yet"],
+  answered:"Personal only" },
+
+/* 6 — the answered set */
+{ recapRows:true,
+  says:"That&rsquo;s everything I need.",
+  sub:"Change any of it and I&rsquo;ll redo the numbers.",
+  cta:"Show me the math",
+  more:true },
+
+/* 8 — the math */
+{ more:true, math:"The Math",
+  says:"$100 a month buys him the car, with room to spare.",
+  sub:"Six years at $100 a month reaches about $8,367 &mdash; the top half of the $6,000&ndash;$10,000 you had in mind. The bottom of that range needs $67 a month, so you have cushion either way.<br><br>Two things work in your favour. Six years is long enough that the bank does about $1,167 of the work rather than you. And you already hide money from yourself, which is exactly the behaviour this needs: a separate account with his name on it, pulling the day after payday, and nothing from you until he&rsquo;s driving.<br><br>One thing would change the order. If anything you owe carries a rate above 6%, that gets the money first and this waits.",
+  mod:function(){return modLadder()+modRefine();}, recap:"How the ladder builds.",
+  cta:"See my options" },
+
+/* 9 — the options component */
+{ more:true,
+  mod:modAccounts, recap:"Three places, and the trade-off you opened.", gate:true,
+  cta:"What happens when something frees up?" },
+
+/* 10 — after the target: the redirect rules */
+{ more:true,
+  toastFn:function(){
+    var sel=ACCT.filter(function(a){return a.id===S.acct})[0]||ACCT[2];
+    return 'Target added to <b>Nolan&rsquo;s car fund</b> &mdash; '+usd(S.mo)+' a month for '+S.yrs+' years, in '+sel.n.toLowerCase()+'.';
+  },
+  says:"You already do this &mdash; when something ends, you point it at a goal.",
+  sub:"So let&rsquo;s set those up now, while you&rsquo;re thinking about it. Each one waits until the thing actually happens, then moves on its own.",
+  mod:modRedirect, recap:"The redirect rules.",
+  cta:"And the other funds?" },
+
+/* 11 — the other funds */
+{ more:true, math:"Your other funds",
+  says:"You said you want several running without them fighting each other.",
+  mod:modPlans, recap:"How the funds sit together.",
+  cta:"Get a step-by-step guide" },
+
+/* 12 — the handoff, the watching, and the save decision */
+{ more:true,
+  says:"Here&rsquo;s what I&rsquo;d put on your plan.",
+  sub:"Two things this week, then the first CD rung at month three. Nothing else needs you.",
+  handoff:true, authorise:true, gate:true }
+];
+
+var ROWS=[
+ ['Why this matters','A fund that runs without me'],
+ ['Nolan&rsquo;s age','9&ndash;12'],
+ ['Every month','$100&ndash;$200'],
+ ['Car budget','$6K&ndash;$10K'],
+ ['Debt payoff','About a year in'],
+ ['Take-home','$6,000&ndash;$8,000'],
+ ['Owed on your car','$5,000&ndash;$15,000'],
+ ['His car will be','Personal use']];
+
+var STEPS=[['Entry','entry'],['Why are you asking','0'],['The reframe','1'],['Intake','2'],
+ ['What you told me','9'],['The math','10'],['Your options','11'],
+ ['Later','12'],['Other funds','13'],['Handoff','14'],
+ ['SIGN UP','signup'],['LOADER','welcome'],['HOME','home'],['PRIORITY page','priority'],['ACTION page','pack']];
+
+var NOTES={
+ entry:"Her question, as she typed it.",
+ '0':"Asks nothing about money. Her answer is her own, from the transcript.",
+ '1':"The reframe, earned from what she said rather than guessed from her data.",
+ '2':"Seven questions in one block. The fourth is the one she was never asked.",
+ '9':"Everything she told me, editable.",
+ '10':"Prose and the ladder, no controls. Ends on a CTA into the options.",
+ '11':"Three places. Explore trade-offs opens the interactive part below.",
+ '12':"Rules for money that frees up later — the behaviour she already values.",
+ '13':"Her own ask — several funds that account for each other.",
+ '14':"The pack, what I'll watch, and the save decision — all one beat.",
+ signup:"The account ask, after the value. Nothing is kept until this point.",
+ welcome:"The loader between signing up and home. Advances on its own.",
+ home:"Where she lands once the conversation is done.",
+ priority:"Priority detail. Target, actions, monitoring, questions asked, related.",
+ pack:"Action detail: why it comes first, the steps, and what it counts toward."
+};
+
+var HOME={hero:'Welcome back, Heather.', sub:'Two things this week, and then this one runs itself.'};
+var HOME_CARDS=[
+ {n:1, pri:['Nolan&rsquo;s car fund'], title:'Open the account and name it after him',
+  body:"Ally or Marcus &mdash; no minimum, no monthly fee, 4.5&ndash;5%. The name is what stops it getting spent.",
+  cta:'Walk me through it'},
+ {n:2, pri:['Nolan&rsquo;s car fund'], title:'Set the auto-transfer',
+  body:"Day after payday, pulling from checking. Once it&rsquo;s running the fund needs nothing from you for six years.",
+  cta:'Walk me through it'},
+ {n:3, pri:['Nolan&rsquo;s car fund','Debt payoff'], title:'Check whether anything you owe is above 6%',
+  body:"If it is, it gets paid before this fund does. It&rsquo;s the only thing that would change the answer.",
+  cta:'Add information'}
+];
+var WEEK_STEPS=[
+ {pri:['Nolan&rsquo;s car fund'], t:'Open the account and name it after him',
+  b:"Individual savings, not custodial. Identity check, link checking, set the nickname.",
+  tag:'20 MIN', cta:'Walk me through it'},
+ {pri:['Nolan&rsquo;s car fund'], t:'Set the auto-transfer',
+  b:"Pull from checking the day after payday. $100 to start.",
+  tag:'5 MIN', cta:'Walk me through it'},
+ {pri:['Nolan&rsquo;s car fund','Debt payoff'], t:'Check whether anything you owe is above 6%',
+  b:"One number. If it&rsquo;s there, the fund waits and the debt goes first.",
+  tag:'ONE NUMBER', cta:'Add information'}
+];
+var CAL={title:'To-Do: Week of Aug 25', sub:'Two things, both in one sitting. After that the only thing left this year is the first CD at month three, and I&rsquo;ll tell you when.',
+ weeks:[['Aug 18','Done','done'],['Aug 25','Now','now'],['Sep 1','',''],['Sep 8','',''],['Nov 24','Next','']],
+ next:['First CD rung &mdash; once there&rsquo;s $300&ndash;$400 in the account','Confirm the first auto-transfer landed']};
+var PRI={t:'Nolan&rsquo;s car fund', b:'$8,367 by the time he can drive, on money that moves without you.', n:4};
+var REC={t:'Point the car payment here when the loan clears', b:'You owe $5,000&ndash;$15,000 on your car. Whenever that ends, the payment is already leaving on a schedule you don&rsquo;t think about &mdash; redirecting it is the cleanest source there is.',
+ why:'Set the rule now and you never have to remember to make the decision later.'};
+var PAST={t:'Saving for Nolan&rsquo;s first car', b:'What it takes a month, where to put it, and how to keep it out of sight &mdash; 20 August'};
+var NOTSTARTED=['Set a rule for when the car loan clears','Give the cruise fund a date','Roll the first CD at month three'];
+var FOUND=[
+ ['Cash','&#9635;','ok','Take-home and outgoings known'],
+ ['Safety','&#9679;','grey','No emergency fund figure yet'],
+ ['Protection','&#10039;','grey','No cover details yet'],
+ ['Debt','&#9636;','warn','Payoff running, rate unknown'],
+ ['Long game','&#9650;','grey','No retirement figures yet'],
+ ['Taxes','&#9638;','grey','Nothing on tax yet']
+];
+var FOUND_NOTE='2 of 6 measured. I can only score what you&rsquo;ve told me &mdash; the rest stay blank rather than guessing.';
+var ASKS=[
+ ['How do I teach him to pay for part of it?','Worth deciding before he can drive'],
+ ['What happens if I need this money?','Savings is liquid; the CDs are not'],
+ ['Should the cruise fund wait?','It has no date and this one does']
+];
+
+/* ---------------- home + plan sheet ---------------- */
+
+function ebText(pri){
+  var t=pri.slice(0,2).join(', ')+(pri.length>2?', +'+(pri.length-2):'');
+  return t.replace(/&rsquo;s/g,'S').toUpperCase().replace(/&NDASH;/g,'&ndash;').replace(/&MDASH;/g,'&mdash;');
+}
+function homeCard(c){
+  var eb=ebText(c.pri);
+  var act = c.cta==='Send to Finneas'
+    ? '<button class="btn-work">Send to Finneas</button>'
+    : '<div class="cact">'+c.cta+' &nbsp;&#9656;</div>';
+  return '<div class="hcard"><span class="eyebrow">'+eb+'</span>'+
+   '<div class="crow2"><div class="num">'+c.n+'</div><div>'+
+   '<div class="ctitle">'+c.title+'</div>'+
+   '<div class="cbody">'+c.body+'</div>'+act+
+   '</div></div></div>';
+}
+
+function stepRow(st){
+  var eb=ebText(st.pri);
+  return '<div class="pcard"><div class="eyebrow">'+eb+'</div>'+
+   '<div class="pt">'+st.t+'</div><div class="pb">'+st.b+'</div>'+
+   '<div class="prow"><span class="dur">'+st.tag+'</span>'+
+   '<span class="ta">'+st.cta+' <i>&#9656;</i></span></div></div>';
+}
+
+function tabCalendar(){
+  return '<div class="sect"><div class="sicon">&#9776;</div>'+
+   '<div class="stitle">'+CAL.title+'</div>'+
+   '<div class="ssub">'+CAL.sub+'</div></div>'+
+   '<div class="weeks">'+CAL.weeks.map(function(w){
+     return '<div class="wk '+w[2]+'"><span>Week of</span><b>'+w[0]+'</b>'+(w[1]?'<i>'+w[1]+'</i>':'')+'</div>';
+   }).join('')+'</div>'+
+   '<div class="grp">'+WEEK_STEPS.map(stepRow).join('')+'</div>'+
+   '<div class="wknext"><div class="wnk">Next week</div>'+
+   CAL.next.map(function(n){return '<div class="wnr">'+n+'</div>'}).join('')+'</div>';
+}
+
+function tabPriorities(){
+  return '<div class="sect"><div class="sicon">&#9781;</div><div class="stitle">My Priorities</div></div>'+
+   '<div class="prio" data-go="priority"><div class="pn">1</div><div class="pbody">'+
+   '<span class="urg high">Active</span>'+
+   '<div class="pt">'+PRI.t+'</div>'+
+   '<div class="pb">'+PRI.b+'</div>'+
+   '<div class="ta">View all '+PRI.n+' actions <i>&#9656;</i></div></div><span class="chev">&#9656;</span></div>'+
+   '<div class="sect sm"><div class="sicon">&#9788;</div><div class="stitle">To think about</div></div>'+
+   '<div class="rec"><span class="recpill">Finneas recommends</span>'+
+   '<div class="pt">'+REC.t+'</div>'+
+   '<div class="pb">'+REC.b+'</div>'+
+   '<div class="pwhy">'+REC.why+'</div>'+
+   '<div class="recbtns"><button class="rj">Not for us</button><button class="ac">Look into it</button></div></div>'+
+   '<div class="pastwrap">'+
+   '<div class="past"><div><div class="pt2">'+PAST.t+'</div>'+
+   '<div class="pb">'+PAST.b+'</div></div>'+
+   '<span class="chev">&#9656;</span></div></div>';
+}
+
+function tabActions(){
+  return '<div class="filt"><span>&#9906; Filter</span><span class="sep">|</span><span>Sort by type</span></div>'+
+   '<div class="sect nogap"><div class="stitle">Action bank</div></div>'+
+   '<div class="grp">'+WEEK_STEPS.map(stepRow).join('')+'</div>'+
+   '<div class="abank"><div class="abk">Not started</div>'+
+   NOTSTARTED.map(function(r){
+     return '<div class="abr"><span>'+r+'</span><span class="chev">&#9656;</span></div>';
+   }).join('')+'</div>';
+}
+
+function sheetHTML(){
+  var tabs=[['cal','Calendar'],['pri','Priorities'],['act','Actions']];
+  var body = S.tab==='pri'?tabPriorities() : S.tab==='act'?tabActions() : tabCalendar();
+  return '<div class="sheet">'+
+   '<div class="shead"><span class="close" data-sheet="0">&darr;</span>'+
+   '<span class="wm2">MY FINNEAS</span><span class="close" style="opacity:0">&darr;</span></div>'+
+   '<h2>Your plan</h2>'+
+   '<div class="tabs">'+tabs.map(function(t){
+     return '<button class="tb'+(S.tab===t[0]?' on':'')+'" data-tab="'+t[0]+'">'+t[1]+'</button>';
+   }).join('')+'</div>'+
+   '<div class="tabbody" key="'+S.tab+'">'+body+'</div>'+
+   '<div class="lsect"><span class="licon">&#9671;</span>Foundations</div>'+
+   '<div class="found">'+FOUND.map(function(f){
+     return '<div class="fitem'+(f[2]==='grey'?' unknown':'')+'" title="'+f[3]+'">'+
+       '<span class="fdot '+f[2]+'">'+(f[2]==='grey'?'?':f[1])+'</span>'+f[0]+'</div>';
+   }).join('')+'</div>'+
+   '<div class="fnote">'+FOUND_NOTE+'</div>'+
+   '<div class="viewf">View Foundations <i>&#9656;</i></div>'+
+   '<div class="lsect"><span class="licon">&#9993;</span>Ask us anything</div>'+
+   ASKS.map(function(a){
+     return '<div class="askrow"><div><div class="aq">'+a[0]+'</div>'+
+       '<div class="as">'+a[1]+'</div></div><span class="chev">&#9656;</span></div>';
+   }).join('')+
+   '<div class="askbar"><span>&#10022; &nbsp;Ask us anything..</span><button>Ask</button></div>'+
+   '</div>';
+}
+
+function viewSignup(){
+  return topBar()+'<div class="body" id="scroll"><div class="turn"><div class="avatar">F</div>'+
+   '<div class="said">I&rsquo;ll need somewhere to keep it.</div>'+
+   '<div class="sub">Your target, the two things to set up this week, and the rules for when something frees up &mdash; they all stay with your account. It&rsquo;s also what lets me watch your rate and tell you when a CD rung is due, so you don&rsquo;t have to keep a date in your head.</div>'+
+   '<div class="signup">'+
+     '<button class="sso"><span class="ssoi">&#63743;</span> Continue with Apple</button>'+
+     '<button class="sso"><span class="ssoi">G</span> Continue with Google</button>'+
+     '<div class="ordiv"><span>or</span></div>'+
+     '<div class="field"><label>Email</label><div class="fakefield">you@example.com</div></div>'+
+     '<button class="mkacct" data-go="welcome">Create my account</button>'+
+     '<div class="fineprint">You can delete the plan or the account at any time. I&rsquo;ll only email you when something needs you.</div>'+
+   '</div>'+
+   '<div class="opts"><button class="opt ghost" data-go="12">Back to the plan</button></div>'+
+   '</div><div style="height:20px"></div></div>'+dock();
+}
+
+function viewWelcome(){
+  return topBar()+'<div class="body" id="scroll"></div>'+dock()+
+   '<div class="welcome"><div class="wmark">Finneas</div>'+
+   '<div class="wtitle">Welcome to Finneas</div>'+
+   '<div class="wsub">Setting up your plan&hellip;</div>'+
+   '<div class="wbar"><i></i></div></div>';
+}
+
+function viewHome(){
+  var body;
+  if(!S.fan){
+    body = '<div class="avatar c">F</div>'+
+     '<div class="hero">'+HOME.hero+'</div>'+
+     '<div class="subhero">'+HOME.sub+'</div>'+
+     '<div class="hstack" data-fan="1"><div class="ghost g2"></div><div class="ghost"></div>'+
+     homeCard(HOME_CARDS[0])+'</div><div style="height:34px"></div>';
+  }else{
+    body = '<div class="avatar c">F</div>'+
+     '<div class="hero">Let&rsquo;s get started.</div>'+
+     '<div class="cards">'+HOME_CARDS.map(homeCard).join('')+'</div>';
+  }
+  return topBar()+'<div class="body" id="scroll">'+body+
+   '<div style="height:16px"></div></div>'+dock()+
+   '<div class="myh" data-sheet="1">MY FINNEAS</div>'+
+   (S.sheet?sheetHTML():'');
+}
+
+/* ---------------- rendering ---------------- */
+
+function topBar(){return '<div class="top"><div class="wm" data-go="entry">Finneas</div>'+
+  '<div class="burger"><span></span><span></span></div></div>'}
+function dockTyped(txt){
+  return '<div class="dock"><div class="inp">'+
+   '<span class="ic">&#128206;</span><span class="ic">&#127908;</span>'+
+   '<span class="ph" style="color:#2c1d24">'+txt+'</span>'+
+   '<button class="snd" data-send="1">&uarr;</button></div></div>';
+}
+function dock(){
+  return '<div class="dock"><div class="inp">'+
+   '<span class="ic">&#128206;</span><span class="ic">&#127908;</span>'+
+   '<span class="ph">Speak or type a message</span><button class="snd">&uarr;</button></div></div>';
+}
+
+function henceBlock(n,past){
+  var t=D[n];
+  var h='<div class="turn'+(past?'':(t.bare?' dissolve':' fade'))+'"'+(past?'':' id="curturn"')+'>';
+  if(t.toastFn) h+='<div class="toast'+(past?'':' fade3')+'" data-go="priority">'+
+    '<span class="tk">&#10003;</span><span class="tt">'+t.toastFn()+'</span>'+
+    '<span class="tv">View</span></div>';
+  if(!t.bare&&t.says) h+='<div class="avatar">F</div>';
+  if(t.says) h+='<div class="said">'+t.says+'</div>';
+  if(t.math) h+='<div class="mathhead">'+t.math+'</div>';
+  if(t.sub) h+='<div class="sub'+(past?'':' fade2')+'">'+t.sub+'</div>';
+  if(t.toast) h+='<div class="toast'+(past?'':' fade3')+'" data-go="priority">'+
+    '<span class="tk">&#10003;</span>'+
+    '<span class="tt">'+t.toast+'</span>'+
+    '<span class="tv">View</span></div>';
+  if(t.lace && S.mode==='laced') h+='<div class="lace'+(past?'':' fade3')+'"><div class="lk">'+t.lace[0]+'</div><p>'+t.lace[1]+'</p></div>';
+  if(t.recapRows){ h+='<div class="fade2">'+ROWS.map(function(r){
+      return '<div class="rowa"><span class="q">'+r[0]+'</span><span class="a">'+r[1]+'</span><span class="ed">Edit</span></div>';}).join('')+'</div>';
+      if(S.mode==='held') h+=digest(); }
+  if(t.two) h+= past ? '<div>'+twoSided()+'</div>' : '<div class="fade2">'+twoSided()+'</div>';
+  if(t.mod) h+= past ? '<div>'+t.mod()+'</div>' : '<div class="fade2">'+t.mod()+'</div>';
+  if(t.after) h+='<div class="sub'+(past?'':' fade3')+'">'+t.after+'</div>';
+  if(t.handoff) h+= past ? '<div>'+packHTML()+'</div>' : '<div class="fade2">'+packHTML()+'</div>';
+  if(t.authorise) h+=
+    '<div class="said fade3" style="font-size:20px;margin-top:26px">Want me to keep this?</div>'+
+    '<div class="sub fade3">Saving it puts these in your plan and starts watching your rate and the CD rungs. I&rsquo;ll only come back to you when something needs a decision.</div>'+
+    '<div class="opts fade3">'+
+    '<button class="opt" data-go="signup">Save it to my plan</button>'+
+    '<button class="opt" data-go="9">Change the target first</button>'+
+    '<button class="opt ghost" data-decline="1">Not now &mdash; just keep the answer</button></div>'+
+    (S.declined?'<div class="declined fade3"><div class="dh">Kept, but not saved.</div>'+
+      '<div class="dp">The answer stays in this conversation. Without an account I can&rsquo;t hold the plan, and I can&rsquo;t watch your rate or tell you when a rung is due &mdash; so nothing will reach you when it moves.</div>'+
+      '<button class="pill-more" data-go="signup" style="margin:14px auto 0">Actually, save it</button></div>':'');
+  if(t.end) h+='<div class="avatar">F</div><div class="said">That&rsquo;s everything. It&rsquo;s on your plan now.</div>'+
+    '<div class="sub">I&rsquo;ll keep an eye on the things that move, and bring you in when something needs a decision.</div>'+
+    '<button class="pill-more" data-go="home" style="margin:22px auto 4px">Take me home</button>'+
+    '<div class="gapbox"><div class="gl">Not designed yet &mdash; guide section 4</div>'+
+    '<p>The check-in before options, and the visualized options summary, sit here. Neither exists in Figma or in this prototype, and nothing has been invented to stand in for them.</p>'+
+    '<p>In Luke&rsquo;s real session the options pane read GENERATING YOUR OPTIONS with three skeleton cards labeled A, B and C, and never resolved. The Compare as options / Slides / PDF controls appeared once the response completed; he clicked none of them.</p></div>'+
+    '<div class="gapbox"><div class="gl">Not designed yet &mdash; guide section 5</div>'+
+    '<p>The confidence signal. Present in today&rsquo;s Finneas, absent from Figma and from here. Pending the go/no-go.</p></div>';
+  if(t.meta) h+='<div class="ask" style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.5);font-weight:700">'+t.meta+'</div>';
+  if(t.ask) h+='<div class="ask">'+t.ask+'</div>';
+  if(t.why) h+='<div class="qwhy">'+t.why+'</div>';
+  if(t.gapAfter && !past) h+='<div class="gapbox"><div class="gl">Not captured</div><p>'+t.gapAfter+'</p></div>';
+  return h;
+}
+
+function thread(){
+  return S.log.map(function(m){
+    return m.who==='me'
+      ? '<div class="mine"><div class="b">'+m.text+'</div></div>'
+      : henceBlock(m.i,true)+'</div>';
+  }).join('');
+}
+
+function lightBar(){
+  return '<div class="top light"><div class="wm" data-go="entry">Finneas</div>'+
+    '<div class="burger"><span></span><span></span></div></div>';
+}
+function eyebrowOf(p){ return ebText(p.pri); }
+function actionCard(p,i){
+  return '<div class="pcard" data-go="pack"><div class="eyebrow">'+eyebrowOf(p)+'</div>'+
+   '<div class="pt">'+p.t+'</div><div class="pb">'+p.b+'</div>'+
+   '<div class="prow"><span class="dur">'+p.tag+'</span>'+
+   '<span class="ta">'+(p.cta||'Take action')+' <i>&#9656;</i></span></div></div>';
+}
+function rateTracker(){
+  var W=300,H=72,PAD=8, v=RATES.map(function(r){return r.v});
+  var mx=Math.max.apply(null,v), mn=Math.min.apply(null,v);
+  var X=function(r){return PAD+r.x*(W-PAD*2)};
+  var Y=function(x){return H-PAD-((x-mn)/((mx-mn)||1))*(H-PAD*2)};
+  var pts=RATES.map(function(r){return X(r)+','+Y(r.v)}).join(' ');
+  var area='M'+X(RATES[0])+','+(H-PAD)+' L'+pts.split(' ').join(' L')+' L'+X(RATES[RATES.length-1])+','+(H-PAD)+' Z';
+  return '<div class="mod"><div class="modk">Monitoring</div>'+
+   '<h3 class="modh">Savings rates have been drifting down since March</h3>'+
+   '<div class="ratenow">4.55%<span>&darr; 0.50 since March</span></div>'+
+   '<svg viewBox="0 0 '+W+' '+H+'" class="ratesvg">'+
+     '<path d="'+area+'" fill="rgba(176,124,216,.14)"/>'+
+     '<polyline fill="none" stroke="#b07cd8" stroke-width="2" points="'+pts+'"/>'+
+     '<circle cx="'+X(RATES[RATES.length-1])+'" cy="'+Y(6.69)+'" r="3.5" fill="#b07cd8"/>'+
+   '</svg>'+
+   '<div class="ratex"><span>Mar</span><span>May</span><span>Jul</span><span>Aug</span></div>'+
+   '<p class="modp">Half a point over six years is about $250 on your balance. Not enough to act on today, but enough that a bank quietly cutting its rate is worth catching.</p>'+
+   '<p class="modp">I&rsquo;ll check monthly and only tell you if yours falls behind what&rsquo;s available by half a point or more.</p>'+
+   '<div class="src">National average high-yield savings APY &middot; checked 20 August 2026</div></div>';
+}
+function viewPriority(){
+  return lightBar()+'<div class="body page" id="scroll">'+
+   '<div class="pghead">'+
+     '<span class="urg high">Running</span>'+
+     '<h2 class="pgt">Nolan&rsquo;s car fund</h2>'+
+     '<div class="progbar"><i style="width:0%"></i></div>'+
+     '<div class="progl">0 of 4 actions done &middot; started 20 August</div>'+
+   '</div>'+
+   '<div class="mod"><div class="modk">Target</div>'+
+   '<h3 class="modh">'+usd(ladderBalance(S.mo,S.yrs*12))+' by the time he can drive, on money that moves without you.</h3>'+
+   '<div class="trow"><span>Every month</span><b>'+usd(S.mo)+'</b></div>'+
+   '<div class="trow"><span>Years to go</span><b>'+S.yrs+'</b></div>'+
+   '<div class="trow"><span>Account open</span><b>Not yet</b></div>'+
+   '<div class="trow"><span>Transfer running</span><b>Not yet</b></div>'+
+   '<p class="modp">Nothing has been set up. Both of those are done in one sitting.</p></div>'+
+   '<h1 class="secH">Actions for this priority</h1>'+
+   '<div class="mod plain">'+ACTIONS.map(actionCard).join('')+'</div>'+
+   rateTracker()+
+   '<div class="mod"><div class="modk">What could change this</div>'+
+   '<h3 class="modh">A balance above 6% would come first</h3>'+
+   '<p class="modp">You said you&rsquo;d have to check. Until you do, this plan assumes there isn&rsquo;t one &mdash; and if there is, paying it beats saving at 4.75% by a wide margin.</p></div>'+
+   '<div class="mod"><div class="modk">Questions you&rsquo;ve asked</div>'+
+   '<div class="qrow"><div><div class="pt2">Saving for Nolan&rsquo;s first car</div>'+
+   '<div class="pb">What it takes a month, where to put it, and how to make it invisible &mdash; 20 August</div></div>'+
+   '<span class="chev">&#9656;</span></div></div>'+
+   '<div class="mod"><div class="modk">Related</div>'+
+   '<div class="qrow"><div><div class="pt2">The cruise fund</div>'+
+   '<div class="pb">No date set. It draws on the same money as this one &mdash; the car fund pulls first.</div></div>'+
+   '<span class="chev">&#9656;</span></div>'+
+   '<div class="qrow"><div><div class="pt2">Debt-free in two years</div>'+
+   '<div class="pb">Running. If anything in it is above 6%, it outranks this fund.</div></div>'+
+   '<span class="chev">&#9656;</span></div></div>'+
+   '<div style="height:20px"></div></div>'+dock();
+}
+function viewPack(){
+  return lightBar()+'<div class="body page" id="scroll">'+
+   '<div class="pghead">'+
+     '<span class="eyebrow">NOLAN&rsquo;S CAR FUND</span>'+
+     '<h2 class="pgt">Open the account and name it after him</h2>'+
+     '<div class="progbar"><i style="width:0%"></i></div>'+
+     '<div class="progl">0 of 3 steps done</div>'+
+   '</div>'+
+   '<div class="mod"><div class="modk">Why this first</div>'+
+   '<h3 class="modh">Nothing else works until the money has somewhere else to be.</h3>'+
+   '<div class="modnote">It needs to be away from your everyday bank, because seeing it is what makes it spendable. The name matters more than it sounds like it should &mdash; an account called &ldquo;Nolan&rsquo;s car fund&rdquo; is materially harder to raid than one called Savings 2.</div></div>'+
+   '<div class="mod"><div class="modk">Steps</div>'+
+   ACT_STEPS.map(function(p){
+     return '<div class="stepc"><div class="stepn">'+p.n+'</div><div class="stepb">'+
+       '<div class="pt">'+p.t+'</div><div class="pb">'+p.b+'</div>'+
+       '<div class="prow"><span class="dur">'+p.tag.toUpperCase()+'</span>'+
+       '<span class="ta">'+p.cta+' <i>&#9656;</i></span></div></div></div>';
+   }).join('')+'</div>'+
+   '<div class="mod"><div class="modk">Also counts toward</div>'+
+   '<div class="qrow" data-go="priority"><div><div class="pt2">Nolan&rsquo;s car fund</div>'+
+   '<div class="pb">The transfer can&rsquo;t be set until this exists.</div></div>'+
+   '<span class="chev">&#9656;</span></div></div>'+
+   '<div style="height:20px"></div></div>'+dock();
+}
+function viewEntry(){
+  return topBar()+'<div class="body" style="display:flex;flex-direction:column;justify-content:center">'+
+   '<div class="avatar c">F</div><div class="hero">What&rsquo;s on your<br>money mind?</div></div>'+
+   '<div class="dock"><div class="inp"><span class="ic">&#128206;</span><span class="ic">&#127908;</span>'+
+   '<span class="ph" style="color:#2c1d24">I am looking to save for my sons future car I have a few years to work with and I want something safe and nice. I don&rsquo;t have a whole LOT to set aside but some and I want to make it feel like it doesn&rsquo;t exist the savings toward it</span>'+
+   '<button class="snd" data-go="0">&uarr;</button></div></div>';
+}
+
+function viewTurn(){
+  var t=D[S.t];
+  var h=thread()+henceBlock(S.t,false);
+  if(t.opts){
+    h+='<div class="opts">'+t.opts.map(function(o,i){
+      return '<button class="opt'+(o==='[cut off]'?' ghost':'')+'" data-opt="'+i+'">'+o+'</button>'}).join('')+'</div>';
+    if(t.banded) h+='<div class="fieldfoot"><span>Or enter a specific answer below</span>'+
+      '<span class="skip" data-opt="0">Skip this question</span></div>';
+  }
+  if(t.more && !t.gate) h+='<button class="pill-more" data-more="1">'+t.cta+'</button>';
+  h+='</div><div style="height:26px"></div>';
+  return topBar()+'<div class="body" id="scroll">'+h+'</div>'+
+    (t.answer?dockTyped(t.answer):dock());
+}
+
+function render(){
+  var s=document.getElementById('screen');
+  s.innerHTML = S.t==='signup' ? viewSignup() : S.t==='welcome' ? viewWelcome() : S.t==='home' ? viewHome() : S.t==='entry' ? viewEntry() : S.t==='priority' ? viewPriority() : S.t==='pack' ? viewPack() : viewTurn();
+  wire();
+  document.getElementById('note').textContent=NOTES[S.t]||'';
+  document.querySelectorAll('#vsw button').forEach(function(b){
+    b.classList.toggle('on',b.getAttribute('data-m')===S.mode)});
+  document.querySelectorAll('#steps button').forEach(function(b){
+    b.classList.toggle('on',b.getAttribute('data-v')===String(S.t))});
+  if(S.welcomeTimer){clearTimeout(S.welcomeTimer);S.welcomeTimer=null;}
+  if(S.t==='welcome') S.welcomeTimer=setTimeout(function(){S.t='home';render();},1900);
+}
+
+function wire(){
+  var s=document.getElementById('screen');
+  s.querySelectorAll('[data-go]').forEach(function(e){e.onclick=function(){
+    var g=e.getAttribute('data-go');
+    if(g==='entry'){S.t='entry';S.log=[];}
+    else if(g==='priority'||g==='pack'||g==='home'||g==='signup'||g==='welcome'){S.t=g;}
+    else {S.t=parseInt(g,10);}
+    render();scrollToTurn();}});
+  s.querySelectorAll('[data-opt]').forEach(function(e){e.onclick=function(){
+    var t=D[S.t];
+    S.log.push({who:'hence',i:S.t});
+    if(t.answered) S.log.push({who:'me',text:t.answered});
+    S.t=S.t+1;render();scrollToTurn();}});
+  s.querySelectorAll('[data-send]').forEach(function(e){e.onclick=function(){
+    var t=D[S.t];
+    S.log.push({who:'hence',i:S.t});
+    S.log.push({who:'me',text:t.answer});
+    S.t=S.t+1;render();scrollToTurn();}});
+  s.querySelectorAll('[data-more]').forEach(function(e){e.onclick=function(){
+    S.log.push({who:'hence',i:S.t});
+    S.t=S.t+1;render();scrollToTurn();}});
+  s.querySelectorAll('input[type=range]').forEach(function(e){
+    e.oninput=function(){
+      var k=this.getAttribute('data-k');
+    if(k.indexOf('rule:')===0){ S.ruleAmt[k.split(':')[1]]=parseInt(this.value,10); }
+    else { S[k]= k==='apy' ? parseFloat(this.value) : parseInt(this.value,10); }
+      var lab=this.parentNode.querySelector('label b');
+      if(lab && typeof usd==='function'){ var k=this.getAttribute('data-k'); if(S[k]!==undefined) lab.innerHTML=usd(S[k]); }
+    };
+    e.onchange=function(){
+      var b=document.getElementById('scroll'), pos=b?b.scrollTop:0;
+      render(); var nb=document.getElementById('scroll'); if(nb) nb.scrollTop=pos;
+    };
+  });
+  s.querySelectorAll('[data-rule]').forEach(function(e){e.onclick=function(ev){
+    if(ev.target.tagName==='INPUT') return;
+    var id=this.getAttribute('data-rule');
+    S.rules[id]=!S.rules[id];
+    var b=document.getElementById('scroll'), pos=b?b.scrollTop:0;
+    render(); var nb=document.getElementById('scroll'); if(nb) nb.scrollTop=pos;}});
+  s.querySelectorAll('[data-fan]').forEach(function(e){e.onclick=function(){
+    S.fan=true; render();}});
+  s.querySelectorAll('[data-sheet]').forEach(function(e){e.onclick=function(){
+    S.sheet=this.getAttribute('data-sheet')==='1'; render();}});
+  s.querySelectorAll('[data-tab]').forEach(function(e){e.onclick=function(){
+    S.tab=this.getAttribute('data-tab'); render();}});
+  s.querySelectorAll('[data-decline]').forEach(function(e){e.onclick=function(){
+    S.declined=true;
+    var b=document.getElementById('scroll'), pos=b?b.scrollTop:0;
+    render(); var nb=document.getElementById('scroll'); if(nb) nb.scrollTop=pos;}});
+  s.querySelectorAll('[data-refopen]').forEach(function(e){e.onclick=function(){
+    S.refineOpen=!S.refineOpen;
+    var b=document.getElementById('scroll'), pos=b?b.scrollTop:0;
+    render(); var nb=document.getElementById('scroll'); if(nb) nb.scrollTop=pos;}});
+  s.querySelectorAll('[data-refine]').forEach(function(e){e.onclick=function(){
+    var k=this.getAttribute('data-refine'); S.refine[k]=!S.refine[k];
+    var b=document.getElementById('scroll'), pos=b?b.scrollTop:0;
+    render(); var nb=document.getElementById('scroll'); if(nb) nb.scrollTop=pos;}});
+  s.querySelectorAll('[data-exp]').forEach(function(e){e.onclick=function(){
+    S.expOpen=true; render();
+    var mods=document.querySelectorAll('#curturn .mod');
+    if(mods.length) mods[mods.length-1].scrollIntoView({block:'start'});}});
+  s.querySelectorAll('[data-goal]').forEach(function(e){e.onclick=function(){
+    S.goalSet=true; S.log.push({who:'hence',i:S.t}); S.t=S.t+1; S.expOpen=false;
+    render(); scrollToTurn();}});
+  s.querySelectorAll('[data-acct]').forEach(function(e){e.onclick=function(){
+    S.acct=this.getAttribute('data-acct');
+    var b=document.getElementById('scroll'), pos=b?b.scrollTop:0;
+    render(); var nb=document.getElementById('scroll'); if(nb) nb.scrollTop=pos;}});
+  s.querySelectorAll('[data-conf]').forEach(function(e){e.onclick=function(){
+    S.confOpen=!S.confOpen;
+    var b=document.getElementById('scroll'), pos=b?b.scrollTop:0;
+    render(); var nb=document.getElementById('scroll'); if(nb) nb.scrollTop=pos;}});
+  s.querySelectorAll('[data-scen]').forEach(function(e){e.onclick=function(){
+    var p=this.getAttribute('data-scen').split('|');
+    S.price=+p[0]; S.rate=+p[1];
+    var b=document.getElementById('scroll'), pos=b?b.scrollTop:0;
+    render(); var nb=document.getElementById('scroll'); if(nb) nb.scrollTop=pos;
+  }});
+}
+
+function scrollToTurn(){
+  var b=document.getElementById('scroll');
+  if(!b) return;
+  var t=document.getElementById('curturn');
+  if(!t){ b.scrollTop=0; return; }
+  b.scrollTop += t.getBoundingClientRect().top - b.getBoundingClientRect().top - 8;
+}
+
+document.getElementById('steps').innerHTML=STEPS.map(function(x){
+  return '<button data-v="'+x[1]+'">'+x[0]+'</button>'}).join('');
+document.getElementById('vsw').onclick=function(e){
+  var m=e.target.getAttribute&&e.target.getAttribute('data-m'); if(!m) return;
+  S.mode=m; render(); scrollToTurn();
+};
+document.getElementById('steps').onclick=function(e){
+  var v=e.target.getAttribute&&e.target.getAttribute('data-v');if(!v)return;
+  S.log=[];
+  S.expOpen=false;
+  if(v==='entry'||v==='priority'||v==='pack'||v==='home'||v==='signup'||v==='welcome'){S.t=v;render();return;}
+  var n=parseInt(v,10);
+  for(var i=0;i<n;i++){ S.log.push({who:'hence',i:i});
+    var a=D[i].answer||D[i].answered; if(a) S.log.push({who:'me',text:a}); }
+  S.t=n; render(); scrollToTurn();
+};
+
+render();
+</script>
+</body>
+</html>
